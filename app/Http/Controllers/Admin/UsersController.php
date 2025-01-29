@@ -15,7 +15,6 @@ class UsersController extends Controller
     public function index(Request $request)
     {
         $query = User::query();
-
         if ($request->filled('status')) {
             $query->where('status', $request->input('status'));
         }
@@ -26,7 +25,6 @@ class UsersController extends Controller
                 ->orWhere('email', 'like', '%' . $searchQuery . '%');
             });
         }
-
         $data['users'] = $query->orderBy('id', 'DESC')->paginate(50);
         $data['filters'] = $request->only([ 'status', 'search_query']);
         return view('admin/users/manage_users', $data);
