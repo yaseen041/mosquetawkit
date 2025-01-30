@@ -7,8 +7,7 @@
   <link rel='shortcut icon' type='image/x-icon' href="{{ asset('assets/favicon.ico') }}" />
   <link rel='apple-touch-icon' sizes='152x152' href="{{ asset('assets/favicon152.png') }}" />
   <meta name='description' content="Tawkit - Awkat Salat Clock | Prayer times for Mosque">
-  <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico'>
-  <link rel='preload' href='/font/Amiri-Regular.woff2' as='font' type='font/woff2' crossorigin=''>
+  <link rel='preload' href='{{ asset('assets/font/Amiri-Regular.woff2') }}' as='font' type='font/woff2' crossorigin=''>
   <link href="{{ asset('assets/w9vendors/aos.css') }}" rel='stylesheet'>
   <link href="{{ asset('assets/w9vendors/bootstrap.min.css') }}" rel='stylesheet'>
   <link href="{{ asset('assets/w9vendors/bootstrap-icons.css') }}" rel='stylesheet'>
