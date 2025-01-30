@@ -158,3 +158,6 @@
 .alert li{
 	list-style: none !important;
 }
+.img_width {
+	width: 150px;
+}

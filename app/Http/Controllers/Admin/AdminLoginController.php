@@ -30,7 +30,7 @@ class AdminLoginController extends Controller
 
         $credentials = $request->only('email', 'password');
         if (Auth::guard('admin')->attempt($credentials)){
-            return redirect('admin');
+            return redirect('admin/mosques');
         }else{
             return redirect("admin/login")->withErrors('Invalid email or password!.');
         }
