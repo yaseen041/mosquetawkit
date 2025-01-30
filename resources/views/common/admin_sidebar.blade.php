@@ -20,10 +20,9 @@
                 </div>
             </li>
 
-            <li class="">
-                <a href=""><i class="fa fa-money-bill"></i>
-                    <span class="nav-label"> Add Mosque</span>
-                </a>
+
+            <li class="{{ Request::is('admin/users') ? 'active' : '' }} {{ Request::is('admin/users*') ? 'active' : '' }}">
+                <a href="{{ url('admin/users') }}"><i class="fa-solid fa-users"></i><span class="nav-label">Users</span></a>
             </li>
 
         </ul>
