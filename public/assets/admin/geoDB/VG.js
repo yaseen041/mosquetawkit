@@ -1,0 +1,4 @@
+JS_GPS_CALCULATION_CITIES_NOW =
+[
+"VG|Road Town|18.42693|-64.62079|-4.0|-4.0",
+];

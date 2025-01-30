@@ -2003,30 +2003,30 @@
 		}
 	}
 	function UpdateFullClock(YES_ACTIVATE_IT) {
-    var sssBOOL = YES_ACTIVATE_IT ? 1 : 0;
-    localStorage.setItem('STORAGE_FULL_CLOCK_ACTIVE', sssBOOL);
+		var sssBOOL = YES_ACTIVATE_IT ? 1 : 0;
+		localStorage.setItem('STORAGE_FULL_CLOCK_ACTIVE', sssBOOL);
 
     // Ensure the checkbox reflects the correct state
-    if (typeof JS_eFullClockCHECK !== 'undefined') {
-        JS_eFullClockCHECK.checked = !!sssBOOL;
-    }
+		if (typeof JS_eFullClockCHECK !== 'undefined') {
+			JS_eFullClockCHECK.checked = !!sssBOOL;
+		}
 
-    if (sssBOOL) {
+		if (sssBOOL) {
         // Activate Full Clock (Hide Mini Clock, Show Full Clock)
-        HideZunder('CLOKO_MINI_VR');
-        HideZunder('CLOKO_MINI_HR');
-        ShowZunder('CLOKO_FULL_VR');
-        ShowZunder('CLOKO_FULL_HR');
-    } else {
+			HideZunder('CLOKO_MINI_VR');
+			HideZunder('CLOKO_MINI_HR');
+			ShowZunder('CLOKO_FULL_VR');
+			ShowZunder('CLOKO_FULL_HR');
+		} else {
         // Activate Mini Clock (Show Mini Clock, Hide Full Clock)
-        ShowZunder('CLOKO_MINI_VR');
-        ShowZunder('CLOKO_MINI_HR');
-        HideZunder('CLOKO_FULL_VR');
-        HideZunder('CLOKO_FULL_HR');
-    }
+			ShowZunder('CLOKO_MINI_VR');
+			ShowZunder('CLOKO_MINI_HR');
+			HideZunder('CLOKO_FULL_VR');
+			HideZunder('CLOKO_FULL_HR');
+		}
 
-    setTimeout(Go1MN, 3000);
-}
+		setTimeout(Go1MN, 3000);
+	}
 	function SetDimmOnOff() {
 		JS_DIMM_WHILE_PRAYIN_ACTIVE = !JS_DIMM_WHILE_PRAYIN_ACTIVE;
 		var sssBOOL = 0;
@@ -2557,35 +2557,44 @@
 		var fullDX = getFullDynDATE(0);
 		return fullDX + 'T' + hhh + ':00';
 	}
+
 	var JS_mtoGPS = document.getElementById('mtoGPS');
-	function updateGpsMETEO() {
-		if (navigator.geolocation) {
+	function updateGpsMETEO()
+	{
+		if(navigator.geolocation)
+		{
 			JS_mtoGPS.innerHTML = '...';
 			navigator.geolocation.getCurrentPosition(iniPosition);
 		}
-		else { alert("Geolocation is Not supported by this browser."); }
+		else
+			{alert("Geolocation is Not supported by this browser.");}
 	}
-	function iniPosition(position) {
-		JS_METEO_LATITUDE = position.coords.latitude;
+	function iniPosition(position)
+	{
+		JS_METEO_LATITUDE  = position.coords.latitude;
 		JS_METEO_LONGITUDE = position.coords.longitude;
 		localStorage.setItem('STORAGE_JS_METEO_LATITUDE', JS_METEO_LATITUDE);
 		localStorage.setItem('STORAGE_JS_METEO_LONGITUDE', JS_METEO_LONGITUDE);
 		ShowNowLatiLong();
 		FetchMETEO();
 	}
-	function ShowNowLatiLong() {
+	function ShowNowLatiLong()
+	{
 		JS_mtoGPS.innerHTML = JS_METEO_LATITUDE + ',' + JS_METEO_LONGITUDE;
 	}
-	function FetchMETEO() {
-		if (JS_METEO_LATITUDE == 0) { JS_VRCELSIUS.innerHTML = ""; JS_HRCELSIUS.innerHTML = ""; return; }
-		fetch('https://api.open-meteo.com/v1/forecast?latitude=' + JS_METEO_LATITUDE + '&longitude=' + JS_METEO_LONGITUDE + '&hourly=temperature_2m,weathercode&forecast_days=3&timezone=auto')
+	function FetchMETEO()
+	{
+		if(JS_METEO_LATITUDE == 0) {JS_VRCELSIUS.innerHTML = ""; JS_HRCELSIUS.innerHTML = ""; return;}
+
+		fetch('https://api.open-meteo.com/v1/forecast?latitude='+JS_METEO_LATITUDE+'&longitude='+JS_METEO_LONGITUDE+'&hourly=temperature_2m,weathercode&forecast_days=3&timezone=auto')
 		.then(text => text.json())
 		.then(data => {
 			JS_DATA_METEO = data;
 			proccessMETEO(true);
 		})
-		.catch(error => { console.log(error); })
+		.catch(error => {console.log(error);})
 	}
+
 	var JS_nowUNIT = "";
 	var JS_nowCELS = "";
 	var JS_arr7HOURS = ['T04:00', 'T07:00', 'T10:00', 'T13:00', 'T17:00', 'T20:00', 'T23:00'];

@@ -1,0 +1,5 @@
+JS_GPS_CALCULATION_CITIES_NOW =
+[
+"SG|Singapore|1.28967|103.85007|8.0|8.0",
+"SG|Woodlands|1.43801|103.78877|8.0|8.0",
+];

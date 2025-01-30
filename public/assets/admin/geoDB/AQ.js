@@ -1,0 +1,4 @@
+JS_GPS_CALCULATION_CITIES_NOW =
+[
+"AQ|McMurdo Station|-77.846|166.676|13.0|12.0",
+];

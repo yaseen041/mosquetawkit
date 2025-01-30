@@ -1,0 +1,4 @@
+JS_GPS_CALCULATION_CITIES_NOW =
+[
+"GS|Grytviken|-54.28111|-36.5092|-2.0|-2.0",
+];
