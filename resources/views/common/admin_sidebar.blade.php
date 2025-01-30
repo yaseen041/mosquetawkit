@@ -21,8 +21,8 @@
             </li>
 
 
-            <li class="{{ Request::is('admin/users') ? 'active' : '' }} {{ Request::is('admin/users*') ? 'active' : '' }}">
-                <a href="{{ url('admin/users') }}"><i class="fa-solid fa-users"></i><span class="nav-label">Users</span></a>
+            <li class="{{ Request::is('admin/mosques') ? 'active' : '' }} {{ Request::is('admin/mosques*') ? 'active' : '' }}">
+                <a href="{{ url('admin/mosques') }}"><i class="fa-solid fa-mosque"></i><span class="nav-label">Mosques</span></a>
             </li>
 
         </ul>

@@ -16,7 +16,7 @@
 	<div class="middle-box text-center loginscreen animated fadeInDown">
 		<div>
 			<div class="col-lg-12 text-center" style="margin-top: 70px;">
-				<img class="img-responsive" src="{{ asset('assets') }}/{{ get_section_content('project', 'site_logo') }}" alt="logo" style="width: 241px;">
+				<img class="img-responsive" src="{{ asset('assets') }}/{{ get_section_content('project', 'site_logo') }}" alt="logo" style="width: 150px;">
 			</div>
 			<h3 class="admin_login_st">Administrator Login</h3>
 			@if(session()->has('errors'))
@@ -42,7 +42,7 @@
 				</div>
 				<button type="submit" class="btn btn-primary block full-width m-b">Login</button>
 			</form>
-			{{-- <a href="{{ url('admin/forgot_password') }}"><small>Forgot password?</small></a> --}}
+			<a href="{{ url('admin/forgot-password') }}"><small>Forgot password?</small></a>
 			{{-- <p class="text-muted text-center"><small>Do not have an account?</small></p> --}}
 			{{-- <a class="btn btn-sm btn-success btn-block" href="{{ url('admin/register') }}">Create an account</a> --}}
 			<p class="m-t"> {{ get_section_content('project', 'site_title') }} &copy; {{ date("Y") }} </p>

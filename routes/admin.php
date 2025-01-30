@@ -4,8 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AdminLoginController;
 use App\Http\Controllers\Admin\AdminController;
 
-use App\Http\Controllers\Admin\UsersController;
-// use App\Http\Controllers\Admin\DocumentsController;
+use App\Http\Controllers\Admin\MosquesController;
+use App\Http\Controllers\Admin\ForgotPasswordController;
 // use App\Http\Controllers\Admin\PaymentsController;
 
 
@@ -16,23 +16,27 @@ Route::group(['prefix'  =>  'admin'], function () {
 	Route::post('verify_login', [AdminLoginController::class, 'verify_login']);
 	Route::get('logout', [AdminLoginController::class, 'logout']);
 
+	Route::get('forgot-password', [ForgotPasswordController::class, 'index']);
+	Route::post('forgot_password', [ForgotPasswordController::class, 'forgot_password']);
+
 	Route::group(['middleware' => ['auth:admin']], function () {
 		Route::get('admin', [AdminController::class, 'index']);
-		Route::get('/dashboard', [AdminController::class, 'index'])->name('admin.dashboard');
+		Route::get('dashboard', [AdminController::class, 'index'])->name('admin.dashboard');
 		Route::get('change_password', [AdminController::class, 'change_password']);
 		Route::post('update_password', [AdminController::class, 'update_password']);
 
-		Route::group(['prefix' => 'users'], function () {
-			Route::get('/', [UsersController::class, 'index']);
-			Route::get('/manage-user/{id}', [UsersController::class, 'manage_user']);
+		Route::group(['prefix' => 'mosques'], function () {
+			Route::get('/', [MosquesController::class, 'index']);
+			Route::get('manage-mosque/{id}', [MosquesController::class, 'manage_mosque']);
+			Route::post('update_status', [MosquesController::class, 'update_status']);
+			Route::post('delete', [MosquesController::class, 'destroy']);
+
 			// Route::get('/user-documents/{id}', [UsersController::class, 'show_documents']);
 			// Route::get('/user-payments/{id}', [UsersController::class, 'show_payments']);
 			// Route::post('store-document', [UsersController::class, 'store_document']);
 			// Route::post('store-balance', [UsersController::class, 'store_balance']);
 			// Route::get('create', [UsersController::class, 'create']);
 			// Route::post('update', [UsersController::class, 'update']);
-			// Route::post('suspend', [UsersController::class, 'suspend']);
-			// Route::post('delete', [UsersController::class, 'destroy']);
 		});
 
 		// Route::group(['prefix' => 'documents'], function () {

@@ -80,19 +80,6 @@ if (!function_exists('get_complete_table')) {
 }
 
 
-if (!function_exists('get_users_submissions')) {
-	function get_users_submissions($user_id)
-	{
-		$query = DB::table('submissions');
-		$query->where('user_id', $user_id);
-		$query->where('entrytype', '1');
-		$query->where('status', '1');
-		$query->orderBy('id', 'DESC');
-		$data = $query->get();
-		return $data;
-	}
-}
-
 if (!function_exists('get_single_row')) {
 	function get_single_row($table, $primary_key, $where_id, $primary_key2 = '', $where_id2 = '', $type = '', $type_value = '')
 	{
@@ -173,13 +160,5 @@ if (!function_exists('count_records')) {
 	}
 }
 
-if (!function_exists('count_user_pending_payments')) {
-	function count_user_pending_payments($user_id)
-	{
-		$query = DB::table('payments');
-		$query->where('status', 0);
-		$query->where('user_id', $user_id);
-		return $query->count();
-	}
-}
+
 

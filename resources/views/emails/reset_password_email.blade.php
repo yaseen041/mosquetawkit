@@ -15,6 +15,7 @@
         }
         .footer { font-size: 0.9em; color: #000000; margin-top: 20px; }
     </style>
+    <title>Reset Password</title>
 </head>
 <body>
     <h4>Hi {{ $data['email'] }},</h4>
