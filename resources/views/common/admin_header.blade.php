@@ -18,4 +18,5 @@
 <link href="{{ asset('admin_assets/css/custom.css') }}" rel="stylesheet">
 
 <link href="{{ asset('admin_assets/css/plugins/summernote/summernote-bs4.css') }}" rel="stylesheet">
-<link rel="shortcut icon" href="{{ asset('assets/favicon.png') }}" type="image/x-icon">
+<link rel='shortcut icon' type='image/x-icon' href="{{ asset('assets/favicon.ico') }}" />
+<link rel='apple-touch-icon' sizes='152x152' href="{{ asset('assets/favicon152.png') }}" />
