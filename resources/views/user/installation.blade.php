@@ -3,7 +3,9 @@
 <head>
   <meta charset='utf-8'>
   <meta content='width=device-width, initial-scale=1.0' name='viewport'>
-  <title>Tawkit Installation for Android Devices - Tawkit - برنامج التوقيت</title>
+  <title>Tawkit Installation for Android Devices &#8211; {{ get_section_content('project', 'site_title') }}</title>
+  <link rel='shortcut icon' type='image/x-icon' href="{{ asset('assets/favicon.ico') }}" />
+  <link rel='apple-touch-icon' sizes='152x152' href="{{ asset('assets/favicon152.png') }}" />
   <meta name='description' content="Tawkit - Awkat Salat Clock | Prayer times for Mosque">
   <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico'>
   <link rel='preload' href='/font/Amiri-Regular.woff2' as='font' type='font/woff2' crossorigin=''>
@@ -119,7 +121,7 @@
                   </div>
                 </section>
               </main>
-          <footer id='footer'>
+              <footer id='footer'>
                 <div class='footer-top'>
                   <div class='container'>
                     <div class='row align-items-end' style='padding-top:35px; border-top:1px solid #F3F3F3;'>

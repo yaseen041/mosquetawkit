@@ -47,7 +47,10 @@
 		select optgroup{color:#913E23;}
 		select option{color:#252525;}
 	</style>
-	<title>New Mosque Account</title>
+
+    <title>New Mosque Account &#8211; {{ get_section_content('project', 'site_title') }}</title>
+	<link rel='shortcut icon' type='image/x-icon' href="{{ asset('assets/favicon.ico') }}" />
+	<link rel='apple-touch-icon' sizes='152x152' href="{{ asset('assets/favicon152.png') }}" />
 </head>
 <body>
 	<center>

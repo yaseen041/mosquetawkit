@@ -43,7 +43,12 @@
 		.cssBLUE {color:blue; cursor:pointer;}
 		.cssSelecL {width:100%; padding:7px;}
 	</style>
-	<title>Tawkit Praying Times</title>
+
+	<link rel='shortcut icon' type='image/x-icon' href="{{ asset('assets/favicon.ico') }}" />
+	<link rel='apple-touch-icon' sizes='152x152' href="{{ asset('assets/favicon152.png') }}" />
+
+    <title>Tawkit Praying Times &#8211; {{ get_section_content('project', 'site_title') }}</title>
+
 </head>
 <body>
 	<center>
