@@ -8,7 +8,7 @@
     <script src="{{ asset('assets/admin/wtimes/1-data52b7.js') }}"></script>
 </head>
 
-<body onload='_cadro();' onresize='_cadro();'>
+<body >
     @include('common.header')
     @yield('content')
     @include('common.footer')

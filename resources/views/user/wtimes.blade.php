@@ -80,13 +80,13 @@
 	</style>
 	<link rel='shortcut icon' type='image/x-icon' href="{{ asset('assets/favicon.ico') }}" />
 	<link rel='apple-touch-icon' sizes='152x152' href="{{ asset('assets/favicon152.png') }}" />
-	<title>Tawkit Praying Times &#8211; {{ get_section_content('project', 'site_title') }}</title>
+	<title>{{ get_section_content('project', 'site_title') }} Praying Times &#8211; {{ get_section_content('project', 'site_title') }}</title>
 </head>
 <body>
 	<center>
 		<div align='center' style='width:750px; padding:15px 0;'>
 			<div style='font-size:140%; color:#353535; line-height:1.9em;'>
-				<a href='https://www.tawkit.net' target='_blank'>Tawkit</a> Annual Prayer Times File Maker<br />
+				<a href="{{ url('/') }}" target='_blank'>{{ get_section_content('project', 'site_title') }}</a> Annual Prayer Times File Maker<br />
 				<span class='cssAR'>مواقيت الصلاة لبرنامج التوقيت</span>
 			</div>
 			<br>
@@ -414,7 +414,7 @@
 				</tr>
 				<tr>
 					<td height='40' width='100%' align='center'>
-						Annual Data-File To Use in Tawkit Application <br>
+						Annual Data-File To Use in {{ get_section_content('project', 'site_title') }} Application <br>
 						<span class='cssAR'>ملف البيانات لاستخدامه في تطبيق التوقيت</span><br>
 					</td>
 				</tr>
@@ -427,14 +427,15 @@
 			</table>
 		</div>
 		<div align='left' style='color:#919191; width:550px; padding:90px 0px;'>
-			Credits : <br />
+			{{-- Credits : <br />
 			Calculation Script of pray times : &nbsp; <a href='http://praytimes.org/' target='_blank'
 				style='color:gray;'>PrayTimes.org</a><br />
 			World Geographical Database : &nbsp; <a href='https://www.geonames.org/' target='_blank'
 				style='color:gray;'>GeoNames.org</a>
+			<br> --}}
 			<br>
+			© {{date('Y')}} {{ get_section_content('project', 'site_title') }}. All rights reserved.
 			<br>
-			© Copyright TAWKIT.NET<br>
 		</div>
 	</center>
 </body>

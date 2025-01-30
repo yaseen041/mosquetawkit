@@ -1,20 +1,11 @@
-/**
-* Template Name: Appland
-* Updated: Mar 10 2023 with Bootstrap v5.2.3
-* Template URL: https://bootstrapmade.com/free-bootstrap-app-landing-page-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-
 @font-face {
     font-family: 'Amiri';
-    src: url('./fonts/Amiri-Regular.eot');
-    src: url('./fonts/Amiri-Regular.eot') format('embedded-opentype'),
-         url('./fonts/Amiri-Regular.woff2') format('woff2'),
-         url('./fonts/Amiri-Regular.woff') format('woff'),
-         url('./fonts/Amiri-Regular.ttf') format('truetype'),
-         url('./fonts/Amiri-Regular.svg') format('svg');
+    src: url('font/Amiri-Regular.eot');
+    src: url('font/Amiri-Regular.eot') format('embedded-opentype'),
+         url('font/Amiri-Regular.woff2') format('woff2'),
+         url('font/Amiri-Regular.woff') format('woff'),
+         url('font/Amiri-Regular.ttf') format('truetype'),
+         url('font/Amiri-Regular.svg') format('svg');
     font-weight	: normal;
     font-style	: normal;
 }

@@ -6,19 +6,19 @@
                     <ul>
                         <li>
                             <i class='bx bx-chevron-right'></i>
-                            <a title='Tawkit Home Page' href="{{ url('/') }}">Home</a>
+                            <a title='{{ get_section_content('project', 'site_title') }} Home Page' href="{{ url('/') }}">Home</a>
                         </li>
                         <li>
                             <i class='bx bx-chevron-right'></i>
-                            <a title='Tawkit Installation on Android Devices' href="{{url('/installation/')}}">Installation</a>
+                            <a title='{{ get_section_content('project', 'site_title') }} Installation on Android Devices' href="{{url('/installation/')}}">Installation</a>
                         </li>
                         <li>
                             <i class='bx bx-chevron-right'></i>
-                            <a title='Tawkit Frequently Asked Questions' href="{{ url('/faq/') }}">F.A.Q</a>
+                            <a title='{{ get_section_content('project', 'site_title') }} Frequently Asked Questions' href="{{ url('/faq/') }}">F.A.Q</a>
                         </li>
                         <li>
                             <i class='bx bx-chevron-right'></i>
-                            <a title='Tawkit Live Demonstration' href="{{ url('online') }}" target='_blank'>Tawkit Live Demo</a>
+                            <a title='{{ get_section_content('project', 'site_title') }} Live Demonstration' href="{{ url('online') }}" target='_blank'>{{ get_section_content('project', 'site_title') }} Live Demo</a>
                         </li>
                     </ul>
                 </div>
@@ -26,27 +26,27 @@
                     <ul>
                         <li>
                             <i class='bx bx-chevron-right'></i>
-                            <a title='Contact Tawkit Author' href="{{ url('contact') }}">Contact Author</a>
+                            <a title='Contact {{ get_section_content('project', 'site_title') }} Author' href="{{ url('contact') }}">Contact Author</a>
                         </li>
                         <li>
                             <i class='bx bx-chevron-right'></i>
-                            <a title='Tawkit Offline App Installers' href="{{ url('/#Installers')}}">Installers</a>
+                            <a title='{{ get_section_content('project', 'site_title') }} Offline App Installers' href="{{ url('/#Installers')}}">Installers</a>
                         </li>
                         <li>
                             <i class='bx bx-chevron-right'></i>
-                            <a title='Tawkit Online App Administration' href="{{ url('admin') }}" target='_blank'>Online Administration</a>
+                            <a title='{{ get_section_content('project', 'site_title') }} Online App Administration' href="{{ url('admin') }}" target='_blank'>Online Administration</a>
                         </li>
                         <li>
                             <i class='bx bx-chevron-right'></i>
-                            <a title='Tawkit Annual Prayer Times File Maker' href="{{ url('wtimes')}}">Tawkit wTimes File Maker</a>
+                            <a title='{{ get_section_content('project', 'site_title') }} Annual Prayer Times File Maker' href="{{ url('wtimes')}}">{{ get_section_content('project', 'site_title') }} wTimes File Maker</a>
                         </li>
                     </ul>
                 </div>
                 <div class='col-lg-4 col-md-4 footer-links'>
                     <ul align='right'>
-                        <li>Author : Ismail CHAGDALI</li>
-                        <li>Email : ismail@tawkit.net</li>
-                        <li>Copyright Tawkit.net</li>
+                        <li>Author : {{ get_section_content('project', 'site_author') }}</li>
+                        <li>Email :  {{ get_section_content('project', 'admin_email') }}</li>
+                        <li>© {{date('Y')}} {{ get_section_content('project', 'site_title') }}. All rights reserved.</li>
                     </ul>
                 </div>
             </div>

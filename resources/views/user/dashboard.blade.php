@@ -110,10 +110,10 @@
     </section>
 
     <section id='contact' class='contact'>
-        <div class='container'>
+        <div class='container' id='Installers'>
             <div class='row mrjBTM50'>
                 <div class='pad20'>
-                    <h2 id='Installers'>Volunteers to help you for installation <br>
+                    <h2>Volunteers to help you for installation <br>
                         <span>متطوعين للمساعدة على تركيب البرنامج </span>
                     </h2>
                     <br>

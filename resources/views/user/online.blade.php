@@ -250,11 +250,11 @@
 			<div class='cssMenuBTN' dir='ltr' style='text-align:center;'>
 				<br>
 				<div style='letter-spacing:0.05em;' >
-					<span class='eLiter'>Tawkit Online Version</span><br><br>
+					<span class='eLiter'>{{ get_section_content('project', 'site_title') }} Online Version</span><br><br>
 					<span class='CSS_EN33' onclick='ClearSETTINGS();'>RESET</span>&nbsp;.
 					<span class='CSS_EN33' onclick='location.reload();'>RELOAD</span>&nbsp;.
 					<span class='CSS_EN33' onclick="window.open('https://www.tawkit.net/contact/', '_blank');">CONTACT</span><br><br>
-					<span class='CSS_EN33' onclick="window.open('https://www.tawkit.net/', '_blank');">&copy; TAWKIT.NET</span><br>
+					<span class='CSS_EN33' onclick="window.open('https://www.tawkit.net/', '_blank');">© {{date('Y')}} {{ get_section_content('project', 'site_title') }}. All rights reserved.</span><br>
 				</div>
 				<br>
 			</div>
@@ -744,32 +744,9 @@
 <script src="{{ asset('assets/w9vendors/validate.js') }}"></script>
 <script src="{{ asset('assets/w9vendors/swiper-bundle.min.js') }}"></script>
 <script src="{{ asset('assets/w9main.js') }}"></script>
-{{-- <script type="text/javascript">
-	var JS_LANG_NOW = 'AR';
-	var baseUrl = "{{ asset('assets/languages/') }}";
-	var eetempo = localStorage.getItem('STORAGE_LANG_NOW');
-	if (eetempo) JS_LANG_NOW = eetempo;
-	var langScript = document.createElement("script");
-	langScript.src = baseUrl + "/lang-" + JS_LANG_NOW + ".js";
-	langScript.onload = function () {
-		ProcessLANGUAGE();
-	};
-	langScript.onerror = function () {
-		console.error("Error loading language script: " + langScript.src);
-	};
-	document.head.appendChild(langScript);
-</script> --}}
+
 <script>
 	var JS_VERSIO = new Date().getTime();
-	// var JS_FORCED_VERTICAL = localStorage.getItem('STORAGE_JS_FORCED_VERTICAL');
-	// if(JS_FORCED_VERTICAL == null) JS_FORCED_VERTICAL = 0;
-	// var baseUrl = "{{ asset('') }}";
-	// var JScssNOW = baseUrl+"/assets/offline/style1.css";
-	// if(JS_FORCED_VERTICAL > 0) JScssNOW = baseUrl+"assets/offline/style2.css";
-	// document.write("<link rel='stylesheet' href='" + baseUrl + '/assets/offline/style0.css?s=' + JS_VERSIO + "'>");
-
-	// document.write("<link rel='stylesheet' href='"+JScssNOW+"?s="+JS_VERSIO+"'>");
-	// var eBUILD = 'n';
 	var JS_LANG_NOW = "AR";
 	var baseUrl = "{{ asset('') }}";
 	var eetempo = localStorage.getItem('STORAGE_LANG_NOW'); if(eetempo) JS_LANG_NOW = eetempo;

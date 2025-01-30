@@ -32,7 +32,7 @@ if( (JS_LANG_NOW=="UR")||(JS_LANG_NOW=="KU") ) JS_LANG_NOW = "AR"; // set UR/KU 
 
 <script>
 
-    var JS_TAWKIT_VERSION = 'TAWKIT.NET 9.54';
+    var JS_TAWKIT_VERSION = '{{ get_section_content('project', 'site_title') }}';
     const JS_ROOT = document.documentElement;
 
     var JS_TIMES        = '';
@@ -753,9 +753,9 @@ else
         <div class='cssMenuBTN' id='AAA_DimDIRECT'      onclick="CloseHELP(); ForceBlackScreenNOW();">-</div>
         <div class='cssMenuBTN' id='AAA_METEO'          onclick="CloseHELP(); ShowZunder('e_METEO');">-</div>
         <div class='cssMenuBTN' id='AAA_AboutTAWKIT'    onclick="CloseHELP(); ShowZunder('e_ABOUT');">-</div>
-        <div class='cssMenuBTN' id='AAA_dev2' onclick="CloseHELP();"><a class='devs' href='https://support.tawkit.net/showthread.php?tid=11' target='_blank'>خيارات في تطوير - Dev. progress</a></div>
-        <div class='cssMenuBTN' id='AAA_dev3' onclick="CloseHELP();"><a class='devs' href='https://www.tawkit.net/contact/' target='_blank'>تصحيحات و اقتراحات - Suggestions</a></div>
-        <div class='cssMenuBTN' id='AAA_dev4' onclick="CloseHELP();"><a class='devs' href='https://www.tawkit.net/' target='_blank'>موقع التحديثات - Updates website</a></div>
+        <div class='cssMenuBTN' id='AAA_dev2' onclick="CloseHELP();"><a class='devs' href="#">خيارات في تطوير - Dev. progress</a></div>
+        <div class='cssMenuBTN' id='AAA_dev3' onclick="CloseHELP();"><a class='devs' href="{{ url('contact')}}" target='_blank'>تصحيحات و اقتراحات - Suggestions</a></div>
+        <div class='cssMenuBTN' id='AAA_dev4' onclick="CloseHELP();"><a class='devs' href="{{ url('/') }}" target='_blank'>موقع التحديثات - Updates website</a></div>
         <div id='mn0'><div id='mn1'></div></div>
 
     </div>
@@ -775,13 +775,16 @@ else
         <br>
         <span id='bx0' class='eLiter' ></span><br><br>
         <span class='CSS_HAFS' id='ab1' ></span><br><br>
-        <span>This application is 100% freeware ! <br>
-            It is not permissible to sell it ! <br>
-            <br>
-            <a href='https://www.tawkit.net/#Installers' target='_blank'>
+        <span>
+            This application is 100% freeware! <br>
+            It is not permissible to sell it! <br><br>
+
+            <a href="{{ url('/#Installers') }}" target="_blank">
                 متطوعين للمساعدة على تركيب البرنامج<br>
-            www.tawkit.net/#Installers</a><br>
+                {{ url('/#Installers') }}
+            </a><br>
         </span>
+
         <br>
         <div id='ab5'></div><br><br>
     </div>
@@ -1526,7 +1529,7 @@ else
                         <div style='padding:3%; color:white;' >
                             <span id='XX_TIMES_3'></span>, <span id='XX_TIMES_4'></span>
                             <div id='XX_YearlyWTIMES'></div>
-                            <a href='https://www.tawkit.net/wtimes/' target='_blank'>https://www.tawkit.net/wtimes</a>
+                            <a href="{{url('/wtimes')}}" target='_blank'>{{url('/wtimes')}}</a>
                         </div>
                     </td>
                 </tr>
@@ -1854,18 +1857,18 @@ else
         var JS_HRMILADIHIJRI = document.getElementById('HRMILADIHIJRI');
         var JS_HRMHJJJ      = document.getElementById('HRMHJJJ');
 //-----------------------------------------------------------------------------------
-function goSetBG()
-{
+        function goSetBG()
+        {
 
-    var JS_NowTHEME = '';
-    var tempSTR     = '';
+            var JS_NowTHEME = '';
+            var tempSTR     = '';
 
-    if( (JS_DISPLAY_IS_HORIZONTAL)&&(JS_FORCED_VERTICAL==0) )
-{
-    JS_NowTHEME = 'assets/offline/themes/HR-' + JS_ACTIVE_BG ;
-    tempSTR = JS_THEMES_HORIZONTALS[JS_ACTIVE_BG];
-    JS_MESSAGES = JS_MESSAGES_HR;
-    JS_COUNT_MSGS   = JS_MESSAGES.length;
+            if( (JS_DISPLAY_IS_HORIZONTAL)&&(JS_FORCED_VERTICAL==0) )
+            {
+                JS_NowTHEME = 'assets/offline/themes/HR-' + JS_ACTIVE_BG ;
+                tempSTR = JS_THEMES_HORIZONTALS[JS_ACTIVE_BG];
+                JS_MESSAGES = JS_MESSAGES_HR;
+                JS_COUNT_MSGS   = JS_MESSAGES.length;
         go5BoxesJomoaLogo(); // refresh
         const hrjx = [15,16,17];
         if(hrjx.indexOf(JS_ACTIVE_BG) > -1)
@@ -1947,13 +1950,13 @@ function goSetBG()
     JS_ROOT.style.setProperty('--Color_BGTUBE',    JS_COLORO_BGTUBE);
 
     if(JS_COLORO_CLOCK == "#FFFFFF")
-JS_ROOT.style.setProperty('--Color_GOLDEN', '#F4DB97');
-else
-    JS_ROOT.style.setProperty('--Color_GOLDEN', JS_COLORO_CLOCK);
+        JS_ROOT.style.setProperty('--Color_GOLDEN', '#F4DB97');
+    else
+        JS_ROOT.style.setProperty('--Color_GOLDEN', JS_COLORO_CLOCK);
 
-goSetNextSalatRemainingTIME(JS_nowMNTS);
-_GoMessages();
-updateBottomInformations();
+    goSetNextSalatRemainingTIME(JS_nowMNTS);
+    _GoMessages();
+    updateBottomInformations();
 }
 //-----------------------------------------------------------------------------------
 function changeBG(nbr)
@@ -1968,7 +1971,7 @@ function demoThemesNEXT()
 {
     JS_ACTIVE_BG++;
     if(JS_ACTIVE_BG > 29) JS_ACTIVE_BG = 0;
-changeBG(JS_ACTIVE_BG);
+    changeBG(JS_ACTIVE_BG);
 }
 
 
@@ -1976,7 +1979,7 @@ function demoThemesBACK()
 {
     JS_ACTIVE_BG--;
     if(JS_ACTIVE_BG < 0) JS_ACTIVE_BG =29;
-changeBG(JS_ACTIVE_BG);
+    changeBG(JS_ACTIVE_BG);
 }
 
 
@@ -2219,25 +2222,25 @@ function animateNoMOBILE()
 {
     JS_ANIM_NOMOBILE--;
     if(JS_ANIM_NOMOBILE < 1)    {
-    JS_ANIM_NOMOBILE = 15;
-    setTimeout(HideZunder, 5000, 'eMobile');
-    setTimeout(HideZunder, 5000, 'HReMobile');
-    return;
-}
+        JS_ANIM_NOMOBILE = 15;
+        setTimeout(HideZunder, 5000, 'eMobile');
+        setTimeout(HideZunder, 5000, 'HReMobile');
+        return;
+    }
 
             // if even hide, then if odd show
-if (JS_ANIM_NOMOBILE % 2 == 0)
-{
-    JS_eMobile.style.visibility   = 'hidden';
-    JS_HReMobile.style.visibility = 'hidden';
-}
-else
-{
-    JS_eMobile.style.visibility   = 'visible';
-    JS_HReMobile.style.visibility = 'visible';
-}
+    if (JS_ANIM_NOMOBILE % 2 == 0)
+    {
+        JS_eMobile.style.visibility   = 'hidden';
+        JS_HReMobile.style.visibility = 'hidden';
+    }
+    else
+    {
+        JS_eMobile.style.visibility   = 'visible';
+        JS_HReMobile.style.visibility = 'visible';
+    }
 
-setTimeout('animateNoMOBILE()', 700 );
+    setTimeout('animateNoMOBILE()', 700 );
 }
 
 
@@ -2247,20 +2250,20 @@ function ShowRIDEAU()
 
 // exit if sender is shrq ( duree 0)
     if(JS_NOW_DIMSCREEN_DURATION == 0)
-{
+    {
     // counter of iqamas, finished, but it's shrq, so show doha_came and close
-    ShowZunder2('VRDOHACAME');
-    ShowZunder2('HRDOHACAME');
-    setTimeout(HideZunder2,20000,'VRDOHACAME');
-    setTimeout(HideZunder2,20000,'HRDOHACAME');
+        ShowZunder2('VRDOHACAME');
+        ShowZunder2('HRDOHACAME');
+        setTimeout(HideZunder2,20000,'VRDOHACAME');
+        setTimeout(HideZunder2,20000,'HRDOHACAME');
     // before exit, also run user-slides if enabled, (no azkar sabah/masaaa)
-    if(JS_USER_SLIDERS_ACTIVE) setTimeout("StartSLIDES()", 30000);
-    return;
-}
+        if(JS_USER_SLIDERS_ACTIVE) setTimeout("StartSLIDES()", 30000);
+        return;
+    }
 
 
 
-setTimeout('RemoveBlackScreenAndStartAZKAR()', (JS_NOW_DIMSCREEN_DURATION * 60000) );
+    setTimeout('RemoveBlackScreenAndStartAZKAR()', (JS_NOW_DIMSCREEN_DURATION * 60000) );
 
 
 var JS_WAITBLK = 12000; // time before black screen
@@ -2294,13 +2297,13 @@ function RemoveBlackScreenAndStartAZKAR()
 
 
     if(JS_APP_AZKAR_ACTIVE)
-{
-    setTimeout('SartMainAZKAR()', 7000 );
-}
-else    {
-    JS_CONTINUE_AZKARING = true;
-    CheckAzkarToSHOW();
-}
+    {
+        setTimeout('SartMainAZKAR()', 7000 );
+    }
+    else    {
+        JS_CONTINUE_AZKARING = true;
+        CheckAzkarToSHOW();
+    }
 
 }
 
@@ -2455,14 +2458,14 @@ function CheckAzkarToSHOW()
 {
 
     if( (JS_NOW_ACTIVE_SALAT == 0)&&(JSALLDATA.IZAzkarSABAH==1)&&(JS_CONTINUE_AZKARING) )   {PlayAzkarOF(JS_AZKAR_SABAH,false);}
-else
-    if( (JS_NOW_ACTIVE_SALAT == 3)&&(JSALLDATA.IZAzkarASR==1)&&(JS_CONTINUE_AZKARING) )     {PlayAzkarOF(JS_AZKAR_MASAA,false);}
-else
-    if( (JS_NOW_ACTIVE_SALAT == 4)&&(JSALLDATA.IZAzkarMAGRIB==1)&&(JS_CONTINUE_AZKARING) )  {PlayAzkarOF(JS_AZKAR_MASAA,false);}
-else
-    if( (JS_NOW_ACTIVE_SALAT == 5)&&(JSALLDATA.IZAzkarISHA==1)&&(JS_CONTINUE_AZKARING) )    {PlayAzkarOF(JS_AZKAR_MASAA,false);}
-else
-    if(JS_USER_SLIDERS_ACTIVE) setTimeout("StartSLIDES()", 7000);
+    else
+        if( (JS_NOW_ACTIVE_SALAT == 3)&&(JSALLDATA.IZAzkarASR==1)&&(JS_CONTINUE_AZKARING) )     {PlayAzkarOF(JS_AZKAR_MASAA,false);}
+    else
+        if( (JS_NOW_ACTIVE_SALAT == 4)&&(JSALLDATA.IZAzkarMAGRIB==1)&&(JS_CONTINUE_AZKARING) )  {PlayAzkarOF(JS_AZKAR_MASAA,false);}
+    else
+        if( (JS_NOW_ACTIVE_SALAT == 5)&&(JSALLDATA.IZAzkarISHA==1)&&(JS_CONTINUE_AZKARING) )    {PlayAzkarOF(JS_AZKAR_MASAA,false);}
+    else
+        if(JS_USER_SLIDERS_ACTIVE) setTimeout("StartSLIDES()", 7000);
 
 }
 
@@ -2472,50 +2475,50 @@ function ProcessAzkarShow()
 {
 
     if(JS_AZKAR_ForceEND) // just stop, no continue, ForceSTOPazkar has FinishAzkar()
-{
+    {
     JS_AZKAR_ForceEND = false; // init for a next new show
     return;
 }
 
     if(JS_AZKAR_NEXT >= JS_AZKAR_MSGS.length)// natural session finished, start sliders if enabled
-{
-    JS_AZKAR_NEXT = 0;
-    FinishAzkar();
-    setTimeout("CheckAzkarToSHOW()", 5000);
-    return;
-}
+    {
+        JS_AZKAR_NEXT = 0;
+        FinishAzkar();
+        setTimeout("CheckAzkarToSHOW()", 5000);
+        return;
+    }
 
-var nowTEXT     = JS_AZKAR_MSGS[JS_AZKAR_NEXT];
-var nSize       = nowTEXT.length;
-var JS_MSC_VIEWING = 20000;
+    var nowTEXT     = JS_AZKAR_MSGS[JS_AZKAR_NEXT];
+    var nSize       = nowTEXT.length;
+    var JS_MSC_VIEWING = 20000;
 
-switch(true)
-{
-case nSize<=50    :   jHHH = '6.5';   jVVV = '8.5';   JS_MSC_VIEWING = 10000; JS_Hmes1.style.lineHeight = '1.60em';   break;
-case nSize<=100   :   jHHH = '6.0';   jVVV = '8.0';   JS_MSC_VIEWING = 12000; JS_Hmes1.style.lineHeight = '1.70em';   break;
-case nSize<=150   :   jHHH = '5.5';   jVVV = '7.5';   JS_MSC_VIEWING = 14000; JS_Hmes1.style.lineHeight = '1.80em';   break;
-case nSize<=200   :   jHHH = '5.0';   jVVV = '7.0';   JS_MSC_VIEWING = 15000; JS_Hmes1.style.lineHeight = '1.90em';   break;
-case nSize<=250   :   jHHH = '4.5';   jVVV = '6.5';   JS_MSC_VIEWING = 16000; JS_Hmes1.style.lineHeight = '2.00em';   break;
-case nSize<=300   :   jHHH = '4.0';   jVVV = '6.0';   JS_MSC_VIEWING = 18000; JS_Hmes1.style.lineHeight = '2.10em';   break;
-case nSize<=350   :   jHHH = '3.9';   jVVV = '6.0';   JS_MSC_VIEWING = 20000; JS_Hmes1.style.lineHeight = '2.20em';   break;
-case nSize<=400   :   jHHH = '3.8';   jVVV = '5.9';   JS_MSC_VIEWING = 21000; JS_Hmes1.style.lineHeight = '2.30em';   break;
-case nSize<=450   :   jHHH = '3.7';   jVVV = '5.6';   JS_MSC_VIEWING = 24000; JS_Hmes1.style.lineHeight = '2.40em';   break;
-case nSize<=500   :   jHHH = '3.6';   jVVV = '5.1';   JS_MSC_VIEWING = 26000; JS_Hmes1.style.lineHeight = '2.50em';   break;
-default           :   jHHH = '3.3';   jVVV = '5.0';   JS_MSC_VIEWING = 20000; JS_Hmes1.style.lineHeight = '1.90em';   break;
-}
+    switch(true)
+    {
+    case nSize<=50    :   jHHH = '6.5';   jVVV = '8.5';   JS_MSC_VIEWING = 10000; JS_Hmes1.style.lineHeight = '1.60em';   break;
+    case nSize<=100   :   jHHH = '6.0';   jVVV = '8.0';   JS_MSC_VIEWING = 12000; JS_Hmes1.style.lineHeight = '1.70em';   break;
+    case nSize<=150   :   jHHH = '5.5';   jVVV = '7.5';   JS_MSC_VIEWING = 14000; JS_Hmes1.style.lineHeight = '1.80em';   break;
+    case nSize<=200   :   jHHH = '5.0';   jVVV = '7.0';   JS_MSC_VIEWING = 15000; JS_Hmes1.style.lineHeight = '1.90em';   break;
+    case nSize<=250   :   jHHH = '4.5';   jVVV = '6.5';   JS_MSC_VIEWING = 16000; JS_Hmes1.style.lineHeight = '2.00em';   break;
+    case nSize<=300   :   jHHH = '4.0';   jVVV = '6.0';   JS_MSC_VIEWING = 18000; JS_Hmes1.style.lineHeight = '2.10em';   break;
+    case nSize<=350   :   jHHH = '3.9';   jVVV = '6.0';   JS_MSC_VIEWING = 20000; JS_Hmes1.style.lineHeight = '2.20em';   break;
+    case nSize<=400   :   jHHH = '3.8';   jVVV = '5.9';   JS_MSC_VIEWING = 21000; JS_Hmes1.style.lineHeight = '2.30em';   break;
+    case nSize<=450   :   jHHH = '3.7';   jVVV = '5.6';   JS_MSC_VIEWING = 24000; JS_Hmes1.style.lineHeight = '2.40em';   break;
+    case nSize<=500   :   jHHH = '3.6';   jVVV = '5.1';   JS_MSC_VIEWING = 26000; JS_Hmes1.style.lineHeight = '2.50em';   break;
+    default           :   jHHH = '3.3';   jVVV = '5.0';   JS_MSC_VIEWING = 20000; JS_Hmes1.style.lineHeight = '1.90em';   break;
+    }
 
 
-JS_Hmes1.style.fontSize = jHHH+jvwh;
-JS_Vmes1.style.fontSize = jVVV+jvwh;
+    JS_Hmes1.style.fontSize = jHHH+jvwh;
+    JS_Vmes1.style.fontSize = jVVV+jvwh;
 
 //dolog(" |"+nowTEXT.length);
-nowTEXT = nowTEXT.replace(/33/g, "<span>33</span>");
-nowTEXT = nowTEXT.replace(/\|/g, "<br>");
-JS_Vmes1.innerHTML = nowTEXT;
-JS_Hmes1.innerHTML = nowTEXT;
-JS_Vmes1.style.lineHeight = JS_Hmes1.style.lineHeight;
-JS_AZKAR_NEXT++;
-DisplayAzkar();
+    nowTEXT = nowTEXT.replace(/33/g, "<span>33</span>");
+    nowTEXT = nowTEXT.replace(/\|/g, "<br>");
+    JS_Vmes1.innerHTML = nowTEXT;
+    JS_Hmes1.innerHTML = nowTEXT;
+    JS_Vmes1.style.lineHeight = JS_Hmes1.style.lineHeight;
+    JS_AZKAR_NEXT++;
+    DisplayAzkar();
 setTimeout("ProcessAzkarShow()", JS_MSC_VIEWING); // repeat action
 setTimeout("FinishAzkar()",  JS_MSC_VIEWING - 5500);
 }
@@ -2537,22 +2540,22 @@ function ProcessSLIDESShow()
 
 
     if(sTEXT == "")
-{
-    JS_SLIDES_NEXT++;
+    {
+        JS_SLIDES_NEXT++;
     ProcessSLIDESShow();// continue
     return;
 }
 
 
     if(JS_SLIDES_ForceEND) // just stop, no continue, ForceSTOPSLIDES has FinishSLIDES()
-{
+    {
     JS_SLIDES_ForceEND = false; // init for a next new show
     return;
 }
 
     if(JS_SLIDES_NEXT >= JS_SLIDES_DATA.length) // natural end
-{
-    JS_SLIDES_NEXT = 0;
+    {
+        JS_SLIDES_NEXT = 0;
     ProcessSLIDESShow();//  loop SLIDES
     return;
 }
@@ -2625,12 +2628,12 @@ function SartMainAZKAR()
     JS_AZKAR_ForceEND = false;
     //---------- IF 1 fixed pic enabled
     if(JSALLDATA.IZ5minAzkar==1)
-{
-    ShowOnePicFIXED5min();
-    return;
-}
+    {
+        ShowOnePicFIXED5min();
+        return;
+    }
 
-PlayAzkarOF(JS_AZKAR_PRIMARY,true);
+    PlayAzkarOF(JS_AZKAR_PRIMARY,true);
 }
 
 //-----ShowFIXED_1_PIC___during_5min---------------
@@ -2755,52 +2758,52 @@ function LiveTime()
     JS_VR_sssCLOKO.innerHTML = ':'+JS_SECSNOW;
 
     if(JS_AZAN_ACTIVE)  {
-    JS_VR_TopTIME.innerHTML = JS_HOURSNOW;
-    JS_HR_TopTIME.innerHTML = JS_HOURSNOW;
-}
+        JS_VR_TopTIME.innerHTML = JS_HOURSNOW;
+        JS_HR_TopTIME.innerHTML = JS_HOURSNOW;
+    }
 
 
-if(JS_DECOMPTE_STARTED)
-{
+    if(JS_DECOMPTE_STARTED)
+    {
 
-    JS_IQUAMA_SECONDS--;
+        JS_IQUAMA_SECONDS--;
 
                 //JS_PERC_DATA = JS_ACTIVE_IQAMA_NOW_SECONDS - JS_IQUAMA_SECONDS;
                 //JS_PERC_DATA = Math.floor((JS_PERC_DATA*100/JS_ACTIVE_IQAMA_NOW_SECONDS));
 
 
-    var minnn = Math.floor(JS_IQUAMA_SECONDS / 60);
-    var seccc = Math.floor(JS_IQUAMA_SECONDS % 60);
-    minnn = ('0' + minnn).slice(-2);
-    seccc = ('0' + seccc).slice(-2);
+        var minnn = Math.floor(JS_IQUAMA_SECONDS / 60);
+        var seccc = Math.floor(JS_IQUAMA_SECONDS % 60);
+        minnn = ('0' + minnn).slice(-2);
+        seccc = ('0' + seccc).slice(-2);
 
-    if(JS_BIG_CONTO_ACTIVE)
-    {
-        JS_sHRCONTO.innerHTML = ARNumbers(minnn + ':' + seccc);
-        JS_sVRCONTO.innerHTML = JS_sHRCONTO.innerHTML;
-    }
-    else
-    {
-        JS_sVRnbr.innerHTML = ARNumbers(minnn + ':' + seccc);
-        JS_sHRnbr.innerHTML = JS_sVRnbr.innerHTML;
-    }
+        if(JS_BIG_CONTO_ACTIVE)
+        {
+            JS_sHRCONTO.innerHTML = ARNumbers(minnn + ':' + seccc);
+            JS_sVRCONTO.innerHTML = JS_sHRCONTO.innerHTML;
+        }
+        else
+        {
+            JS_sVRnbr.innerHTML = ARNumbers(minnn + ':' + seccc);
+            JS_sHRnbr.innerHTML = JS_sVRnbr.innerHTML;
+        }
 
-    if(JS_1MINC_ACTIVE)
-    {
-        JS_LastMinVR.innerHTML = ARNumbers(seccc);
-        JS_LastMinHR.innerHTML = JS_LastMinVR.innerHTML;
-    }
+        if(JS_1MINC_ACTIVE)
+        {
+            JS_LastMinVR.innerHTML = ARNumbers(seccc);
+            JS_LastMinHR.innerHTML = JS_LastMinVR.innerHTML;
+        }
 
-    if(JS_IQUAMA_SECONDS == 15) ShowZunder('ELMOBIL2');
+        if(JS_IQUAMA_SECONDS == 15) ShowZunder('ELMOBIL2');
 
-    if((JS_IQUAMA_SECONDS == 60)&&(JSALLDATA.IZ1MinCounter==1))
-    {
-        JS_1MINC_ACTIVE = true;
-        ShowZunder2('LastMinVR');
-        ShowZunder2('LastMinHR');
-    }
+        if((JS_IQUAMA_SECONDS == 60)&&(JSALLDATA.IZ1MinCounter==1))
+        {
+            JS_1MINC_ACTIVE = true;
+            ShowZunder2('LastMinVR');
+            ShowZunder2('LastMinHR');
+        }
 
-    if(JS_IQUAMA_SECONDS == 0) {
+        if(JS_IQUAMA_SECONDS == 0) {
                                             JS_DECOMPTE_STARTED = false; // stop immediatly
                                             JS_1MINC_ACTIVE = false;
                                             SetAllTubesNORMAL();
@@ -2818,63 +2821,63 @@ if(JS_DECOMPTE_STARTED)
 
 
                                     if(s == '00') Go1MN(false);
-}
+                                }
 
 //-----------------------------------------------------------------------------------
 
 
-var JS_AM_TEXT = "<span class='cEnPM'>AM</span>";
-var JS_PM_TEXT = "<span class='cEnPM'>PM</span>";
+                                var JS_AM_TEXT = "<span class='cEnPM'>AM</span>";
+                                var JS_PM_TEXT = "<span class='cEnPM'>PM</span>";
 
 
 
 
-var JS_MINUTES_AFTER_SHRQ_TO_OFF    = 30;
-var JS_MINUTES_AFTER_ISHA_TO_OFF    = 60;
-var JS_MINUTES_BEFORE_FAJR_TO_ON    = 60;
-var JS_MINUTES_BEFORE_DOHR_TO_ON    = 60;
+                                var JS_MINUTES_AFTER_SHRQ_TO_OFF    = 30;
+                                var JS_MINUTES_AFTER_ISHA_TO_OFF    = 60;
+                                var JS_MINUTES_BEFORE_FAJR_TO_ON    = 60;
+                                var JS_MINUTES_BEFORE_DOHR_TO_ON    = 60;
 
 
-var JS_TODAY_IS_JOMOA   = false;
-var JS_HOURSNOW = "00:00";
+                                var JS_TODAY_IS_JOMOA   = false;
+                                var JS_HOURSNOW = "00:00";
 //*****Go1MN*********************************************************
-function Go1MN(izJustUpdateCLK)
-{
+                                function Go1MN(izJustUpdateCLK)
+                                {
 
-    var JS_AAA  = new Date();
+                                    var JS_AAA  = new Date();
 
-    var h   = JS_AAA.getHours();
-    var m   = JS_AAA.getMinutes();
+                                    var h   = JS_AAA.getHours();
+                                    var m   = JS_AAA.getMinutes();
 
 
 // here format of 12 support
-    var hhhhh = h;
-    var mmmmm = m;
-    mmmmm = ('0' + mmmmm).slice(-2);
+                                    var hhhhh = h;
+                                    var mmmmm = m;
+                                    mmmmm = ('0' + mmmmm).slice(-2);
 
 
 
-    h = ('0' + h).slice(-2);
-    m = ('0' + m).slice(-2);
+                                    h = ('0' + h).slice(-2);
+                                    m = ('0' + m).slice(-2);
 
-    var JS_ClnHM = h+':'+m;
-
-
-
-    var FinalTM4    = JS_ClnHM;
-    var STRampm     = '&nbsp;';
+                                    var JS_ClnHM = h+':'+m;
 
 
-    if(!JS_24H_ACTIVE)
-{
-    if(hhhhh >= 12)
-    {
-        STRampm = JS_PM_TEXT;
-        if(hhhhh > 12) hhhhh = hhhhh - 12;
-        FinalTM4 = hhhhh+':'+mmmmm;
-    }
-    else
-    {
+
+                                    var FinalTM4    = JS_ClnHM;
+                                    var STRampm     = '&nbsp;';
+
+
+                                    if(!JS_24H_ACTIVE)
+                                    {
+                                        if(hhhhh >= 12)
+                                        {
+                                            STRampm = JS_PM_TEXT;
+                                            if(hhhhh > 12) hhhhh = hhhhh - 12;
+                                            FinalTM4 = hhhhh+':'+mmmmm;
+                                        }
+                                        else
+                                        {
                     if(hhhhh == 0) hhhhh = 12; // it is  AM
                     STRampm = JS_AM_TEXT;
                     FinalTM4 = hhhhh+':'+mmmmm;
@@ -2891,62 +2894,62 @@ function Go1MN(izJustUpdateCLK)
             document.getElementById('HR_eAMPM').innerHTML       = STRampm;
 
             if(JS_BIG_CONTO_ACTIVE)
-{
-    JS_sHRCloky.innerHTML = JS_HOURSNOW;
-    JS_sVRCloky.innerHTML = JS_HOURSNOW;
-}
+            {
+                JS_sHRCloky.innerHTML = JS_HOURSNOW;
+                JS_sVRCloky.innerHTML = JS_HOURSNOW;
+            }
 
-document.getElementById('HR_eFullCLOKO').innerHTML = JS_HOURSNOW;
-document.getElementById('VR_eFullCLOKO').innerHTML = JS_HOURSNOW;
+            document.getElementById('HR_eFullCLOKO').innerHTML = JS_HOURSNOW;
+            document.getElementById('VR_eFullCLOKO').innerHTML = JS_HOURSNOW;
 
-JS_nowMNTS  = ( (parseInt(h)*60) + parseInt(m) );
+            JS_nowMNTS  = ( (parseInt(h)*60) + parseInt(m) );
 
 
-document.getElementById('Vclc').innerHTML   = JS_HOURSNOW;
-document.getElementById('Hclc').innerHTML   = JS_HOURSNOW;
-document.getElementById('sVclc').innerHTML  = JS_HOURSNOW;
-document.getElementById('sHclc').innerHTML  = JS_HOURSNOW;
-document.getElementById('V5clc').innerHTML  = JS_HOURSNOW;
-document.getElementById('H5clc').innerHTML  = JS_HOURSNOW;
+            document.getElementById('Vclc').innerHTML   = JS_HOURSNOW;
+            document.getElementById('Hclc').innerHTML   = JS_HOURSNOW;
+            document.getElementById('sVclc').innerHTML  = JS_HOURSNOW;
+            document.getElementById('sHclc').innerHTML  = JS_HOURSNOW;
+            document.getElementById('V5clc').innerHTML  = JS_HOURSNOW;
+            document.getElementById('H5clc').innerHTML  = JS_HOURSNOW;
 
-var nowXDAY = JS_AAA.getDay();
+            var nowXDAY = JS_AAA.getDay();
 
-JS_TODAY_IS_JOMOA = (nowXDAY == 5);
+            JS_TODAY_IS_JOMOA = (nowXDAY == 5);
 
 
 // just update clock if wndw lost focus
-if(izJustUpdateCLK) return;
+            if(izJustUpdateCLK) return;
 
 
 
 
 
 //----- DO DIMM WHEN SHOROUQ COMES
-if(JS_nowMNTS == (_shrq + JS_MINUTES_AFTER_SHRQ_TO_OFF)){ if(JSALLDATA.IZDohaSaver==1) ForceBlackScreenNOW(); }
+            if(JS_nowMNTS == (_shrq + JS_MINUTES_AFTER_SHRQ_TO_OFF)){ if(JSALLDATA.IZDohaSaver==1) ForceBlackScreenNOW(); }
 //----- REMOVE BEFORE DOHR
-if(JS_nowMNTS == (_thuhr - JS_MINUTES_BEFORE_DOHR_TO_ON)) RemoveBlackScreen();
+            if(JS_nowMNTS == (_thuhr - JS_MINUTES_BEFORE_DOHR_TO_ON)) RemoveBlackScreen();
 
 
 
 //----- START OFF AFTER ISHA
-if(JS_nowMNTS == (_isha + JS_MINUTES_AFTER_ISHA_TO_OFF)) { if(JSALLDATA.IZIshaSaver==1) ForceBlackScreenNOW(); }
+            if(JS_nowMNTS == (_isha + JS_MINUTES_AFTER_ISHA_TO_OFF)) { if(JSALLDATA.IZIshaSaver==1) ForceBlackScreenNOW(); }
 //----- REMOVE BEFORE FAJR
-if(JS_nowMNTS == (_fjr - JS_MINUTES_BEFORE_FAJR_TO_ON)) RemoveBlackScreen();
+            if(JS_nowMNTS == (_fjr - JS_MINUTES_BEFORE_FAJR_TO_ON)) RemoveBlackScreen();
 
 
                         // AZAN TIME IS COMING SOON, STOP AZKAR AND SLIDERS --------------
 
-if(     (JS_nowMNTS==(_fjr - 3) )||
-    (JS_nowMNTS==(_shrq - 3) )||
-(JS_nowMNTS==(_thuhr - 3) )||
-(JS_nowMNTS==(_asr - 3) )||
-(JS_nowMNTS==(_maghreb - 3) )||
-(JS_nowMNTS==(_isha - 3) )
-)
-{
-    ForceSTOPSLIDES();
-    ForceSTOPazkar();
-}
+            if(     (JS_nowMNTS==(_fjr - 3) )||
+                (JS_nowMNTS==(_shrq - 3) )||
+                (JS_nowMNTS==(_thuhr - 3) )||
+                (JS_nowMNTS==(_asr - 3) )||
+                (JS_nowMNTS==(_maghreb - 3) )||
+                (JS_nowMNTS==(_isha - 3) )
+                )
+            {
+                ForceSTOPSLIDES();
+                ForceSTOPazkar();
+            }
 
 
 
@@ -2955,11 +2958,11 @@ if(     (JS_nowMNTS==(_fjr - 3) )||
 
 
 // ----------- Start Iqama Counter
-if( JS_nowMNTS == _fjr )        startDECOMPTE(JS_IQAMA_TIME_OF_FAJR,    JS_PRAY_DURATION_OF_FAJR);
-if( JS_nowMNTS == _shrq )       startDECOMPTE(JS_IQAMA_TIME_OF_SHRQ,    0);
-if( JS_nowMNTS == _asr )        startDECOMPTE(JS_IQAMA_TIME_OF_ASR,     JS_PRAY_DURATION_OF_ASR);
-if( JS_nowMNTS == _maghreb )    startDECOMPTE(JS_IQAMA_TIME_OF_MAGHRIB, JS_PRAY_DURATION_OF_MAGHRIB);
-if( JS_nowMNTS == _isha )       startDECOMPTE(JS_IQAMA_TIME_OF_ISHA,    JS_PRAY_DURATION_OF_ISHA);
+            if( JS_nowMNTS == _fjr )        startDECOMPTE(JS_IQAMA_TIME_OF_FAJR,    JS_PRAY_DURATION_OF_FAJR);
+            if( JS_nowMNTS == _shrq )       startDECOMPTE(JS_IQAMA_TIME_OF_SHRQ,    0);
+            if( JS_nowMNTS == _asr )        startDECOMPTE(JS_IQAMA_TIME_OF_ASR,     JS_PRAY_DURATION_OF_ASR);
+            if( JS_nowMNTS == _maghreb )    startDECOMPTE(JS_IQAMA_TIME_OF_MAGHRIB, JS_PRAY_DURATION_OF_MAGHRIB);
+            if( JS_nowMNTS == _isha )       startDECOMPTE(JS_IQAMA_TIME_OF_ISHA,    JS_PRAY_DURATION_OF_ISHA);
 
 
 
@@ -2968,83 +2971,83 @@ if( JS_nowMNTS == _isha )       startDECOMPTE(JS_IQAMA_TIME_OF_ISHA,    JS_PRAY_
         //--------SPECIAL DOHR FOR JOMOA ---------------------------------------
 
         if(JS_TODAY_IS_JOMOA) // if JOMOA
-{
+        {
             //------ JOMOA_THUHR___SPECIAL_DIMMING
-    if(  JS_nowMNTS == (_thuhr - JS_JOMOA_DIM_MINIUTES_BEFORE) )    { StartBlackScreenWhilePraying();}
-    if(  JS_nowMNTS == (_thuhr + JS_JOMOA_DIM_MINIUTES_AFTER) )     { RemoveBlackScreen(); SetAllTubesNORMAL();}
-}
-else
-{
+            if(  JS_nowMNTS == (_thuhr - JS_JOMOA_DIM_MINIUTES_BEFORE) )    { StartBlackScreenWhilePraying();}
+            if(  JS_nowMNTS == (_thuhr + JS_JOMOA_DIM_MINIUTES_AFTER) )     { RemoveBlackScreen(); SetAllTubesNORMAL();}
+        }
+        else
+        {
             //------ NORMAL DOHR DAY
-    if( JS_nowMNTS == _thuhr )  startDECOMPTE(JS_IQAMA_TIME_OF_DOHR,    JS_PRAY_DURATION_OF_DOHR);
-}
+            if( JS_nowMNTS == _thuhr )  startDECOMPTE(JS_IQAMA_TIME_OF_DOHR,    JS_PRAY_DURATION_OF_DOHR);
+        }
 
 
 
                         //--------------- IQAMA_FAJR ---------------
-if(  JS_nowMNTS == (JS_IQAMA_TIME_OF_FAJR + _fjr)  )
-{ Play_IqamaTit();}
+        if(  JS_nowMNTS == (JS_IQAMA_TIME_OF_FAJR + _fjr)  )
+            { Play_IqamaTit();}
 
 
                         //--------------- DOHA CAME ---------------
-if(  JS_nowMNTS == (JS_IQAMA_TIME_OF_SHRQ + _shrq)  )
-{ Play_DohaTit();}
+        if(  JS_nowMNTS == (JS_IQAMA_TIME_OF_SHRQ + _shrq)  )
+            { Play_DohaTit();}
 
                         //--------------- IQAMA_THUHR ---------------
-if(  JS_nowMNTS == (JS_IQAMA_TIME_OF_DOHR + _thuhr)  )
-{
-    if(!JS_TODAY_IS_JOMOA) Play_IqamaTit();
-}
+        if(  JS_nowMNTS == (JS_IQAMA_TIME_OF_DOHR + _thuhr)  )
+        {
+            if(!JS_TODAY_IS_JOMOA) Play_IqamaTit();
+        }
 
                         //--------------- IQAMA_ASR ---------------
-if(  JS_nowMNTS == (JS_IQAMA_TIME_OF_ASR + _asr)  )
-{ Play_IqamaTit();}
+        if(  JS_nowMNTS == (JS_IQAMA_TIME_OF_ASR + _asr)  )
+            { Play_IqamaTit();}
 
                         //--------------- IQAMA_MAGHREB ---------------
-if(  JS_nowMNTS == (JS_IQAMA_TIME_OF_MAGHRIB + _maghreb)  )
-{ Play_IqamaTit();}
+        if(  JS_nowMNTS == (JS_IQAMA_TIME_OF_MAGHRIB + _maghreb)  )
+            { Play_IqamaTit();}
 
                         //--------------- IQAMA__ISHA ---------------
-if(  JS_nowMNTS == (JS_IQAMA_TIME_OF_ISHA + _isha)  )
-{ Play_IqamaTit();}
+        if(  JS_nowMNTS == (JS_IQAMA_TIME_OF_ISHA + _isha)  )
+            { Play_IqamaTit();}
 
 
 
 
 
-var JS_IT_IS_JOMOA_AND_DOHR = ( (JS_nowMNTS == _thuhr) && (JS_TODAY_IS_JOMOA) )
+        var JS_IT_IS_JOMOA_AND_DOHR = ( (JS_nowMNTS == _thuhr) && (JS_TODAY_IS_JOMOA) )
 
 
                         // **********ON_TIME_SALAWATS****************
 
-if(     (JS_nowMNTS==_fjr)||
-    (JS_nowMNTS==_shrq)||
-(JS_nowMNTS==_thuhr)||
-(JS_nowMNTS==_asr)||
-(JS_nowMNTS==_maghreb)||
-(JS_nowMNTS==_isha)
-)
-{
+        if(     (JS_nowMNTS==_fjr)||
+            (JS_nowMNTS==_shrq)||
+            (JS_nowMNTS==_thuhr)||
+            (JS_nowMNTS==_asr)||
+            (JS_nowMNTS==_maghreb)||
+            (JS_nowMNTS==_isha)
+            )
+        {
 
-    if(JS_nowMNTS != _shrq )
-    {
+            if(JS_nowMNTS != _shrq )
+            {
                                     //if(!JS_IT_IS_JOMOA_AND_DOHR)
                                     // let it beep/azan even friday, app can be used in villages etc...
-        Play_Beeep();
-    }
+                Play_Beeep();
+            }
 
-    GoActiveSALAT(JS_nowMNTS);
+            GoActiveSALAT(JS_nowMNTS);
 
 
 
 
 
                                     // IF NOT RAMADAN NOR TASHREEK, THEN DO SYAM REMINDER
-    if( (!JS_THIS_IS_RAMADAN) && (!JS_DULHIJJA_DAYS_0913) && (!JS_SHAABAN_LAST_DAYS) )
-    {
+            if( (!JS_THIS_IS_RAMADAN) && (!JS_DULHIJJA_DAYS_0913) && (!JS_SHAABAN_LAST_DAYS) )
+            {
                                         // SEYAM-REMINDER ----- IF SUNDAY
-        if(nowXDAY == 0)
-        {
+                if(nowXDAY == 0)
+                {
                                         if( (JS_nowMNTS==_maghreb) || (JS_nowMNTS==_isha) ) // wait 7 min then show reminder 30min
                                             setTimeout(ShowThisAlertAndCloseAFTER, (7*60000), JS_DOA_SYAM_MONDAY, 30);
                                     }
@@ -3062,8 +3065,8 @@ if(     (JS_nowMNTS==_fjr)||
 
             // -------------AT NIGHT NEWDAY, GO FILL NEW DATA----------------
                             if( JS_ClnHM == "00:00" )
-{
-    GoGloballyFillDATA();
+                            {
+                                GoGloballyFillDATA();
             AdminMsgsVIEW(); // update view of admin bottom messages
         }
 
@@ -3072,151 +3075,151 @@ if(     (JS_nowMNTS==_fjr)||
 
 
 
-goSetNextSalatRemainingTIME(JS_nowMNTS);
-goDimPassedPRAYINGS(JS_nowMNTS);
-_GoMessages();
+        goSetNextSalatRemainingTIME(JS_nowMNTS);
+        goDimPassedPRAYINGS(JS_nowMNTS);
+        _GoMessages();
 
 // UPDATE WEATHER ON SCREEN EVERY 1 HOUR
-if(m == '00') proccessMETEO();
+        if(m == '00') proccessMETEO();
 
 
-}
+    }
 
 
 
 //-----------------------------------------------------------------------------------
 //------gimeTime-----------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------
-function gimeTime(iniMNTS)
-{
-    var _hours      = Math.floor(iniMNTS / 60);
-    var _minutes    = iniMNTS % 60;
+    function gimeTime(iniMNTS)
+    {
+        var _hours      = Math.floor(iniMNTS / 60);
+        var _minutes    = iniMNTS % 60;
 
-    _minutes = ('0' + _minutes).slice(-2);
+        _minutes = ('0' + _minutes).slice(-2);
 
-    var finalo = _hours + ':' + _minutes;
+        var finalo = _hours + ':' + _minutes;
 
-    if( (_hours == 0) && (_minutes == 0) )
-{
-    finalo = '.';
-    JS_NEXT_PRAYER = '';
-}
-
-
-return finalo;
-}
+        if( (_hours == 0) && (_minutes == 0) )
+        {
+            finalo = '.';
+            JS_NEXT_PRAYER = '';
+        }
 
 
-var JS_NEXT_PRAYER = '-';
+        return finalo;
+    }
+
+
+    var JS_NEXT_PRAYER = '-';
 
 //--------SetNEXTERS---------------------&#10710;------------------------------------------------------
-function SetNEXTERS(xMNTS)
-{
-    JS_HReNextPRAYER.innerHTML  = ARNumbers(gimeTime(xMNTS));
-
-
-    var ssTextnow = '---';
-    if(JS_NEXT_PRAYER !== "")
-{
-    if(JS_LANG_NOW == "AR")
+    function SetNEXTERS(xMNTS)
     {
-        ssTextnow = JS_eLang.NextPrayTime + JS_NEXT_PRAYER;
-        ssTextnow = ssTextnow.replace('لا', 'ل');
+        JS_HReNextPRAYER.innerHTML  = ARNumbers(gimeTime(xMNTS));
+
+
+        var ssTextnow = '---';
+        if(JS_NEXT_PRAYER !== "")
+        {
+            if(JS_LANG_NOW == "AR")
+            {
+                ssTextnow = JS_eLang.NextPrayTime + JS_NEXT_PRAYER;
+                ssTextnow = ssTextnow.replace('لا', 'ل');
+            }
+            else ssTextnow = JS_eLang.NextPrayTime;
+        }
+
+        JS_HReNextPrTEXT.innerHTML  = ssTextnow;
+
+        if(JS_eMainVERTICAL.className == 's002')
+            JS_VReNXXX.innerHTML  = JS_HReNextPRAYER.innerHTML+" <span>"+ssTextnow+"</span>";
+        else
+            JS_VReNXXX.innerHTML  = JS_HReNextPRAYER.innerHTML+"<br><span>"+ssTextnow+"</span>";
     }
-    else ssTextnow = JS_eLang.NextPrayTime;
-}
-
-JS_HReNextPrTEXT.innerHTML  = ssTextnow;
-
-if(JS_eMainVERTICAL.className == 's002')
-JS_VReNXXX.innerHTML  = JS_HReNextPRAYER.innerHTML+" <span>"+ssTextnow+"</span>";
-else
-    JS_VReNXXX.innerHTML  = JS_HReNextPRAYER.innerHTML+"<br><span>"+ssTextnow+"</span>";
-}
 
 //-----------------------------------------------------------------------------------
-var JS_JANAZA_FAJR = 0;
-var JS_JANAZA_DOHR = 0;
-var JS_JANAZA_ASSR = 0;
-var JS_JANAZA_MGRB = 0;
-var JS_JANAZA_ISHA = 0;
+    var JS_JANAZA_FAJR = 0;
+    var JS_JANAZA_DOHR = 0;
+    var JS_JANAZA_ASSR = 0;
+    var JS_JANAZA_MGRB = 0;
+    var JS_JANAZA_ISHA = 0;
 //-----------------------------------------------------------------------------------
-function setJnzPLS(nbr)
-{
-    switch(nbr)
+    function setJnzPLS(nbr)
     {
-    case 0 :  JS_JANAZA_FAJR++; fillThisJnz(JS_JANAZA_FAJR, nbr); break;
-    case 2 :  JS_JANAZA_DOHR++; fillThisJnz(JS_JANAZA_DOHR, nbr); break;
-    case 3 :  JS_JANAZA_ASSR++; fillThisJnz(JS_JANAZA_ASSR, nbr); break;
-    case 4 :  JS_JANAZA_MGRB++; fillThisJnz(JS_JANAZA_MGRB, nbr); break;
-    case 5 :  JS_JANAZA_ISHA++; fillThisJnz(JS_JANAZA_ISHA, nbr); break;
-    default   : dolog('setJnzPLS_error:'+nbr); break;
+        switch(nbr)
+        {
+        case 0 :  JS_JANAZA_FAJR++; fillThisJnz(JS_JANAZA_FAJR, nbr); break;
+        case 2 :  JS_JANAZA_DOHR++; fillThisJnz(JS_JANAZA_DOHR, nbr); break;
+        case 3 :  JS_JANAZA_ASSR++; fillThisJnz(JS_JANAZA_ASSR, nbr); break;
+        case 4 :  JS_JANAZA_MGRB++; fillThisJnz(JS_JANAZA_MGRB, nbr); break;
+        case 5 :  JS_JANAZA_ISHA++; fillThisJnz(JS_JANAZA_ISHA, nbr); break;
+        default   : dolog('setJnzPLS_error:'+nbr); break;
+        }
     }
-}
 //-----------------------------------------------------------------------------------
-function setJnzMNS(nbr)
-{
-    switch(nbr)
+    function setJnzMNS(nbr)
     {
-    case 0 :  JS_JANAZA_FAJR--; fillThisJnz(JS_JANAZA_FAJR, nbr); break;
-    case 2 :  JS_JANAZA_DOHR--; fillThisJnz(JS_JANAZA_DOHR, nbr); break;
-    case 3 :  JS_JANAZA_ASSR--; fillThisJnz(JS_JANAZA_ASSR, nbr); break;
-    case 4 :  JS_JANAZA_MGRB--; fillThisJnz(JS_JANAZA_MGRB, nbr); break;
-    case 5 :  JS_JANAZA_ISHA--; fillThisJnz(JS_JANAZA_ISHA, nbr); break;
-    default   : dolog('setJnzMNS_error:'+nbr); break;
+        switch(nbr)
+        {
+        case 0 :  JS_JANAZA_FAJR--; fillThisJnz(JS_JANAZA_FAJR, nbr); break;
+        case 2 :  JS_JANAZA_DOHR--; fillThisJnz(JS_JANAZA_DOHR, nbr); break;
+        case 3 :  JS_JANAZA_ASSR--; fillThisJnz(JS_JANAZA_ASSR, nbr); break;
+        case 4 :  JS_JANAZA_MGRB--; fillThisJnz(JS_JANAZA_MGRB, nbr); break;
+        case 5 :  JS_JANAZA_ISHA--; fillThisJnz(JS_JANAZA_ISHA, nbr); break;
+        default   : dolog('setJnzMNS_error:'+nbr); break;
+        }
     }
-}
 //-----------------------------------------------------------------------------------
-function fillThisJnz(konto, nbx)
-{
-    var nnnjAAA = "[id='jA"+nbx+"']";
-    var nnnjBBB = "[id='jB"+nbx+"']";
+    function fillThisJnz(konto, nbx)
+    {
+        var nnnjAAA = "[id='jA"+nbx+"']";
+        var nnnjBBB = "[id='jB"+nbx+"']";
 
-    var elemsAAA = document.querySelectorAll(nnnjAAA);
-    var elemsBBB = document.querySelectorAll(nnnjBBB);
+        var elemsAAA = document.querySelectorAll(nnnjAAA);
+        var elemsBBB = document.querySelectorAll(nnnjBBB);
 
 
-    if(konto > 0)
-{
-    for(var i = 0; i < elemsAAA.length; i++) {elemsAAA[i].innerHTML = 'ج';  elemsAAA[i].parentNode.style.opacity = 1;}
-        for(var i = 0; i < elemsBBB.length; i++) {elemsBBB[i].innerHTML = konto;}
+        if(konto > 0)
+        {
+            for(var i = 0; i < elemsAAA.length; i++) {elemsAAA[i].innerHTML = 'ج';  elemsAAA[i].parentNode.style.opacity = 1;}
+                for(var i = 0; i < elemsBBB.length; i++) {elemsBBB[i].innerHTML = konto;}
+            }
+        else
+        {
+            for(var i = 0; i < elemsAAA.length; i++) {elemsAAA[i].innerHTML = ' '; elemsAAA[i].parentNode.style.opacity = 0.21;}
+                for(var i = 0; i < elemsBBB.length; i++) {elemsBBB[i].innerHTML = ' ';}
+            }
+
+
     }
-else
-{
-    for(var i = 0; i < elemsAAA.length; i++) {elemsAAA[i].innerHTML = ' '; elemsAAA[i].parentNode.style.opacity = 0.21;}
-        for(var i = 0; i < elemsBBB.length; i++) {elemsBBB[i].innerHTML = ' ';}
-    }
-
-
-}
 //-----------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------
 //---------Next Salat--------------------------------------------------------------------------
-var JS_HReNextPRAYER  = document.getElementById('HReNextPRAYER');
-var JS_HReJOMOAPRAYER = document.getElementById('HReJOMOAPRAYER');
+    var JS_HReNextPRAYER  = document.getElementById('HReNextPRAYER');
+    var JS_HReJOMOAPRAYER = document.getElementById('HReJOMOAPRAYER');
 
 
 
 //-----------------------------------------------------------------------------------
-function goSetNextSalatRemainingTIME(mntsNOW)
-{
+    function goSetNextSalatRemainingTIME(mntsNOW)
+    {
 
 
-    if(mntsNOW <= _fjr)     {JS_NEXT_PRAYER=JS_PRAYNAMES_NOW[0]; SetNEXTERS(_fjr - mntsNOW); return;}
+        if(mntsNOW <= _fjr)     {JS_NEXT_PRAYER=JS_PRAYNAMES_NOW[0]; SetNEXTERS(_fjr - mntsNOW); return;}
 
-if(mntsNOW <= _shrq)    {JS_NEXT_PRAYER=JS_PRAYNAMES_NOW[1]; SetNEXTERS(_shrq - mntsNOW);   return;}
+        if(mntsNOW <= _shrq)    {JS_NEXT_PRAYER=JS_PRAYNAMES_NOW[1]; SetNEXTERS(_shrq - mntsNOW);   return;}
 
-if(mntsNOW <= _thuhr)   {JS_NEXT_PRAYER=JS_PRAYNAMES_NOW[2]; if(JS_TODAY_IS_JOMOA)JS_NEXT_PRAYER=JS_tempJMA; SetNEXTERS(_thuhr - mntsNOW);  return;}
+        if(mntsNOW <= _thuhr)   {JS_NEXT_PRAYER=JS_PRAYNAMES_NOW[2]; if(JS_TODAY_IS_JOMOA)JS_NEXT_PRAYER=JS_tempJMA; SetNEXTERS(_thuhr - mntsNOW);  return;}
 
-if(mntsNOW <= _asr)     {JS_NEXT_PRAYER=JS_PRAYNAMES_NOW[3]; SetNEXTERS(_asr - mntsNOW);    return;}
+        if(mntsNOW <= _asr)     {JS_NEXT_PRAYER=JS_PRAYNAMES_NOW[3]; SetNEXTERS(_asr - mntsNOW);    return;}
 
-if(mntsNOW <= _maghreb) {JS_NEXT_PRAYER=JS_PRAYNAMES_NOW[4]; SetNEXTERS(_maghreb - mntsNOW); return;}
+        if(mntsNOW <= _maghreb) {JS_NEXT_PRAYER=JS_PRAYNAMES_NOW[4]; SetNEXTERS(_maghreb - mntsNOW); return;}
 
-if(mntsNOW <= _isha)    {JS_NEXT_PRAYER=JS_PRAYNAMES_NOW[5]; SetNEXTERS(_isha - mntsNOW);   return;}
+        if(mntsNOW <= _isha)    {JS_NEXT_PRAYER=JS_PRAYNAMES_NOW[5]; SetNEXTERS(_isha - mntsNOW);   return;}
 
-if(mntsNOW > _isha)     {JS_NEXT_PRAYER=JS_PRAYNAMES_NOW[0]; SetNEXTERS( (1440 - mntsNOW) + _fjr);  return;}
+        if(mntsNOW > _isha)     {JS_NEXT_PRAYER=JS_PRAYNAMES_NOW[0]; SetNEXTERS( (1440 - mntsNOW) + _fjr);  return;}
 
-}
+    }
 
 
 //-----------------------------------------------------------------------------------
@@ -3225,51 +3228,51 @@ if(mntsNOW > _isha)     {JS_NEXT_PRAYER=JS_PRAYNAMES_NOW[0]; SetNEXTERS( (1440 -
 
 
 //---------------DimPassedPRAYINGS--------------------------------------------------------------------
-function goDimPassedPRAYINGS(mntsNOW)
-{
+    function goDimPassedPRAYINGS(mntsNOW)
+    {
 
 
-    JS_tube0.className = 'cccROUND_ACTIVE';
-    JS_tube1.className = 'cccROUND_ACTIVE';
-    JS_tube2.className = 'cccROUND_ACTIVE';
-    JS_tube3.className = 'cccROUND_ACTIVE';
-    JS_tube4.className = 'cccROUND_ACTIVE';
-    JS_tube5.className = 'cccROUND_ACTIVE';
+        JS_tube0.className = 'cccROUND_ACTIVE';
+        JS_tube1.className = 'cccROUND_ACTIVE';
+        JS_tube2.className = 'cccROUND_ACTIVE';
+        JS_tube3.className = 'cccROUND_ACTIVE';
+        JS_tube4.className = 'cccROUND_ACTIVE';
+        JS_tube5.className = 'cccROUND_ACTIVE';
 
-    JS_W333HRtube0.style.opacity = '1';
-    JS_W333HRtube1.style.opacity = '1';
-    JS_W333HRtube2.style.opacity = '1';
-    JS_W333HRtube3.style.opacity = '1';
-    JS_W333HRtube4.style.opacity = '1';
-    JS_W333HRtube5.style.opacity = '1';
+        JS_W333HRtube0.style.opacity = '1';
+        JS_W333HRtube1.style.opacity = '1';
+        JS_W333HRtube2.style.opacity = '1';
+        JS_W333HRtube3.style.opacity = '1';
+        JS_W333HRtube4.style.opacity = '1';
+        JS_W333HRtube5.style.opacity = '1';
 
 
 
 // EXIT IF OPTION DISABLED
-    if(!JS_PAST_DIMER_ACTIVE) return;
+        if(!JS_PAST_DIMER_ACTIVE) return;
 
-if(mntsNOW > (_fjr      + 60) )     { JS_tube0.className = 'cccROUND';  JS_W333HRtube0.style.opacity = '0.5';}
-if(mntsNOW > (_shrq     + 30) )     { JS_tube1.className = 'cccROUND';  JS_W333HRtube1.style.opacity = '0.5';}
-if(mntsNOW > (_thuhr    + 40) )     { JS_tube2.className = 'cccROUND';  JS_W333HRtube2.style.opacity = '0.5';}
-if(mntsNOW > (_asr      + 30) )     { JS_tube3.className = 'cccROUND';  JS_W333HRtube3.style.opacity = '0.5';}
-if(mntsNOW > (_maghreb  + 30) )     { JS_tube4.className = 'cccROUND';  JS_W333HRtube4.style.opacity = '0.5';}
-if(mntsNOW > (_isha     + 30) )     { JS_tube5.className = 'cccROUND';  JS_W333HRtube5.style.opacity = '0.5';}
+        if(mntsNOW > (_fjr      + 60) )     { JS_tube0.className = 'cccROUND';  JS_W333HRtube0.style.opacity = '0.5';}
+        if(mntsNOW > (_shrq     + 30) )     { JS_tube1.className = 'cccROUND';  JS_W333HRtube1.style.opacity = '0.5';}
+        if(mntsNOW > (_thuhr    + 40) )     { JS_tube2.className = 'cccROUND';  JS_W333HRtube2.style.opacity = '0.5';}
+        if(mntsNOW > (_asr      + 30) )     { JS_tube3.className = 'cccROUND';  JS_W333HRtube3.style.opacity = '0.5';}
+        if(mntsNOW > (_maghreb  + 30) )     { JS_tube4.className = 'cccROUND';  JS_W333HRtube4.style.opacity = '0.5';}
+        if(mntsNOW > (_isha     + 30) )     { JS_tube5.className = 'cccROUND';  JS_W333HRtube5.style.opacity = '0.5';}
 
-}
+    }
 
 
-var JS_FLASHER_TUBE = 0;
+    var JS_FLASHER_TUBE = 0;
 
 
 
 //-------processActiveTUBE------------------------------------------------------------------------------------
-function processActiveTUBE(vTube,hx)
-{
+    function processActiveTUBE(vTube,hx)
+    {
 
 // If Shorouq  no flash
-    if(vTube.id == 'tube1') { ShowAdanAutoClose(true); return; }
+        if(vTube.id == 'tube1') { ShowAdanAutoClose(true); return; }
 
-ShowAdanAutoClose(false);
+        ShowAdanAutoClose(false);
 
 setTimeout(selectActiveTUBES, 5000, vTube, hx); // delay it to be not seen with azan screen
 
@@ -3311,11 +3314,11 @@ function GoActiveSALAT(nowLiveTIME)
 {
 
     if(nowLiveTIME == _fjr)     { JS_NOW_ACTIVE_SALAT = 0; JS_NOW_SALAT_NAME = JS_PRAYNAMES_NOW[0];     processActiveTUBE(JS_tube0,0);  return; }
-if(nowLiveTIME == _shrq)    { JS_NOW_ACTIVE_SALAT = 1; JS_NOW_SALAT_NAME = JS_PRAYNAMES_NOW[1];     processActiveTUBE(JS_tube1,1);  return; }
-if(nowLiveTIME == _thuhr)   { JS_NOW_ACTIVE_SALAT = 2; JS_NOW_SALAT_NAME = JS_PRAYNAMES_NOW[2];     processActiveTUBE(JS_tube2,2);  return; }
-if(nowLiveTIME == _asr)     { JS_NOW_ACTIVE_SALAT = 3; JS_NOW_SALAT_NAME = JS_PRAYNAMES_NOW[3];     processActiveTUBE(JS_tube3,3);  return; }
-if(nowLiveTIME == _maghreb) { JS_NOW_ACTIVE_SALAT = 4; JS_NOW_SALAT_NAME = JS_PRAYNAMES_NOW[4];     processActiveTUBE(JS_tube4,4);  return; }
-if(nowLiveTIME == _isha)    { JS_NOW_ACTIVE_SALAT = 5; JS_NOW_SALAT_NAME = JS_PRAYNAMES_NOW[5];     processActiveTUBE(JS_tube5,5);  return; }
+    if(nowLiveTIME == _shrq)    { JS_NOW_ACTIVE_SALAT = 1; JS_NOW_SALAT_NAME = JS_PRAYNAMES_NOW[1];     processActiveTUBE(JS_tube1,1);  return; }
+    if(nowLiveTIME == _thuhr)   { JS_NOW_ACTIVE_SALAT = 2; JS_NOW_SALAT_NAME = JS_PRAYNAMES_NOW[2];     processActiveTUBE(JS_tube2,2);  return; }
+    if(nowLiveTIME == _asr)     { JS_NOW_ACTIVE_SALAT = 3; JS_NOW_SALAT_NAME = JS_PRAYNAMES_NOW[3];     processActiveTUBE(JS_tube3,3);  return; }
+    if(nowLiveTIME == _maghreb) { JS_NOW_ACTIVE_SALAT = 4; JS_NOW_SALAT_NAME = JS_PRAYNAMES_NOW[4];     processActiveTUBE(JS_tube4,4);  return; }
+    if(nowLiveTIME == _isha)    { JS_NOW_ACTIVE_SALAT = 5; JS_NOW_SALAT_NAME = JS_PRAYNAMES_NOW[5];     processActiveTUBE(JS_tube5,5);  return; }
 }
 //-----------------------------------------------------------------------------------
 var JS_VR_AZAN      = document.getElementById('eeeNowNAMEazan');
@@ -3329,32 +3332,32 @@ function ShowAdanAutoClose(isSHRQ)
     JS_AZAN_ACTIVE  = true;
 
     if( (JS_TODAY_IS_JOMOA)&&(JS_nowMNTS == _thuhr) )
-{
-    JS_VR_AZAN.innerHTML    = JS_tempJMA;
-    JS_HR_AZAN.innerHTML    = JS_tempJMA;
-}
-else
-{
-    if(isSHRQ)
     {
-        JS_eeeTextAZAN.innerHTML    = "&nbsp;";
-        JS_HRTextAZAN.innerHTML     = "&nbsp;";
-        JS_VR_AZAN.innerHTML        = JS_eLang.XX_WQT_SHRQ;
-        JS_HR_AZAN.innerHTML        = JS_eLang.XX_WQT_SHRQ;
+        JS_VR_AZAN.innerHTML    = JS_tempJMA;
+        JS_HR_AZAN.innerHTML    = JS_tempJMA;
     }
     else
     {
-        JS_eeeTextAZAN.innerHTML    = JS_eLang.AzanCalling;
-        JS_HRTextAZAN.innerHTML     = JS_eLang.AzanCalling;
-        JS_VR_AZAN.innerHTML        = JS_NOW_SALAT_NAME;
-        JS_HR_AZAN.innerHTML        = JS_NOW_SALAT_NAME;
+        if(isSHRQ)
+        {
+            JS_eeeTextAZAN.innerHTML    = "&nbsp;";
+            JS_HRTextAZAN.innerHTML     = "&nbsp;";
+            JS_VR_AZAN.innerHTML        = JS_eLang.XX_WQT_SHRQ;
+            JS_HR_AZAN.innerHTML        = JS_eLang.XX_WQT_SHRQ;
+        }
+        else
+        {
+            JS_eeeTextAZAN.innerHTML    = JS_eLang.AzanCalling;
+            JS_HRTextAZAN.innerHTML     = JS_eLang.AzanCalling;
+            JS_VR_AZAN.innerHTML        = JS_NOW_SALAT_NAME;
+            JS_HR_AZAN.innerHTML        = JS_NOW_SALAT_NAME;
+        }
+
     }
 
-}
 
-
-ShowZunder2('VRAzanCOMES');
-ShowZunder2('HRAzanCOMES');
+    ShowZunder2('VRAzanCOMES');
+    ShowZunder2('HRAzanCOMES');
 
 
 
@@ -3401,13 +3404,13 @@ function ShowCOUNTERS()
 //  && (!JS_THIS_IS_SHOROQ)
 
 
-if( (JS_ACTIVE_IQAMA_NOW > 1) && (JS_IQAMA_COUNTDOWN_ACTIVE)  )
-{
-    if(JSALLDATA.IZSCounterEnlarge==1)
+    if( (JS_ACTIVE_IQAMA_NOW > 1) && (JS_IQAMA_COUNTDOWN_ACTIVE)  )
     {
-        JS_BIG_CONTO_ACTIVE = true;
-        ShowZunder2('VRCONTO');
-        ShowZunder2('HRCONTO');
+        if(JSALLDATA.IZSCounterEnlarge==1)
+        {
+            JS_BIG_CONTO_ACTIVE = true;
+            ShowZunder2('VRCONTO');
+            ShowZunder2('HRCONTO');
             Go1MN(true); // to refresh clock up right
             JS_ROOT.style.setProperty('--VRBigCNTR', 0);
         }
@@ -3511,22 +3514,22 @@ function KonvertTimeTo12(time24)
 {
 // ----------- If 24H Enabled, Give As it is And Exit)
     if(JS_24H_ACTIVE)   {
-    if(time24.length < 5) time24 = '0'+time24;
-    return time24;
-}
+        if(time24.length < 5) time24 = '0'+time24;
+        return time24;
+    }
 
 
-var eee = time24.split(':'), hhhhh, mmmmm, FinalTM4, strAmPm;
+    var eee = time24.split(':'), hhhhh, mmmmm, FinalTM4, strAmPm;
 
-hhhhh = parseInt(eee[0]);
-mmmmm = eee[1];
+    hhhhh = parseInt(eee[0]);
+    mmmmm = eee[1];
 
-if(hhhhh >= 12)
-{
-    if(hhhhh > 12) hhhhh = hhhhh - 12;
-}
-else
-{
+    if(hhhhh >= 12)
+    {
+        if(hhhhh > 12) hhhhh = hhhhh - 12;
+    }
+    else
+    {
             if(hhhhh == 0) hhhhh = 12; // midnight AM
 
 
@@ -3535,80 +3538,80 @@ else
         var finalOut = hhhhh+':'+mmmmm;
 
         if(JSALLDATA.IZaddZerosAMPM==1)
-{ if(finalOut.length < 5) finalOut = '0'+finalOut; }
+            { if(finalOut.length < 5) finalOut = '0'+finalOut; }
 
-return finalOut;
-}
+        return finalOut;
+    }
 
 
 //-----------------------------------------------------------------------------------
 
-var JS_SUMMER_LIVE_ACTIVE   = false;
-var JS_LOCATION_NOW         = '';
-var JS_FULL_HJRI_NOW        = '-----';
-var JS_FULL_HJRI_CLR        = '-----';
-var JS_ARRAY_FULLHJRI       = ['-','-','-'];
-var JS_DULHIJJA_DAYS_0913   = false;
-var JS_SHAABAN_LAST_DAYS    = false;
-var JS_DULHIJJA_WORK_DAYS   = false;
-var JS_TAKBIR_DAYS          = false;
-var JS_RAMADAN_10_NIGHTS    = false;
-var JS_FASTING_3_WHITE_DAYS = false;
-var JS_IS_10DULHIJJA        = false;
+    var JS_SUMMER_LIVE_ACTIVE   = false;
+    var JS_LOCATION_NOW         = '';
+    var JS_FULL_HJRI_NOW        = '-----';
+    var JS_FULL_HJRI_CLR        = '-----';
+    var JS_ARRAY_FULLHJRI       = ['-','-','-'];
+    var JS_DULHIJJA_DAYS_0913   = false;
+    var JS_SHAABAN_LAST_DAYS    = false;
+    var JS_DULHIJJA_WORK_DAYS   = false;
+    var JS_TAKBIR_DAYS          = false;
+    var JS_RAMADAN_10_NIGHTS    = false;
+    var JS_FASTING_3_WHITE_DAYS = false;
+    var JS_IS_10DULHIJJA        = false;
 
 
-var JS_arr6TIMES = ['0','0','0','0','0','0'];
-var JS_arr6DATAC = [0,0,0,0,0,0];
+    var JS_arr6TIMES = ['0','0','0','0','0','0'];
+    var JS_arr6DATAC = [0,0,0,0,0,0];
 
-var JS_ADM_WEEK_DAYS    = ["SUNDAY","MONDAY","TUESDAY","WEDNESDAY","THURSDAY","JOMOA","SATURDAY"];
-var JS_ADM_TODAY_NAME   = "";
-var JS_ADM_HIJRI_DATE   = "";
-var JS_ADM_10DLHJ       = "";
+    var JS_ADM_WEEK_DAYS    = ["SUNDAY","MONDAY","TUESDAY","WEDNESDAY","THURSDAY","JOMOA","SATURDAY"];
+    var JS_ADM_TODAY_NAME   = "";
+    var JS_ADM_HIJRI_DATE   = "";
+    var JS_ADM_10DLHJ       = "";
 
 //*****GoGloballyFillDATA*********************************************************
-function GoGloballyFillDATA()
-{
+    function GoGloballyFillDATA()
+    {
 
-    var JS_CCC  = new Date();
+        var JS_CCC  = new Date();
 
 //   -------------TEST ONLY  JS_CCC.setDate(JS_CCC.getDate() + 5);
 
-    MiladiToHIJRI(JS_CCC,JS_HIJRI_DECALAGE);
+        MiladiToHIJRI(JS_CCC,JS_HIJRI_DECALAGE);
 
 
-    var WeekDayX        = JS_CCC.getDay();
-    var arYOUM          = JS_WEEK_DAYS_NOW[WeekDayX];
-    JS_ADM_TODAY_NAME   = JS_ADM_WEEK_DAYS[WeekDayX];
+        var WeekDayX        = JS_CCC.getDay();
+        var arYOUM          = JS_WEEK_DAYS_NOW[WeekDayX];
+        JS_ADM_TODAY_NAME   = JS_ADM_WEEK_DAYS[WeekDayX];
 
-    var YearNow = JS_CCC.getFullYear();
+        var YearNow = JS_CCC.getFullYear();
 
-    var h3      = JS_CCC.getHours();
-    var m3      = JS_CCC.getMinutes();
-    var JSNOW   = ( (h3*60) + m3 );
-
-
-
-    var mmm     = (JS_CCC.getMonth());
-    var jx      = JS_CCC.getDate();
-    var jj      = '0'+jx;
-    jj      = jj.slice(-2);
+        var h3      = JS_CCC.getHours();
+        var m3      = JS_CCC.getMinutes();
+        var JSNOW   = ( (h3*60) + m3 );
 
 
 
-    var mm = '0'+(mmm+1);
-    mm = mm.slice(-2);
+        var mmm     = (JS_CCC.getMonth());
+        var jx      = JS_CCC.getDate();
+        var jj      = '0'+jx;
+        jj      = jj.slice(-2);
+
+
+
+        var mm = '0'+(mmm+1);
+        mm = mm.slice(-2);
 
 
 
 
 
 
-    var _n0 = '-';
-    var _n1 = '-';
-    var _n2 = '-';
-    var _n3 = '-';
-    var _n4 = '-';
-    var _n5 = '-';
+        var _n0 = '-';
+        var _n1 = '-';
+        var _n2 = '-';
+        var _n3 = '-';
+        var _n4 = '-';
+        var _n5 = '-';
 
 
 JS_HReJOMOA2WCSV.innerHTML = ''; // always reset
@@ -3781,45 +3784,45 @@ if(JS_SUMMER_ADD1HOUR)
 
 //-------------- MOROCCO 1 HOUR LESS IN RAMADAN
                                 if( (JS_THIS_IS_RAMADAN) && (JS_CITY_CODE.substring(0, 3) == "MA.") )
-{
-    _n0 = Gime1HourLESS(_n0);
-    _n1 = Gime1HourLESS(_n1);
-    _n2 = Gime1HourLESS(_n2);
-    _n3 = Gime1HourLESS(_n3);
-    _n4 = Gime1HourLESS(_n4);
-    _n5 = Gime1HourLESS(_n5);
-}
+                                {
+                                    _n0 = Gime1HourLESS(_n0);
+                                    _n1 = Gime1HourLESS(_n1);
+                                    _n2 = Gime1HourLESS(_n2);
+                                    _n3 = Gime1HourLESS(_n3);
+                                    _n4 = Gime1HourLESS(_n4);
+                                    _n5 = Gime1HourLESS(_n5);
+                                }
 
 
 
 
 //---------manually add 1 hour to all if set----------------------------------------------
-if(JS_1HOURMORE)
-{
-    _n0 = Gime1HourMORE(_n0);
-    _n1 = Gime1HourMORE(_n1);
-    _n2 = Gime1HourMORE(_n2);
-    _n3 = Gime1HourMORE(_n3);
-    _n4 = Gime1HourMORE(_n4);
-    _n5 = Gime1HourMORE(_n5);
-}
+                                if(JS_1HOURMORE)
+                                {
+                                    _n0 = Gime1HourMORE(_n0);
+                                    _n1 = Gime1HourMORE(_n1);
+                                    _n2 = Gime1HourMORE(_n2);
+                                    _n3 = Gime1HourMORE(_n3);
+                                    _n4 = Gime1HourMORE(_n4);
+                                    _n5 = Gime1HourMORE(_n5);
+                                }
 
 //---------manually remove 1 hour from all if set----------------------------------------------
-if(JS_1LESSMORE)
-{
-    _n0 = Gime1HourLESS(_n0);
-    _n1 = Gime1HourLESS(_n1);
-    _n2 = Gime1HourLESS(_n2);
-    _n3 = Gime1HourLESS(_n3);
-    _n4 = Gime1HourLESS(_n4);
-    _n5 = Gime1HourLESS(_n5);
-}
+                                if(JS_1LESSMORE)
+                                {
+                                    _n0 = Gime1HourLESS(_n0);
+                                    _n1 = Gime1HourLESS(_n1);
+                                    _n2 = Gime1HourLESS(_n2);
+                                    _n3 = Gime1HourLESS(_n3);
+                                    _n4 = Gime1HourLESS(_n4);
+                                    _n5 = Gime1HourLESS(_n5);
+                                }
 
 //-----------------------------------------------------------------------------------
 
 
 // AUTO ADD 30 MIN TO ISHA IF RAMADAN AND OPTION ACTIVE
-if( (JS_THIS_IS_RAMADAN) && (JS_RAMADAN_30MIN_ACTIVE) ) _n5 = GoAdjustment(_n5, 30);
+                                if( (JS_THIS_IS_RAMADAN) && (JS_RAMADAN_30MIN_ACTIVE) ) _n5 = GoAdjustment(_n5, 30);
 
 
 
@@ -3848,18 +3851,18 @@ if( (JSALLDATA.DHRxminASR > 0) && (!JS_WCSV_ACTIVE) )
 //-----------------------------------------------------------------------------------
 
     if(JS_TODAY_IS_JOMOA)
-{
-    JS_T_2.innerHTML      = JS_tempJMA;
-    JS_W333HT_2.innerHTML = JS_T_2.innerHTML;
-
-    if(JS_PERSO_FIXED_JOMOA !== "")
     {
+        JS_T_2.innerHTML      = JS_tempJMA;
+        JS_W333HT_2.innerHTML = JS_T_2.innerHTML;
 
-        if(JS_PERSO_FIXED_JOMOA == 'AUTO')
+        if(JS_PERSO_FIXED_JOMOA !== "")
         {
 
-            if(JS_WCSV_ACTIVE)
+            if(JS_PERSO_FIXED_JOMOA == 'AUTO')
             {
+
+                if(JS_WCSV_ACTIVE)
+                {
                                     JS_PERSO_AUTOX_JOMOA = _n13; // TODAY_ from today-jomoa1 wcsv
                                     JS_HReJOMOA2WCSV.innerHTML = '2nd Jomoa : '+_n14; // TODAY_jomoa 2
                                 }
@@ -3894,8 +3897,8 @@ if( (JSALLDATA.DHRxminASR > 0) && (!JS_WCSV_ACTIVE) )
 //-----------------------------------------------------------------------------------
 // NOW SET FIXED FAJR
             if( (JS_FIXED_IQAMATFAJR !== "")&&(!JS_WCSV_ACTIVE) )
-{
-    JS_IQAMA_TIME_OF_FAJR = GimeTotalMinutes(JS_FIXED_IQAMATFAJR) - GimeTotalMinutes(_n0);
+            {
+                JS_IQAMA_TIME_OF_FAJR = GimeTotalMinutes(JS_FIXED_IQAMATFAJR) - GimeTotalMinutes(_n0);
 if(JS_IQAMA_TIME_OF_FAJR < 1) JS_IQAMA_TIME_OF_FAJR = 10; //default 10
 }
 //-----------------------------------------------------------------------------------
@@ -4084,100 +4087,100 @@ function GetNextFriday(x)
             if( (JS_SUMMER_LIVE_ACTIVE) && (Exmont !== 10) ) nextFridayX = Gime1HourMORE(nextFridayX);
 
 
-return nextFridayX;
-}
+            return nextFridayX;
+        }
 
 
 
 //-----------------------------------------------------------------------------------
 
-var JS_DECOMPTE_STARTED         =  false;
-var JS_IQUAMA_SECONDS           =  0;
-var JS_NOW_DIMSCREEN_DURATION   =  0;
-var JS_ACTIVE_IQAMA_NOW         =  0;
-var JS_ACTIVE_IQAMA_NOW_SECONDS =  0;
+        var JS_DECOMPTE_STARTED         =  false;
+        var JS_IQUAMA_SECONDS           =  0;
+        var JS_NOW_DIMSCREEN_DURATION   =  0;
+        var JS_ACTIVE_IQAMA_NOW         =  0;
+        var JS_ACTIVE_IQAMA_NOW_SECONDS =  0;
 
 //---------------------------------------------
-function startDECOMPTE(xminu, duree)
-{
+        function startDECOMPTE(xminu, duree)
+        {
 
-    if( (!JS_IQAMA_COUNTDOWN_ACTIVE) || (JSALLDATA.IZforHOME==1) ) return;
+            if( (!JS_IQAMA_COUNTDOWN_ACTIVE) || (JSALLDATA.IZforHOME==1) ) return;
 
 // NO COUNTER, DIRECT BLACKSCREEN AND EXIT
-if(xminu < 1) {setTimeout('ShowRIDEAU()', 1000);  setTimeout('SetAllTubesNORMAL()', 9000);   return; }
+            if(xminu < 1) {setTimeout('ShowRIDEAU()', 1000);  setTimeout('SetAllTubesNORMAL()', 9000);   return; }
 
 
 // first, fill prayer duration
-JS_NOW_DIMSCREEN_DURATION   = duree;
+            JS_NOW_DIMSCREEN_DURATION   = duree;
 
 
 
-JS_DECOMPTE_STARTED         = true;
-JS_IQUAMA_SECONDS           = (xminu * 60);
-JS_ACTIVE_IQAMA_NOW         = xminu;
-JS_ACTIVE_IQAMA_NOW_SECONDS = JS_IQUAMA_SECONDS;
+            JS_DECOMPTE_STARTED         = true;
+            JS_IQUAMA_SECONDS           = (xminu * 60);
+            JS_ACTIVE_IQAMA_NOW         = xminu;
+            JS_ACTIVE_IQAMA_NOW_SECONDS = JS_IQUAMA_SECONDS;
 
-}
+        }
 
 
 
 //-------------------closeDECOMPTE--------------------------
-function closeDECOMPTE()
-{
-    JS_DECOMPTE_STARTED = false;
-    JS_IQUAMA_SECONDS   = 0;
-    JS_ACTIVE_IQAMA_NOW = 0;
-    JS_ACTIVE_IQAMA_NOW_SECONDS = 0;
-}
+        function closeDECOMPTE()
+        {
+            JS_DECOMPTE_STARTED = false;
+            JS_IQUAMA_SECONDS   = 0;
+            JS_ACTIVE_IQAMA_NOW = 0;
+            JS_ACTIVE_IQAMA_NOW_SECONDS = 0;
+        }
 
 
 
 //-----------------------------------HijriClick--------------------------
-function HijriClick()
-{
-    JS_HIJRI_DECALAGE++;
-    if(JS_HIJRI_DECALAGE > 2) JS_HIJRI_DECALAGE = -2;
+        function HijriClick()
+        {
+            JS_HIJRI_DECALAGE++;
+            if(JS_HIJRI_DECALAGE > 2) JS_HIJRI_DECALAGE = -2;
 
-localStorage.setItem('STORAGE_DECALAGE', JS_HIJRI_DECALAGE);
+            localStorage.setItem('STORAGE_DECALAGE', JS_HIJRI_DECALAGE);
 
-GoGloballyFillDATA();
-}
+            GoGloballyFillDATA();
+        }
 
 
-var JS_STRICT_WTIMES_FILE = false;
+        var JS_STRICT_WTIMES_FILE = false;
 //**************************************************************
-function ShowTomorrow()
-{
+        function ShowTomorrow()
+        {
 
 // TOMORROW TIMES ...
-    var JS_TTT  = new Date;
-    JS_TTT.setDate(JS_TTT.getDate() + 1);
+            var JS_TTT  = new Date;
+            JS_TTT.setDate(JS_TTT.getDate() + 1);
 
-    var dayNBR = JS_TTT.getDay();
+            var dayNBR = JS_TTT.getDay();
 
-    var YearNow = JS_TTT.getFullYear();
+            var YearNow = JS_TTT.getFullYear();
 
-    var mm      ='0'+(JS_TTT.getMonth()+1);
-    var jj      ='0'+JS_TTT.getDate();
+            var mm      ='0'+(JS_TTT.getMonth()+1);
+            var jj      ='0'+JS_TTT.getDate();
 
-    jj =jj.slice(-2);
-    mm =mm.slice(-2);
-
-
-    var eeeFajrTMRW = '';
+            jj =jj.slice(-2);
+            mm =mm.slice(-2);
 
 
+            var eeeFajrTMRW = '';
 
-    if(JS_WCSV_ACTIVE)
-{
+
+
+            if(JS_WCSV_ACTIVE)
+            {
         // WSCV USER FILE ---------------------------------------
         // "Date,Day,FajrBegins,....
 
-    var fulldate = mm+'-'+jj;
-    var idx = FindInArray(fulldate, JS_WCSV_DATA);
-    if(idx== -1) { return; }
-    var VLine   = JS_WCSV_DATA[idx];
-    var VDatenz = VLine.split(',');
+                var fulldate = mm+'-'+jj;
+                var idx = FindInArray(fulldate, JS_WCSV_DATA);
+                if(idx== -1) { return; }
+                var VLine   = JS_WCSV_DATA[idx];
+                var VDatenz = VLine.split(',');
         eeeFajrTMRW = VDatenz[2];  // FAJR TOMORROW
     }
     else
@@ -4201,21 +4204,21 @@ function ShowTomorrow()
 
 
     if( (JS_SUMMER_LIVE_ACTIVE)&&(JS_STRICT_WTIMES_FILE) )
-{
-    var dayNBR = JS_TTT.getDay();
-    var xmont  = JS_TTT.getMonth();
-    var xdato  = JS_TTT.getDate();
-    var JS_IS_LASTOCTOBERSUNDAY =( (dayNBR==0)&&(xmont==9)&&(xdato > 24) );
+    {
+        var dayNBR = JS_TTT.getDay();
+        var xmont  = JS_TTT.getMonth();
+        var xdato  = JS_TTT.getDate();
+        var JS_IS_LASTOCTOBERSUNDAY =( (dayNBR==0)&&(xmont==9)&&(xdato > 24) );
 // tomorrow add 1 hour only if summer time is realy active AND tomorrow is not last sunday of october
-    if(!JS_IS_LASTOCTOBERSUNDAY) adjustedTMRW = Gime1HourMORE(adjustedTMRW);
-}
+        if(!JS_IS_LASTOCTOBERSUNDAY) adjustedTMRW = Gime1HourMORE(adjustedTMRW);
+    }
 
 
 
-adjustedTMRW = KonvertTimeTo12(adjustedTMRW);
-var ArTMRW = ARNumbers(adjustedTMRW);
-document.getElementById('VRdemain').innerHTML   = ArTMRW;
-document.getElementById('HRdemain').innerHTML   = ArTMRW;
+    adjustedTMRW = KonvertTimeTo12(adjustedTMRW);
+    var ArTMRW = ARNumbers(adjustedTMRW);
+    document.getElementById('VRdemain').innerHTML   = ArTMRW;
+    document.getElementById('HRdemain').innerHTML   = ArTMRW;
 }
 
 
@@ -4244,19 +4247,19 @@ function forceAudio()
 function Play_Beeep()
 {
     if(JS_AUDIO_AZAN_IQAMA_IS_BY_VOICE)
-{
-    if(JS_SHORT_AZAN_ACTIVE)
     {
-        JS_SND_SHORTAZAN.play();
+        if(JS_SHORT_AZAN_ACTIVE)
+        {
+            JS_SND_SHORTAZAN.play();
+        }
+        else
+        {
+            if(JS_nowMNTS==_fjr) JS_SND_FAJR.play();
+            else JS_SND_AZAN.play();
+        }
     }
     else
-    {
-        if(JS_nowMNTS==_fjr) JS_SND_FAJR.play();
-        else JS_SND_AZAN.play();
-    }
-}
-else
-    JS_SND_BEEEP.play();
+        JS_SND_BEEEP.play();
 }
 
 
@@ -4264,12 +4267,12 @@ else
 function Play_IqamaTit()
 {
     if(JS_AUDIO_AZAN_IQAMA_IS_BY_VOICE)
-{
-    if(JS_SHORT_IQAMA_ACTIVE) JS_SND_SHORTIQAMA.play();
-    else JS_SND_TIT.play();
-}
-else
-    JS_SND_TIT.play();
+    {
+        if(JS_SHORT_IQAMA_ACTIVE) JS_SND_SHORTIQAMA.play();
+        else JS_SND_TIT.play();
+    }
+    else
+        JS_SND_TIT.play();
 }
 
 //-----------------------------------------
@@ -4347,15 +4350,15 @@ function SetAudioVoiceOnOff()
 
     var eeBOOL = 0;
     if(JS_AUDIO_AZAN_IQAMA_IS_BY_VOICE) eeBOOL = 1;
-localStorage.setItem('STORAGE_AUDIO_BY_VOICE', eeBOOL);
+    localStorage.setItem('STORAGE_AUDIO_BY_VOICE', eeBOOL);
 
-if(eeBOOL) JS_eVoiceCHECK.checked = true; else JS_eVoiceCHECK.checked = false;
+    if(eeBOOL) JS_eVoiceCHECK.checked = true; else JS_eVoiceCHECK.checked = false;
 
 
-VerifyMP3Options();
+    VerifyMP3Options();
 
 // to trigger sounds in browser to be accepted
-if(JS_AUDIO_AZAN_IQAMA_IS_BY_VOICE) JS_SND_BEEEP.play();
+    if(JS_AUDIO_AZAN_IQAMA_IS_BY_VOICE) JS_SND_BEEEP.play();
 }
 
 //-------------------------------------------------------------------------------------------
@@ -4371,8 +4374,8 @@ function SetShortAZANOnOff()
     JS_SHORT_AZAN_ACTIVE = !JS_SHORT_AZAN_ACTIVE;
     var eeBOOL = 0;
     if(JS_SHORT_AZAN_ACTIVE) eeBOOL = 1;
-localStorage.setItem('STORAGE_JS_SHORT_AZAN_ACTIVE', eeBOOL);
-if(eeBOOL) JS_eShortAZAN.checked = true; else JS_eShortAZAN.checked = false;
+    localStorage.setItem('STORAGE_JS_SHORT_AZAN_ACTIVE', eeBOOL);
+    if(eeBOOL) JS_eShortAZAN.checked = true; else JS_eShortAZAN.checked = false;
 }
 
 //-------SetShortIQAMAOnOff----------------------------------------------------
@@ -4381,8 +4384,8 @@ function SetShortIQAMAOnOff()
     JS_SHORT_IQAMA_ACTIVE = !JS_SHORT_IQAMA_ACTIVE;
     var eeBOOL = 0;
     if(JS_SHORT_IQAMA_ACTIVE) eeBOOL = 1;
-localStorage.setItem('STORAGE_JS_SHORT_IQAMA_ACTIVE', eeBOOL);
-if(eeBOOL) JS_eShortIQAMA.checked = true; else JS_eShortIQAMA.checked = false;
+    localStorage.setItem('STORAGE_JS_SHORT_IQAMA_ACTIVE', eeBOOL);
+    if(eeBOOL) JS_eShortIQAMA.checked = true; else JS_eShortIQAMA.checked = false;
 }
 
 
@@ -4393,11 +4396,11 @@ function SetRamadan30MinOnOff()
 
     var eeBOOL = 0;
     if(JS_RAMADAN_30MIN_ACTIVE) eeBOOL = 1;
-localStorage.setItem('STORAGE_RAMADAN_30MIN_ACTIVE', eeBOOL);
+    localStorage.setItem('STORAGE_RAMADAN_30MIN_ACTIVE', eeBOOL);
 
-if(eeBOOL) JS_eRamadan30CHECK.checked = true; else JS_eRamadan30CHECK.checked = false;
+    if(eeBOOL) JS_eRamadan30CHECK.checked = true; else JS_eRamadan30CHECK.checked = false;
 
-GoGloballyFillDATA();
+    GoGloballyFillDATA();
 }
 
 
@@ -4408,9 +4411,9 @@ function SetSummerOnOff()
 
     var eeBOOL = 0;
     if(JS_SUMMER_ADD1HOUR) eeBOOL = 1;
-localStorage.setItem('STORAGE_SUMMER_ADD1HOUR', eeBOOL);
-if(eeBOOL) JS_summerCHECK.checked = true; else JS_summerCHECK.checked = false;
-GoGloballyFillDATA();
+    localStorage.setItem('STORAGE_SUMMER_ADD1HOUR', eeBOOL);
+    if(eeBOOL) JS_summerCHECK.checked = true; else JS_summerCHECK.checked = false;
+    GoGloballyFillDATA();
 }
 
 //-------Set1MoreHOUR------------------------------------------------------------------------------------
@@ -4419,9 +4422,9 @@ function Set1MoreHOUR()
     JS_1HOURMORE = !JS_1HOURMORE;
     var eeBOOL = 0;
     if(JS_1HOURMORE) eeBOOL = 1;
-localStorage.setItem('STORAGE_JS_1HOURMORE', eeBOOL);
-if(eeBOOL) JS_eMoreHourCHECK.checked = true; else JS_eMoreHourCHECK.checked = false;
-GoGloballyFillDATA();
+    localStorage.setItem('STORAGE_JS_1HOURMORE', eeBOOL);
+    if(eeBOOL) JS_eMoreHourCHECK.checked = true; else JS_eMoreHourCHECK.checked = false;
+    GoGloballyFillDATA();
 }
 
 //-------Set1LessHOUR------------------------------------------------------------------------------------
@@ -4430,9 +4433,9 @@ function Set1LessHOUR()
     JS_1LESSMORE = !JS_1LESSMORE;
     var eeBOOL = 0;
     if(JS_1LESSMORE) eeBOOL = 1;
-localStorage.setItem('STORAGE_JS_1LESSMORE', eeBOOL);
-if(eeBOOL) JS_eLessHourCHECK.checked = true; else JS_eLessHourCHECK.checked = false;
-GoGloballyFillDATA();
+    localStorage.setItem('STORAGE_JS_1LESSMORE', eeBOOL);
+    if(eeBOOL) JS_eLessHourCHECK.checked = true; else JS_eLessHourCHECK.checked = false;
+    GoGloballyFillDATA();
 }
 
 
@@ -4442,30 +4445,30 @@ GoGloballyFillDATA();
 function SetMeteoOnOff()
 {
     if(JSALLDATA.IZmeteo==0) JSALLDATA.IZmeteo=1; else JSALLDATA.IZmeteo=0;
-SaveJsDATA();
-updateMeteoDSP(true);
+    SaveJsDATA();
+    updateMeteoDSP(true);
 }
 //-----------------------------------------------------------------------------------
 function updateMeteoDSP(_forceFETCH)
 {
     if(JSALLDATA.IZmeteo==1){
-    JS_MeteoCHECK.checked = true;
-    JS_ROOT.style.setProperty('--METEO', 'visible');
-    if(_forceFETCH) FetchMETEO();
-}
-else
-{
-    JS_MeteoCHECK.checked = false;
-    JS_ROOT.style.setProperty('--METEO', 'hidden');
-}
+        JS_MeteoCHECK.checked = true;
+        JS_ROOT.style.setProperty('--METEO', 'visible');
+        if(_forceFETCH) FetchMETEO();
+    }
+    else
+    {
+        JS_MeteoCHECK.checked = false;
+        JS_ROOT.style.setProperty('--METEO', 'hidden');
+    }
 }
 
 //-------SetMtoPRYRS------------------------------------------------------------------------------------
 function SetMtoPRYRS()
 {
     if(JSALLDATA.IZMtoPRYRS==0) JSALLDATA.IZMtoPRYRS=1; else JSALLDATA.IZMtoPRYRS=0;
-SaveJsDATA();
-updateMtoPRYRS(true);
+    SaveJsDATA();
+    updateMtoPRYRS(true);
 }
 //-----------------------------------------------------------------------------------
 function updateMtoPRYRS(_forceFETCH)
@@ -4475,11 +4478,11 @@ function updateMtoPRYRS(_forceFETCH)
     objjj.checked = (JSALLDATA.IZMtoPRYRS==1);
 
     if(JSALLDATA.IZMtoPRYRS==1)
-JS_ROOT.style.setProperty('--MTOSLWTS', 'visible');
-else
-    JS_ROOT.style.setProperty('--MTOSLWTS', 'hidden');
+        JS_ROOT.style.setProperty('--MTOSLWTS', 'visible');
+    else
+        JS_ROOT.style.setProperty('--MTOSLWTS', 'hidden');
 
-if(_forceFETCH) FetchMETEO();
+    if(_forceFETCH) FetchMETEO();
 }
 //-------Set24OnOff------------------------------------------------------------------------------------
 function Set24OnOff()
@@ -4487,11 +4490,11 @@ function Set24OnOff()
     JS_24H_ACTIVE = !JS_24H_ACTIVE;
     var sssBOOL = 0;
     if(JS_24H_ACTIVE) sssBOOL = 1;
-localStorage.setItem('STORAGE_24H_ACTIVE', sssBOOL);
-if(sssBOOL) JS_e24CHECK.checked = true; else JS_e24CHECK.checked = false;
+    localStorage.setItem('STORAGE_24H_ACTIVE', sssBOOL);
+    if(sssBOOL) JS_e24CHECK.checked = true; else JS_e24CHECK.checked = false;
 
-GoGloballyFillDATA();
-Go1MN(false);
+    GoGloballyFillDATA();
+    Go1MN(false);
 }
 
 //-------SetFullClockOnOff------------------------------------------------------------------------------------
@@ -4507,26 +4510,26 @@ function SetPersoWCSV()
     JS_WCSV_ACTIVE = !JS_WCSV_ACTIVE;
     var sssBOOL = 0;
     if(JS_WCSV_ACTIVE) sssBOOL = 1;
-localStorage.setItem('STORAGE_WCSV_ACTIVE', sssBOOL);
-execWCSV(JS_WCSV_ACTIVE);
+    localStorage.setItem('STORAGE_WCSV_ACTIVE', sssBOOL);
+    execWCSV(JS_WCSV_ACTIVE);
 }
 
 //-------execWCSV------------------------------------------------------------------------------------
 function execWCSV(sBOL)
 {
     if(sBOL)
-{
-    JS_eWCSVCHECK.checked = true;
-    JS_ROOT.style.setProperty('--OPAK', '0');
-}
-else
-{
-    JS_eWCSVCHECK.checked = false;
-    JS_ROOT.style.setProperty('--OPAK', '1');
-}
+    {
+        JS_eWCSVCHECK.checked = true;
+        JS_ROOT.style.setProperty('--OPAK', '0');
+    }
+    else
+    {
+        JS_eWCSVCHECK.checked = false;
+        JS_ROOT.style.setProperty('--OPAK', '1');
+    }
 
 
-Go1MN(false);
+    Go1MN(false);
 }
 
 
@@ -4540,11 +4543,11 @@ function SetPastDimerOnOff()
     JS_PAST_DIMER_ACTIVE = !JS_PAST_DIMER_ACTIVE;
     var sssBOOL = 0;
     if(JS_PAST_DIMER_ACTIVE) sssBOOL = 1;
-localStorage.setItem('STORAGE_PAST_DIMER_ACTIVE', sssBOOL);
-if(sssBOOL) JS_ePastDimerCHECK.checked = true; else JS_ePastDimerCHECK.checked = false;
+    localStorage.setItem('STORAGE_PAST_DIMER_ACTIVE', sssBOOL);
+    if(sssBOOL) JS_ePastDimerCHECK.checked = true; else JS_ePastDimerCHECK.checked = false;
 
 // go update view
-goDimPassedPRAYINGS(JS_nowMNTS);
+    goDimPassedPRAYINGS(JS_nowMNTS);
 }
 
 //-------SetIqamaFullTimes------------------------------------------------------------------------------------
@@ -4553,11 +4556,11 @@ function SetIqamaFullTimes()
     JS_IQAMA_FULL_TIMES = !JS_IQAMA_FULL_TIMES;
     var sssBOOL = 0;
     if(JS_IQAMA_FULL_TIMES) sssBOOL = 1;
-localStorage.setItem('STORAGE_IQAMA_FULL_TIMES', sssBOOL);
-if(sssBOOL) JS_eIQAMAasHOURCHECK.checked = true; else JS_eIQAMAasHOURCHECK.checked = false;
+    localStorage.setItem('STORAGE_IQAMA_FULL_TIMES', sssBOOL);
+    if(sssBOOL) JS_eIQAMAasHOURCHECK.checked = true; else JS_eIQAMAasHOURCHECK.checked = false;
 
 
-goUpdateIQAMAS();
+    goUpdateIQAMAS();
 }
 
 
@@ -4567,8 +4570,8 @@ function SetCOUNTDOWNOnOff()
     JS_IQAMA_COUNTDOWN_ACTIVE = !JS_IQAMA_COUNTDOWN_ACTIVE;
     var sssBOOL = 0;
     if(JS_IQAMA_COUNTDOWN_ACTIVE) sssBOOL = 1;
-localStorage.setItem('STORAGE_IQAMA_COUNTDOWN_ACTIVE', sssBOOL);
-if(sssBOOL) JS_eCOUNTDOWNOnOff.checked = true; else JS_eCOUNTDOWNOnOff.checked = false;
+    localStorage.setItem('STORAGE_IQAMA_COUNTDOWN_ACTIVE', sssBOOL);
+    if(sssBOOL) JS_eCOUNTDOWNOnOff.checked = true; else JS_eCOUNTDOWNOnOff.checked = false;
 }
 
 
@@ -4579,26 +4582,26 @@ function UpdateFullClock(YES_ACTIVATE_IT)
 {
     var sssBOOL = 0;
     if(YES_ACTIVATE_IT) sssBOOL = 1;
-localStorage.setItem('STORAGE_FULL_CLOCK_ACTIVE', sssBOOL);
-if(sssBOOL) JS_eFullClockCHECK.checked = true; else JS_eFullClockCHECK.checked = false;
+    localStorage.setItem('STORAGE_FULL_CLOCK_ACTIVE', sssBOOL);
+    if(sssBOOL) JS_eFullClockCHECK.checked = true; else JS_eFullClockCHECK.checked = false;
 
 
-if(YES_ACTIVATE_IT)
-{
-    HideZunder('CLOKO_MINI_VR');
-    HideZunder('CLOKO_MINI_HR');
-    ShowZunder('CLOKO_FULL_VR');
-    ShowZunder('CLOKO_FULL_HR');
-}
-else
-{
-    ShowZunder('CLOKO_MINI_VR');
-    ShowZunder('CLOKO_MINI_HR');
-    HideZunder('CLOKO_FULL_VR');
-    HideZunder('CLOKO_FULL_HR');
-}
+    if(YES_ACTIVATE_IT)
+    {
+        HideZunder('CLOKO_MINI_VR');
+        HideZunder('CLOKO_MINI_HR');
+        ShowZunder('CLOKO_FULL_VR');
+        ShowZunder('CLOKO_FULL_HR');
+    }
+    else
+    {
+        ShowZunder('CLOKO_MINI_VR');
+        ShowZunder('CLOKO_MINI_HR');
+        HideZunder('CLOKO_FULL_VR');
+        HideZunder('CLOKO_FULL_HR');
+    }
 
-setTimeout(Go1MN, 3000);
+    setTimeout(Go1MN, 3000);
 }
 
 
@@ -4608,8 +4611,8 @@ function SetDimmOnOff()
     JS_DIMM_WHILE_PRAYIN_ACTIVE = !JS_DIMM_WHILE_PRAYIN_ACTIVE;
     var sssBOOL = 0;
     if(JS_DIMM_WHILE_PRAYIN_ACTIVE) sssBOOL = 1;
-localStorage.setItem('STORAGE_DIMM_SCREEN', sssBOOL);
-if(sssBOOL) JS_eDimmCHECK.checked = true; else JS_eDimmCHECK.checked = false;
+    localStorage.setItem('STORAGE_DIMM_SCREEN', sssBOOL);
+    if(sssBOOL) JS_eDimmCHECK.checked = true; else JS_eDimmCHECK.checked = false;
 }
 
 
@@ -4622,8 +4625,8 @@ function SetOwnSlidersOnOff()
     JS_USER_SLIDERS_ACTIVE = !JS_USER_SLIDERS_ACTIVE;
     var sssBOOL = 0;
     if(JS_USER_SLIDERS_ACTIVE) sssBOOL = 1;
-localStorage.setItem('STORAGE_SLIDERS_ACTIVE', sssBOOL);
-if(sssBOOL) JS_eSlidersCHECK.checked = true; else JS_eSlidersCHECK.checked = false;
+    localStorage.setItem('STORAGE_SLIDERS_ACTIVE', sssBOOL);
+    if(sssBOOL) JS_eSlidersCHECK.checked = true; else JS_eSlidersCHECK.checked = false;
 }
 
 
@@ -4633,17 +4636,17 @@ function SwitchOnOffAZKAR()
     JS_APP_AZKAR_ACTIVE = !JS_APP_AZKAR_ACTIVE;
     var sssBOOL = 0;
     if(JS_APP_AZKAR_ACTIVE) sssBOOL = 1;
-localStorage.setItem('STORAGE_AZKAR_ACTIVE', sssBOOL);
-if(sssBOOL) JS_eAzkarCHECK.checked = true; else JS_eAzkarCHECK.checked = false;
+    localStorage.setItem('STORAGE_AZKAR_ACTIVE', sssBOOL);
+    if(sssBOOL) JS_eAzkarCHECK.checked = true; else JS_eAzkarCHECK.checked = false;
 
-GoBoxesONOFF((sssBOOL==0),JS_eAzkar5minCHECK);
+    GoBoxesONOFF((sssBOOL==0),JS_eAzkar5minCHECK);
 }
 //-------SetOnePictureFixed5min------------------------------------------------------------------------------------
 function SetOnePictureFixed5min()
 {
     if(JSALLDATA.IZ5minAzkar==0) JSALLDATA.IZ5minAzkar=1; else JSALLDATA.IZ5minAzkar=0;
-SaveJsDATA();
-set5minAzkar();
+    SaveJsDATA();
+    set5minAzkar();
 }
 //------------------------------------------------------------
 function set5minAzkar()
@@ -4669,126 +4672,126 @@ function _GoMessages()
     if(JS_LAST_X == JS_NB ) { _GoMessages(); return; }
 
 
-var str = JS_MESSAGES[JS_NB];
-if(str == "") { _GoMessages(); return; }
+    var str = JS_MESSAGES[JS_NB];
+    if(str == "") { _GoMessages(); return; }
 
 
 
-if((JS_DULHIJJA_WORK_DAYS) &&
-    ((str.indexOf('10NIGHTS') > -1) || (str.indexOf('3WHITEDAYS') > -1) || (str.indexOf('TAKBIR') > -1))) { _GoMessages(); return; }
+    if((JS_DULHIJJA_WORK_DAYS) &&
+        ((str.indexOf('10NIGHTS') > -1) || (str.indexOf('3WHITEDAYS') > -1) || (str.indexOf('TAKBIR') > -1))) { _GoMessages(); return; }
 
-if((JS_RAMADAN_10_NIGHTS) &&
-    ((str.indexOf('10DAYS') > -1) || (str.indexOf('3WHITEDAYS') > -1) || (str.indexOf('TAKBIR') > -1))) { _GoMessages(); return; }
+        if((JS_RAMADAN_10_NIGHTS) &&
+            ((str.indexOf('10DAYS') > -1) || (str.indexOf('3WHITEDAYS') > -1) || (str.indexOf('TAKBIR') > -1))) { _GoMessages(); return; }
 
-if((JS_FASTING_3_WHITE_DAYS) &&
-    ((str.indexOf('10DAYS') > -1) || (str.indexOf('10NIGHTS') > -1) || (str.indexOf('TAKBIR') > -1))) { _GoMessages(); return; }
+            if((JS_FASTING_3_WHITE_DAYS) &&
+                ((str.indexOf('10DAYS') > -1) || (str.indexOf('10NIGHTS') > -1) || (str.indexOf('TAKBIR') > -1))) { _GoMessages(); return; }
 
-if((JS_TAKBIR_DAYS) &&
-    ((str.indexOf('10DAYS') > -1) || (str.indexOf('10NIGHTS') > -1) || (str.indexOf('3WHITEDAYS') > -1))) { _GoMessages(); return; }
+                if((JS_TAKBIR_DAYS) &&
+                    ((str.indexOf('10DAYS') > -1) || (str.indexOf('10NIGHTS') > -1) || (str.indexOf('3WHITEDAYS') > -1))) { _GoMessages(); return; }
 
-var group4Specials   = (JS_DULHIJJA_WORK_DAYS || JS_RAMADAN_10_NIGHTS || JS_FASTING_3_WHITE_DAYS || JS_TAKBIR_DAYS);
-var spclSTRini       = (str.indexOf('10DAYS') > -1) || (str.indexOf('10NIGHTS') > -1) || (str.indexOf('3WHITEDAYS') > -1) || (str.indexOf('TAKBIR') > -1);
+                    var group4Specials   = (JS_DULHIJJA_WORK_DAYS || JS_RAMADAN_10_NIGHTS || JS_FASTING_3_WHITE_DAYS || JS_TAKBIR_DAYS);
+                var spclSTRini       = (str.indexOf('10DAYS') > -1) || (str.indexOf('10NIGHTS') > -1) || (str.indexOf('3WHITEDAYS') > -1) || (str.indexOf('TAKBIR') > -1);
 
-if (spclSTRini && !group4Specials) { _GoMessages(); return; }
+                if (spclSTRini && !group4Specials) { _GoMessages(); return; }
 
 
 // filter passed, clean now,
-str = str.replace('TAKBIR', '');
-str = str.replace('10DAYS', '');
-str = str.replace('10NIGHTS', '');
-str = str.replace('3WHITEDAYS', '');
+                str = str.replace('TAKBIR', '');
+                str = str.replace('10DAYS', '');
+                str = str.replace('10NIGHTS', '');
+                str = str.replace('3WHITEDAYS', '');
 
 
-if(spclSTRini) str = "<span style='color:var(--Color_CLOCK);'>"+str+"<span>";
+                if(spclSTRini) str = "<span style='color:var(--Color_CLOCK);'>"+str+"<span>";
 
-str = str.replace(/\{/g, "﴿");
-str = str.replace(/\}/g, "﴾");
+                str = str.replace(/\{/g, "﴿");
+                str = str.replace(/\}/g, "﴾");
 
 
-if(JS_LOGS_ENABLED) str = JS_TEST_TEXT;
+                if(JS_LOGS_ENABLED) str = JS_TEST_TEXT;
 
-JS_VReAYATS.innerHTML = str;
-JS_HReAYATS.innerHTML = str;
+                JS_VReAYATS.innerHTML = str;
+                JS_HReAYATS.innerHTML = str;
 
-JS_LAST_X = JS_NB;
-}
+                JS_LAST_X = JS_NB;
+            }
 
 
 
 
 
 //--------editMOSQUENAME-----------------------------------------------------------------------------------
-function editMOSQUENAME()
-{
+            function editMOSQUENAME()
+            {
 
-    var str = prompt("Enter your Mosque name", JS_MOSQUE_NAME);
-    if(str === null) return;
+                var str = prompt("Enter your Mosque name", JS_MOSQUE_NAME);
+                if(str === null) return;
 
-JS_MOSQUE_NAME = str;
-JS_VRMsqNAME.innerHTML = JS_MOSQUE_NAME;
-JS_HRMsqNAME.innerHTML = JS_MOSQUE_NAME;
-localStorage.setItem('STORAGE_MOSQUE_NAME', JS_MOSQUE_NAME);
+                JS_MOSQUE_NAME = str;
+                JS_VRMsqNAME.innerHTML = JS_MOSQUE_NAME;
+                JS_HRMsqNAME.innerHTML = JS_MOSQUE_NAME;
+                localStorage.setItem('STORAGE_MOSQUE_NAME', JS_MOSQUE_NAME);
 
-}
+            }
 
 //-------------------------------------------------------------------------------------------
-function doDHRxminASR()
-{
-    var str = prompt("Enter Dohr-Azan, X-minutes before Asr,  (enter 0 to disable)", JSALLDATA.DHRxminASR);
-    if(str === null) return;
-JSALLDATA.DHRxminASR = parseInt(str);
-if(!JSALLDATA.DHRxminASR) JSALLDATA.DHRxminASR = 0;
-SaveJsDATA();
-updateDHRxminASR();
-updateBottomInformations();
-GoGloballyFillDATA();
-}
+            function doDHRxminASR()
+            {
+                var str = prompt("Enter Dohr-Azan, X-minutes before Asr,  (enter 0 to disable)", JSALLDATA.DHRxminASR);
+                if(str === null) return;
+                JSALLDATA.DHRxminASR = parseInt(str);
+                if(!JSALLDATA.DHRxminASR) JSALLDATA.DHRxminASR = 0;
+                SaveJsDATA();
+                updateDHRxminASR();
+                updateBottomInformations();
+                GoGloballyFillDATA();
+            }
 
 //-------------------------------------------------------------------------------------------+' min'
-function updateDHRxminASR()
-{
-    document.getElementById('DHRxminASR').innerHTML = JSALLDATA.DHRxminASR;
-}
+            function updateDHRxminASR()
+            {
+                document.getElementById('DHRxminASR').innerHTML = JSALLDATA.DHRxminASR;
+            }
 
 
 //-------------------------------------------------------------------------------------------
-var JS_KNTO = 0;
+            var JS_KNTO = 0;
 //-----------------TestCounter---------------
-function TestCounter()
-{
-    JS_KNTO++;
-    if(JS_KNTO >= 3)    {
-    JS_KNTO = 0;
-    startDECOMPTE(2, 1);
-    ShowCOUNTERS();
-}
-}
+            function TestCounter()
+            {
+                JS_KNTO++;
+                if(JS_KNTO >= 3)    {
+                    JS_KNTO = 0;
+                    startDECOMPTE(2, 1);
+                    ShowCOUNTERS();
+                }
+            }
 //-----------------------------------------------------------------------------------
-var JS_KNTazkar = 0;
-function DemoSartMainAZKAR()
-{
-    JS_KNTazkar++; if(JS_KNTazkar >= 3) {JS_KNTazkar = 0; SartMainAZKAR();}
-}
+            var JS_KNTazkar = 0;
+            function DemoSartMainAZKAR()
+            {
+                JS_KNTazkar++; if(JS_KNTazkar >= 3) {JS_KNTazkar = 0; SartMainAZKAR();}
+            }
 //-----------------------------------------------------------------------------------
-var JS_KNTslides = 0;
-function DemoStartSLIDES()
-{
-    JS_KNTslides++; if(JS_KNTslides >= 3) {JS_KNTslides = 0; StartSLIDES();}
-}
+            var JS_KNTslides = 0;
+            function DemoStartSLIDES()
+            {
+                JS_KNTslides++; if(JS_KNTslides >= 3) {JS_KNTslides = 0; StartSLIDES();}
+            }
 
 
 //-----------------------------------------------------------------------------------
-var JS_KNTasABH = 0;
-function DemoAzSABAH()
-{
-    JS_KNTasABH++; if(JS_KNTasABH >= 3) {JS_KNTasABH = 0; PlayAzkarOF(JS_AZKAR_SABAH,false);}
-}
+            var JS_KNTasABH = 0;
+            function DemoAzSABAH()
+            {
+                JS_KNTasABH++; if(JS_KNTasABH >= 3) {JS_KNTasABH = 0; PlayAzkarOF(JS_AZKAR_SABAH,false);}
+            }
 //-----------------------------------------------------------------------------------
-var JS_KNTasMSA = 0;
-function DemoAzMASAA()
-{
-    JS_KNTasMSA++; if(JS_KNTasMSA >= 3) {JS_KNTasMSA = 0; PlayAzkarOF(JS_AZKAR_MASAA,false);}
-}
+            var JS_KNTasMSA = 0;
+            function DemoAzMASAA()
+            {
+                JS_KNTasMSA++; if(JS_KNTasMSA >= 3) {JS_KNTasMSA = 0; PlayAzkarOF(JS_AZKAR_MASAA,false);}
+            }
 
 
 
@@ -4797,114 +4800,114 @@ function DemoAzMASAA()
 
 //-------------------------------------------------------------------------------------------
 //-----------------LogsOnOff---------------
-function LogsOnOff()
-{
-    JS_LOGS_ENABLED = !JS_LOGS_ENABLED;
-    _GoMessages();
-}
+            function LogsOnOff()
+            {
+                JS_LOGS_ENABLED = !JS_LOGS_ENABLED;
+                _GoMessages();
+            }
 
 //-----------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------
 
-var JS_HELP_MENU_IS_OPEN = true;
-var JS_eMenuVR = document.getElementById('eMenuVR');
-var JS_eMenuHR = document.getElementById('eMenuHR');
+            var JS_HELP_MENU_IS_OPEN = true;
+            var JS_eMenuVR = document.getElementById('eMenuVR');
+            var JS_eMenuHR = document.getElementById('eMenuHR');
 //-----------------ShowGlobalHELP---------------
-function ShowGlobalHELP()
-{
-    JS_HELP_MENU_IS_OPEN = !JS_HELP_MENU_IS_OPEN;
+            function ShowGlobalHELP()
+            {
+                JS_HELP_MENU_IS_OPEN = !JS_HELP_MENU_IS_OPEN;
 
-    if(JS_HELP_MENU_IS_OPEN)
-{
-    HideZunder('eHELPSCREEN');
-}
-else
-{
-    ShowZunder('eHELPSCREEN');
-}
-}
+                if(JS_HELP_MENU_IS_OPEN)
+                {
+                    HideZunder('eHELPSCREEN');
+                }
+                else
+                {
+                    ShowZunder('eHELPSCREEN');
+                }
+            }
 
 //-----------------------
-function CloseHELP()
-{
-    JS_HELP_MENU_IS_OPEN = !JS_HELP_MENU_IS_OPEN;
-    HideZunder('eHELPSCREEN');
-}
+            function CloseHELP()
+            {
+                JS_HELP_MENU_IS_OPEN = !JS_HELP_MENU_IS_OPEN;
+                HideZunder('eHELPSCREEN');
+            }
 
 //-----------------openSSS---------------
-function openSSS(xx)
-{
-    HideZunder('sss1');
-    HideZunder('sss2');
-    HideZunder('sss3');
-    HideZunder('sss4');
+            function openSSS(xx)
+            {
+                HideZunder('sss1');
+                HideZunder('sss2');
+                HideZunder('sss3');
+                HideZunder('sss4');
 
-    ShowZunder('sss'+xx);
-}
+                ShowZunder('sss'+xx);
+            }
 
 
 
 //-------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------
 //--------------------------ADMINMSGSEditor--------------------------------------------
-function ADMINMSGSEditor()
-{
-    var str = prompt("Enter your message. اكتب إعلانك ", "");
-    if (str != null)
-{
-    str = str.replaceAll('"', '“');
-    JS_MSGS_DATA.unshift("1|DAILY|" + str);
-    AdminMsgsGLOBAL();
-}
-}
+            function ADMINMSGSEditor()
+            {
+                var str = prompt("Enter your message. اكتب إعلانك ", "");
+                if (str != null)
+                {
+                    str = str.replaceAll('"', '“');
+                    JS_MSGS_DATA.unshift("1|DAILY|" + str);
+                    AdminMsgsGLOBAL();
+                }
+            }
 //-----------------------------------------------------------------------------------
-function AdminMsgsGLOBAL()
-{
-    AdminMsgsSAVER();
-    AdminMsgsLISTER();
-    AdminUpdateWAGON();
-    AdminUpdateMarquee();
-}
+            function AdminMsgsGLOBAL()
+            {
+                AdminMsgsSAVER();
+                AdminMsgsLISTER();
+                AdminUpdateWAGON();
+                AdminUpdateMarquee();
+            }
 
 
 //-----------------------------------------------------------------------------------
-function AdminMsgsVIEW()
-{
-    AdminUpdateWAGON();
-    AdminUpdateMarquee();
-}
+            function AdminMsgsVIEW()
+            {
+                AdminUpdateWAGON();
+                AdminUpdateMarquee();
+            }
 //--------------------------AddSLIDE--------------------------------------------
-function AddSLIDE()
-{
-    var str = prompt("Enter your slide message here, or picture file name (.jpg)", "");
-    if (str != null)
-{
-    str = str.replaceAll('"', '“');
-    str = str.replaceAll('°', '.');
-    str = str.replaceAll('#', '.');
-    str = str.replaceAll('^', '.');
-    JS_SLIDES_DATA.push(str);
-    SlidesGLOBAL();
-}
-}
+            function AddSLIDE()
+            {
+                var str = prompt("Enter your slide message here, or picture file name (.jpg)", "");
+                if (str != null)
+                {
+                    str = str.replaceAll('"', '“');
+                    str = str.replaceAll('°', '.');
+                    str = str.replaceAll('#', '.');
+                    str = str.replaceAll('^', '.');
+                    JS_SLIDES_DATA.push(str);
+                    SlidesGLOBAL();
+                }
+            }
 //-----------------------------------------------------------------------------------
-function clearSlidesTable()
-{
-    while(JS_uaTBslides.hasChildNodes())
-    {
-        JS_uaTBslides.removeChild(JS_uaTBslides.firstChild);
-    }
-}
+            function clearSlidesTable()
+            {
+                while(JS_uaTBslides.hasChildNodes())
+                {
+                    JS_uaTBslides.removeChild(JS_uaTBslides.firstChild);
+                }
+            }
 //-------------SlidesGLOBAL----------------------------------------------------------------------
-function SlidesGLOBAL()
-{
-    SlidesSAVER();
-    SlidesLISTER();
-}
+            function SlidesGLOBAL()
+            {
+                SlidesSAVER();
+                SlidesLISTER();
+            }
 //-----------------------------------------------------------------------------------
-function SlidesSAVER()
-{
+            function SlidesSAVER()
+            {
 JS_SLIDES_MESSAGES  = ""; // clear
 for (var i=0; i < JS_SLIDES_DATA.length; i++)
 {
@@ -4951,11 +4954,11 @@ function editSlide(itm)
 
     var str = prompt("Edit Slide Message",xstr);
     if (str != null)
-{
-    str = str.replaceAll('"', '“');
-    JS_MSGS_DATA[itm] = str;
-    SlidesGLOBAL();
-}
+    {
+        str = str.replaceAll('"', '“');
+        JS_MSGS_DATA[itm] = str;
+        SlidesGLOBAL();
+    }
 }
 //-----------------------------------------------------------------------------------
 function AdminMsgsLISTER()
@@ -4990,8 +4993,8 @@ function AdminMsgsLISTER()
 function SetADMsgOnOff(obj,itm)
 {
     var c = "0"; if(obj.checked) c = "1";
-JS_MSGS_DATA[itm] = JS_MSGS_DATA[itm].replace(/^./, c);
-AdminMsgsGLOBAL();
+    JS_MSGS_DATA[itm] = JS_MSGS_DATA[itm].replace(/^./, c);
+    AdminMsgsGLOBAL();
 }
 //-----------------------------------------------------------------------------------
 function editMovUP(itm)
@@ -5015,12 +5018,12 @@ function editADMsg(itm)
 
     var str = prompt("Edit Message", xARR[2]);
     if (str != null)
-{
-    str = str.replaceAll('"', '“');
-    xARR[2] = str;
-    JS_MSGS_DATA[itm] = xARR[0]+"|"+xARR[1]+"|"+xARR[2];
-    AdminMsgsGLOBAL();
-}
+    {
+        str = str.replaceAll('"', '“');
+        xARR[2] = str;
+        JS_MSGS_DATA[itm] = xARR[0]+"|"+xARR[1]+"|"+xARR[2];
+        AdminMsgsGLOBAL();
+    }
 }
 
 //-----------------------------------------------------------------------------------
@@ -5034,11 +5037,11 @@ function editMxDAY(itm)
 
     var str = prompt(strCHS, xARR[1]);
     if (str != null)
-{
-    xARR[1] = str;
-    JS_MSGS_DATA[itm] = xARR[0]+"|"+xARR[1]+"|"+xARR[2];
-    AdminMsgsGLOBAL();
-}
+    {
+        xARR[1] = str;
+        JS_MSGS_DATA[itm] = xARR[0]+"|"+xARR[1]+"|"+xARR[2];
+        AdminMsgsGLOBAL();
+    }
 }
 //-----------------------------------------------------------------------------------
 function clearMsgsTable()
@@ -5113,13 +5116,13 @@ verifyMarquee(); // must be always after update marquee
 function verifyMarquee()
 {
     if (JS_BTM_WAGON == "")
-{
-    HideZunder('VReMESSAGE0');
-    HideZunder('HReMESSAGE0');
-    HideZunder('VReMESSAGE1');
-    HideZunder('HReMESSAGE1');
+    {
+        HideZunder('VReMESSAGE0');
+        HideZunder('HReMESSAGE0');
+        HideZunder('VReMESSAGE1');
+        HideZunder('HReMESSAGE1');
 
-}
+    }
     else  // USER MSG ACTIVE
     {
 
@@ -5132,18 +5135,18 @@ function verifyMarquee()
 
             if(izArabic(JS_BTM_WAGON))
                 { JS_VRMARQ.direction = 'right'; JS_HRMARQ.direction = 'right';}
-                else
-                    { JS_VRMARQ.direction = 'left'; JS_HRMARQ.direction = 'left';}
-            }
             else
-            {
-                HideZunder('VReMESSAGE1');
-                HideZunder('HReMESSAGE1');
-                ShowZunder('VReMESSAGE0');
-                ShowZunder('HReMESSAGE0');
-            }
+                { JS_VRMARQ.direction = 'left'; JS_HRMARQ.direction = 'left';}
+        }
+        else
+        {
+            HideZunder('VReMESSAGE1');
+            HideZunder('HReMESSAGE1');
+            ShowZunder('VReMESSAGE0');
+            ShowZunder('HReMESSAGE0');
         }
     }
+}
 
 //--------------------------closeThis-----------------------------------------------------
 function closeThis(obj)
@@ -5167,64 +5170,64 @@ function MiladiToHIJRI(myDate,_dek)
     y = parseInt(myDate.getFullYear());
 
     if ((y>1582)||((y==1582)&&(m>10))||((y==1582)&&(m==10)&&(d>14)))
-            {
-                jd= intPart((1461*(y+4800+intPart((m-14)/12)))/4)+
-                intPart((367*(m-2-12*(intPart((m-14)/12))))/12)-
-                intPart( (3* (intPart(  (y+4900+    intPart( (m-14)/12)     )/100)    )   ) /4)+d-32075
-            }
-            else
-            {
-                jd = 367*y-intPart((7*(y+5001+intPart((m-9)/7)))/4)+intPart((275*m)/9)+d+1729777;
-            }
+    {
+        jd= intPart((1461*(y+4800+intPart((m-14)/12)))/4)+
+        intPart((367*(m-2-12*(intPart((m-14)/12))))/12)-
+        intPart( (3* (intPart(  (y+4900+    intPart( (m-14)/12)     )/100)    )   ) /4)+d-32075
+    }
+    else
+    {
+        jd = 367*y-intPart((7*(y+5001+intPart((m-9)/7)))/4)+intPart((275*m)/9)+d+1729777;
+    }
 
 
-            JD=jd;
+    JD=jd;
 
 //wd=weekDay(jd%7);
 
-            l=jd-1948440+10632;
-            n=intPart((l-1)/10631);
-            l=l-10631*n+354;
-            j=(intPart((10985-l)/5316))*(intPart((50*l)/17719))+(intPart(l/5670))*(intPart((43*l)/15238));
-            l=l-(intPart((30-j)/15))*(intPart((17719*j)/50))-(intPart(j/16))*(intPart((15238*j)/43))+29;
+    l=jd-1948440+10632;
+    n=intPart((l-1)/10631);
+    l=l-10631*n+354;
+    j=(intPart((10985-l)/5316))*(intPart((50*l)/17719))+(intPart(l/5670))*(intPart((43*l)/15238));
+    l=l-(intPart((30-j)/15))*(intPart((17719*j)/50))-(intPart(j/16))*(intPart((15238*j)/43))+29;
 
 
 
 
-            m=intPart((24*l)/709);
+    m=intPart((24*l)/709);
 
-            d=l-intPart((709*m)/24);
+    d=l-intPart((709*m)/24);
 
-            y=30*n+j-30;
+    y=30*n+j-30;
 
 
 // DECALAGE_CALC
-            d = d + _dek;
-            if(d < 1 ) { d = 30; m--;   }
-if(d > 30) { d = 1;  m++;   }
+    d = d + _dek;
+    if(d < 1 ) { d = 30; m--;   }
+    if(d > 30) { d = 1;  m++;   }
 
-if(m < 1  ) m = 12;
-if(m > 12 ) m = 1;
+    if(m < 1  ) m = 12;
+    if(m > 12 ) m = 1;
 
-JS_THIS_IS_RAMADAN      = (m == 9 );
-JS_FULL_HJRI_NOW        =  "<span class='cDGT'>" + d + "</span> " + " " + JS_HIJRI_NOW[m-1] + " <span class='cDGT'>" +y+ "</span>";
-JS_FULL_HJRI_CLR        =  "<span class='cCLK cDGT'>" + d + "</span> <span class='cCLK'>" + JS_HIJRI_NOW[m-1] + "</span> <span class='cDGT'>" +y+ "</span>";
-JS_ARRAY_FULLHJRI       = [d,JS_HIJRI_NOW[m-1],y];
-JS_DULHIJJA_DAYS_0913   = ( (m == 12) && (  (d==9)||(d==10)||(d==11)||(d==12)||(d==13)  )   );
-JS_SHAABAN_LAST_DAYS    = ( (m == 8) && (  (d==29)||(d==30)  )   );
-JS_DULHIJJA_WORK_DAYS   = ( (m == 12) && ( d >=1  && d <= 9 ));
-JS_RAMADAN_10_NIGHTS    = ( (m == 9)  && ( d >=20 && d < 29));
-JS_TAKBIR_DAYS          = (  m == 10 &&  d == 1) || ( (m == 12) && ( d >=10  && d <= 13 )) ;
+    JS_THIS_IS_RAMADAN      = (m == 9 );
+    JS_FULL_HJRI_NOW        =  "<span class='cDGT'>" + d + "</span> " + " " + JS_HIJRI_NOW[m-1] + " <span class='cDGT'>" +y+ "</span>";
+    JS_FULL_HJRI_CLR        =  "<span class='cCLK cDGT'>" + d + "</span> <span class='cCLK'>" + JS_HIJRI_NOW[m-1] + "</span> <span class='cDGT'>" +y+ "</span>";
+    JS_ARRAY_FULLHJRI       = [d,JS_HIJRI_NOW[m-1],y];
+    JS_DULHIJJA_DAYS_0913   = ( (m == 12) && (  (d==9)||(d==10)||(d==11)||(d==12)||(d==13)  )   );
+    JS_SHAABAN_LAST_DAYS    = ( (m == 8) && (  (d==29)||(d==30)  )   );
+    JS_DULHIJJA_WORK_DAYS   = ( (m == 12) && ( d >=1  && d <= 9 ));
+    JS_RAMADAN_10_NIGHTS    = ( (m == 9)  && ( d >=20 && d < 29));
+    JS_TAKBIR_DAYS          = (  m == 10 &&  d == 1) || ( (m == 12) && ( d >=10  && d <= 13 )) ;
 
-JS_FASTING_3_WHITE_DAYS = (  d >=12 && d <= 14) && (  (!JS_THIS_IS_RAMADAN)&&(!JS_DULHIJJA_DAYS_0913)&&(!JS_SHAABAN_LAST_DAYS) );
+    JS_FASTING_3_WHITE_DAYS = (  d >=12 && d <= 14) && (  (!JS_THIS_IS_RAMADAN)&&(!JS_DULHIJJA_DAYS_0913)&&(!JS_SHAABAN_LAST_DAYS) );
 
-var xMM = '0'+m;    xMM = xMM.slice(-2);
-var xDD = '0'+d;    xDD = xDD.slice(-2);
+    var xMM = '0'+m;    xMM = xMM.slice(-2);
+    var xDD = '0'+d;    xDD = xDD.slice(-2);
 
-JS_ADM_HIJRI_DATE = xMM+"/"+xDD;
+    JS_ADM_HIJRI_DATE = xMM+"/"+xDD;
 
-JS_IS_10DULHIJJA    = ( (m == 12)  && ( d >=1 && d <= 9));
-if(JS_IS_10DULHIJJA) JS_ADM_10DLHJ = "10DLHJ"; else JS_ADM_10DLHJ = "";
+    JS_IS_10DULHIJJA    = ( (m == 12)  && ( d >=1 && d <= 9));
+    if(JS_IS_10DULHIJJA) JS_ADM_10DLHJ = "10DLHJ"; else JS_ADM_10DLHJ = "";
 
 }
 
@@ -5234,7 +5237,7 @@ if(JS_IS_10DULHIJJA) JS_ADM_10DLHJ = "10DLHJ"; else JS_ADM_10DLHJ = "";
 function intPart(floatNum)
 {
     if (floatNum < -0.0000001) { return Math.ceil(floatNum-0.0000001) }
-return Math.floor(floatNum+0.0000001)
+        return Math.floor(floatNum+0.0000001)
 }
 
 
@@ -5507,8 +5510,8 @@ function JomoaBEFOREminus()
 {
     JS_JOMOA_DIM_MINIUTES_BEFORE--;
     if(JS_JOMOA_DIM_MINIUTES_BEFORE < 0) {JS_JOMOA_DIM_MINIUTES_BEFORE = 0; return;}
-JS_jjj_BEFORE_DOHR.innerHTML = JS_JOMOA_DIM_MINIUTES_BEFORE;
-localStorage.setItem('STORAGE_JOMOA_DIM_BEFORE', JS_JOMOA_DIM_MINIUTES_BEFORE);
+    JS_jjj_BEFORE_DOHR.innerHTML = JS_JOMOA_DIM_MINIUTES_BEFORE;
+    localStorage.setItem('STORAGE_JOMOA_DIM_BEFORE', JS_JOMOA_DIM_MINIUTES_BEFORE);
 }
 
 //--------------JomoaBEFOREplus-----------------------------------------------------------------------------
@@ -5516,8 +5519,8 @@ function JomoaBEFOREplus()
 {
     JS_JOMOA_DIM_MINIUTES_BEFORE++;
     if(JS_JOMOA_DIM_MINIUTES_BEFORE > 60) {JS_JOMOA_DIM_MINIUTES_BEFORE = 60; return;}
-JS_jjj_BEFORE_DOHR.innerHTML = JS_JOMOA_DIM_MINIUTES_BEFORE;
-localStorage.setItem('STORAGE_JOMOA_DIM_BEFORE', JS_JOMOA_DIM_MINIUTES_BEFORE);
+    JS_jjj_BEFORE_DOHR.innerHTML = JS_JOMOA_DIM_MINIUTES_BEFORE;
+    localStorage.setItem('STORAGE_JOMOA_DIM_BEFORE', JS_JOMOA_DIM_MINIUTES_BEFORE);
 }
 
 //-----------------------------------------------------------------------------------
@@ -5527,8 +5530,8 @@ function JomoaAFTERminus()
 {
     JS_JOMOA_DIM_MINIUTES_AFTER--;
     if(JS_JOMOA_DIM_MINIUTES_AFTER < 0) {JS_JOMOA_DIM_MINIUTES_AFTER = 0; return;}
-JS_jjj_AFTER_DOHR.innerHTML = JS_JOMOA_DIM_MINIUTES_AFTER;
-localStorage.setItem('STORAGE_JOMOA_DIM_AFTER', JS_JOMOA_DIM_MINIUTES_AFTER);
+    JS_jjj_AFTER_DOHR.innerHTML = JS_JOMOA_DIM_MINIUTES_AFTER;
+    localStorage.setItem('STORAGE_JOMOA_DIM_AFTER', JS_JOMOA_DIM_MINIUTES_AFTER);
 }
 
 //--------------JomoaAFTERplus-----------------------------------------------------------------------------
@@ -5536,8 +5539,8 @@ function JomoaAFTERplus()
 {
     JS_JOMOA_DIM_MINIUTES_AFTER++;
     if(JS_JOMOA_DIM_MINIUTES_AFTER > 90) {JS_JOMOA_DIM_MINIUTES_AFTER = 90; return;}
-JS_jjj_AFTER_DOHR.innerHTML = JS_JOMOA_DIM_MINIUTES_AFTER;
-localStorage.setItem('STORAGE_JOMOA_DIM_AFTER', JS_JOMOA_DIM_MINIUTES_AFTER);
+    JS_jjj_AFTER_DOHR.innerHTML = JS_JOMOA_DIM_MINIUTES_AFTER;
+    localStorage.setItem('STORAGE_JOMOA_DIM_AFTER', JS_JOMOA_DIM_MINIUTES_AFTER);
 }
 
 //-----------------------------------------------------------------------------------
@@ -5607,9 +5610,9 @@ function SetArabicDIGITSOnOff()
     JS_ARABIC_DIGITS = !JS_ARABIC_DIGITS;
     var sssBOOL = 0;
     if(JS_ARABIC_DIGITS) sssBOOL = 1;
-localStorage.setItem('STORAGE_ARABIC_DIGITS', sssBOOL);
-execDIGITS(JS_ARABIC_DIGITS);
-GoGloballyFillDATA();
+    localStorage.setItem('STORAGE_ARABIC_DIGITS', sssBOOL);
+    execDIGITS(JS_ARABIC_DIGITS);
+    GoGloballyFillDATA();
 proccessMETEO(); // to refresh digits
 }
 
@@ -5617,8 +5620,8 @@ proccessMETEO(); // to refresh digits
 function SetScrollableMSGOnOff()
 {
     if(JSALLDATA.IZmarquee==0) JSALLDATA.IZmarquee=1; else JSALLDATA.IZmarquee=0;
-SaveJsDATA();
-goMarqueeOnOff();
+    SaveJsDATA();
+    goMarqueeOnOff();
 }
 
 //-------------goMarqueeOnOff-----------------------------------------------
@@ -5635,8 +5638,8 @@ function goMarqueeOnOff()
 function DohaSaverOnOff()
 {
     if(JSALLDATA.IZDohaSaver==0) JSALLDATA.IZDohaSaver=1; else JSALLDATA.IZDohaSaver=0;
-SaveJsDATA();
-goDohaSaverOnOff();
+    SaveJsDATA();
+    goDohaSaverOnOff();
 }
 //------------------------------------------------------------
 function goDohaSaverOnOff()
@@ -5651,8 +5654,8 @@ function goDohaSaverOnOff()
 function IshaSaverOnOff()
 {
     if(JSALLDATA.IZIshaSaver==0) JSALLDATA.IZIshaSaver=1; else JSALLDATA.IZIshaSaver=0;
-SaveJsDATA();
-goIshaSaverOnOff();
+    SaveJsDATA();
+    goIshaSaverOnOff();
 }
 //------------------------------------------------------------
 function goIshaSaverOnOff()
@@ -5671,8 +5674,8 @@ function SaveJsDATA()
 function SetVrMiddleNames()
 {
     if(JSALLDATA.IZVrMiddleNames==0) JSALLDATA.IZVrMiddleNames=1; else JSALLDATA.IZVrMiddleNames=0;
-SaveJsDATA();
-goVrMiddleNames();
+    SaveJsDATA();
+    goVrMiddleNames();
 }
 
 //------------------------------------------------------------
@@ -5697,15 +5700,15 @@ function setzzMonths()
     document.getElementById('ZZZ'+JSALLDATA.userMonths).checked = true;
     var rec = JSALLDATA.userMonths;
     if(rec > 0) JS_MONTHS_NOW = JS_MONTHS_ZZ[rec-1].split(",");
-else JS_MONTHS_NOW = JS_eLang.NamesMonthsMiladi.split(",");
+    else JS_MONTHS_NOW = JS_eLang.NamesMonthsMiladi.split(",");
 }
 
 //-------------------------------------------------------------------------------------------
 function SetIqamaScreen()
 {
     if(JSALLDATA.IZIqamaScreen==0) JSALLDATA.IZIqamaScreen=1; else JSALLDATA.IZIqamaScreen=0;
-SaveJsDATA();
-goIqamaScreen();
+    SaveJsDATA();
+    goIqamaScreen();
 }
 
 //-------------------------------------------------------------------------------------------
@@ -5719,8 +5722,8 @@ function goIqamaScreen()
 function SetVrNoNEXTNoJMA()
 {
     if(JSALLDATA.IZVrNoNEXTNoJMA==0) JSALLDATA.IZVrNoNEXTNoJMA=1; else JSALLDATA.IZVrNoNEXTNoJMA=0;
-SaveJsDATA();
-goNoNEXTNoJMA(true);
+    SaveJsDATA();
+    goNoNEXTNoJMA(true);
 }
 
 //------------------------------------------------------------&&(JS_eMainVERTICAL.className == 's002')
@@ -5729,52 +5732,52 @@ function goNoNEXTNoJMA(tempContinue)
     document.getElementById('eVrNoNEXTNoJMA').checked = (JSALLDATA.IZVrNoNEXTNoJMA==1);
 
     if((JSALLDATA.IZVrNoNEXTNoJMA==1)&&(tempContinue))
-{
-    HideZunder('eMIDDLE3');
-    HideZunder('VR_LOGO');
-    JS_VReHDR.style.top = '48%';
-    JS_ROOT.style.setProperty('--RndMrjnB', '3.3%');
-    JS_ROOT.style.setProperty('--VR77', '8.5'+jvwh);
-    JS_ROOT.style.setProperty('--j888', '37.0%');
-}
-else
-{
-    ShowZunder('eMIDDLE3');
-    if(JS_eMainVERTICAL.className == 's003') ShowZunder('VR_LOGO');
-    JS_VReHDR.style.top = '54%';
-    JS_ROOT.style.setProperty('--RndMrjnB', '0.5%');
-    JS_ROOT.style.setProperty('--VR77', '8.1'+jvwh);
-    JS_ROOT.style.setProperty('--j888', '34.0%');
-}
+    {
+        HideZunder('eMIDDLE3');
+        HideZunder('VR_LOGO');
+        JS_VReHDR.style.top = '48%';
+        JS_ROOT.style.setProperty('--RndMrjnB', '3.3%');
+        JS_ROOT.style.setProperty('--VR77', '8.5'+jvwh);
+        JS_ROOT.style.setProperty('--j888', '37.0%');
+    }
+    else
+    {
+        ShowZunder('eMIDDLE3');
+        if(JS_eMainVERTICAL.className == 's003') ShowZunder('VR_LOGO');
+        JS_VReHDR.style.top = '54%';
+        JS_ROOT.style.setProperty('--RndMrjnB', '0.5%');
+        JS_ROOT.style.setProperty('--VR77', '8.1'+jvwh);
+        JS_ROOT.style.setProperty('--j888', '34.0%');
+    }
 }
 
 //-------------OnOffAzkarSBH------------------------------------------------------------------------------
 function OnOffAzkarSBH()
 {
     if(JSALLDATA.IZAzkarSABAH==0) JSALLDATA.IZAzkarSABAH=1; else JSALLDATA.IZAzkarSABAH=0;
-SaveJsDATA();
-goSetThe4Azkar();
+    SaveJsDATA();
+    goSetThe4Azkar();
 }
 //-------------------------------------------------------------------------------------------
 function OnOffAzkarASR()
 {
     if(JSALLDATA.IZAzkarASR==0) JSALLDATA.IZAzkarASR=1; else JSALLDATA.IZAzkarASR=0;
-SaveJsDATA();
-goSetThe4Azkar();
+    SaveJsDATA();
+    goSetThe4Azkar();
 }
 //-------------------------------------------------------------------------------------------
 function OnOffAzkarMGB()
 {
     if(JSALLDATA.IZAzkarMAGRIB==0) JSALLDATA.IZAzkarMAGRIB=1; else JSALLDATA.IZAzkarMAGRIB=0;
-SaveJsDATA();
-goSetThe4Azkar();
+    SaveJsDATA();
+    goSetThe4Azkar();
 }
 //-------------------------------------------------------------------------------------------
 function OnOffAzkarISH()
 {
     if(JSALLDATA.IZAzkarISHA==0) JSALLDATA.IZAzkarISHA=1; else JSALLDATA.IZAzkarISHA=0;
-SaveJsDATA();
-goSetThe4Azkar();
+    SaveJsDATA();
+    goSetThe4Azkar();
 }
 //------------------------------------------------------------
 function goSetThe4Azkar()
@@ -5788,8 +5791,8 @@ function goSetThe4Azkar()
 function SetCounterEnlarge()
 {
     if(JSALLDATA.IZSCounterEnlarge==0) JSALLDATA.IZSCounterEnlarge=1; else JSALLDATA.IZSCounterEnlarge=0;
-SaveJsDATA();
-goCounterEnlarge();
+    SaveJsDATA();
+    goCounterEnlarge();
 }
 //------------------------------------------------------------
 function goCounterEnlarge()
@@ -5801,8 +5804,8 @@ function goCounterEnlarge()
 function Set1MinCounter()
 {
     if(JSALLDATA.IZ1MinCounter==0) JSALLDATA.IZ1MinCounter=1; else JSALLDATA.IZ1MinCounter=0;
-SaveJsDATA();
-go1MinCounter();
+    SaveJsDATA();
+    go1MinCounter();
 }
 //------------------------------------------------------------
 function go1MinCounter()
@@ -5813,23 +5816,23 @@ function go1MinCounter()
 function SetJOMOAonOff()
 {
     if(JSALLDATA.IZJOMOAon==0) JSALLDATA.IZJOMOAon=1; else JSALLDATA.IZJOMOAon=0;
-SaveJsDATA();
-go5BoxesJomoaLogo();
+    SaveJsDATA();
+    go5BoxesJomoaLogo();
 }
 
 //-------SetJomoaLogoCHECK------------------------------------------------------------------------------------
 function SetJomoaLogoCHECK()
 {
     if(JSALLDATA.JomoaIzInLogo==0) JSALLDATA.JomoaIzInLogo=1; else JSALLDATA.JomoaIzInLogo=0;
-SaveJsDATA();
-go5BoxesJomoaLogo();
+    SaveJsDATA();
+    go5BoxesJomoaLogo();
 }
 //------------------------------------------------------------
 function Set5BoxesOnly()
 {
     if(JSALLDATA.IZ5BoxesOnly==0) JSALLDATA.IZ5BoxesOnly=1; else JSALLDATA.IZ5BoxesOnly=0;
-SaveJsDATA();
-go5BoxesJomoaLogo();
+    SaveJsDATA();
+    go5BoxesJomoaLogo();
 }
 //-----------go5BoxesJomoaLogo-------------------------------------------------
 function go5BoxesJomoaLogo()
@@ -5846,8 +5849,8 @@ function go5BoxesJomoaLogo()
     var jsHReNBOX = document.getElementById('HReNextBOX');
 
     if(JSALLDATA.IZ5BoxesOnly==1)
-{
-    JS_W333HRtube1.style.display = 'none';
+    {
+        JS_W333HRtube1.style.display = 'none';
         jsALNGO.style.borderSpacing  = '2.5vw'; //21
         JS_HReOPTIOshrq.style.display = 'block';
         if(JSALLDATA.IZJOMOAon==1)
@@ -5884,8 +5887,8 @@ function go5BoxesJomoaLogo()
 function SetJanazatOnOff()
 {
     if(JSALLDATA.IZJanazatShow==0) JSALLDATA.IZJanazatShow=1; else JSALLDATA.IZJanazatShow=0;
-SaveJsDATA();
-goSetJanazat();
+    SaveJsDATA();
+    goSetJanazat();
 }
 //------------------------------------------------------------
 function goSetJanazat()
@@ -5893,9 +5896,9 @@ function goSetJanazat()
     document.getElementById('eJanazat').checked = (JSALLDATA.IZJanazatShow==1);
 
     if(JSALLDATA.IZJanazatShow==1)
-JS_ROOT.style.setProperty('--JANAZATS', 'visible');
-else
-    JS_ROOT.style.setProperty('--JANAZATS', 'hidden');
+        JS_ROOT.style.setProperty('--JANAZATS', 'visible');
+    else
+        JS_ROOT.style.setProperty('--JANAZATS', 'hidden');
 }
 
 
@@ -5904,8 +5907,8 @@ else
 function SetZerosAMPM()
 {
     if(JSALLDATA.IZaddZerosAMPM==0) JSALLDATA.IZaddZerosAMPM=1; else JSALLDATA.IZaddZerosAMPM=0;
-SaveJsDATA();
-goZerosAMPM();
+    SaveJsDATA();
+    goZerosAMPM();
 GoGloballyFillDATA(); // refresh
 }
 
@@ -5919,7 +5922,7 @@ function goZerosAMPM()
 function SetAudioCOMOnOff()
 {
     if(JSALLDATA.IZAudioCOM==0) JSALLDATA.IZAudioCOM=1; else JSALLDATA.IZAudioCOM=0;
-SaveJsDATA();
+    SaveJsDATA();
 }
 
 
@@ -5929,8 +5932,8 @@ SaveJsDATA();
 function Set4HOMEOnOff()
 {
     if(JSALLDATA.IZforHOME==0) JSALLDATA.IZforHOME=1; else JSALLDATA.IZforHOME=0;
-SaveJsDATA();
-goHideIqamat();
+    SaveJsDATA();
+    goHideIqamat();
 }
 
 var JS_VReAyatsHDR  = document.getElementById('VReAyatsHDR');
@@ -5944,15 +5947,15 @@ function goHideIqamat()
 
 
     if(JSALLDATA.IZforHOME==1)
-{
-    JS_ROOT.style.setProperty('--IQAMAT', 'hidden');
-    if(JS_LANG_NOW == "AR") JS_VReHDR.style.left = '-7%'; else JS_VReHDR.style.left = '27%';
-}
-else
-{
-    JS_VReHDR.style.left = '10%';
-    JS_ROOT.style.setProperty('--IQAMAT', 'visible');
-}
+    {
+        JS_ROOT.style.setProperty('--IQAMAT', 'hidden');
+        if(JS_LANG_NOW == "AR") JS_VReHDR.style.left = '-7%'; else JS_VReHDR.style.left = '27%';
+    }
+    else
+    {
+        JS_VReHDR.style.left = '10%';
+        JS_ROOT.style.setProperty('--IQAMAT', 'visible');
+    }
 
 //JS_eMIDDLE3.style.left = JS_VReHDR.style.left;
 }
@@ -5965,19 +5968,19 @@ function execDIGITS(sBOL)
 {
 
     if(sBOL)
-{
-    JS_eArabicDIGITS.checked = true;
-    JS_ROOT.style.setProperty('--XX_DIGITS', 'Amiri');
-    JS_ROOT.style.setProperty('--XX_CLOKEN', 'Amiri');
-}
-else
-{
-    JS_eArabicDIGITS.checked = false;
-    JS_ROOT.style.setProperty('--XX_DIGITS', JSALLDATA.FontoTIMES);
-    JS_ROOT.style.setProperty('--XX_CLOKEN', JSALLDATA.FontoCLOKEN);
-}
+    {
+        JS_eArabicDIGITS.checked = true;
+        JS_ROOT.style.setProperty('--XX_DIGITS', 'Amiri');
+        JS_ROOT.style.setProperty('--XX_CLOKEN', 'Amiri');
+    }
+    else
+    {
+        JS_eArabicDIGITS.checked = false;
+        JS_ROOT.style.setProperty('--XX_DIGITS', JSALLDATA.FontoTIMES);
+        JS_ROOT.style.setProperty('--XX_CLOKEN', JSALLDATA.FontoCLOKEN);
+    }
 
-Go1MN(false);
+    Go1MN(false);
 }
 
 //-----------------------------------------------------------------------------------
@@ -5995,34 +5998,34 @@ function goUpdateIQAMAS()
     JS_HReOPTIOshrq.innerHTML = "<span class='HRfnx'>"+JS_T_1.innerHTML+"</span> "+JS_S_1.innerHTML;
 
     if(JS_IQAMA_FULL_TIMES)
-{
+    {
             // VR ----------------------
-    JS_QM1.innerHTML = ARNumbers(KonvertTimeTo12(gimeTime(_fjr     + parseInt(JS_IQAMA_TIME_OF_FAJR))));
-JS_QM2.innerHTML = JS_FULLDOHA;
-JS_QM3.innerHTML = ARNumbers(KonvertTimeTo12(gimeTime(_thuhr   + parseInt(JS_IQAMA_TIME_OF_DOHR))));
-JS_QM4.innerHTML = ARNumbers(KonvertTimeTo12(gimeTime(_asr     + parseInt(JS_IQAMA_TIME_OF_ASR))));
-JS_QM5.innerHTML = ARNumbers(KonvertTimeTo12(gimeTime(_maghreb + parseInt(JS_IQAMA_TIME_OF_MAGHRIB))));
-JS_QM6.innerHTML = ARNumbers(KonvertTimeTo12(gimeTime(_isha    + parseInt(JS_IQAMA_TIME_OF_ISHA))));
-}
-else
-{
+        JS_QM1.innerHTML = ARNumbers(KonvertTimeTo12(gimeTime(_fjr     + parseInt(JS_IQAMA_TIME_OF_FAJR))));
+        JS_QM2.innerHTML = JS_FULLDOHA;
+        JS_QM3.innerHTML = ARNumbers(KonvertTimeTo12(gimeTime(_thuhr   + parseInt(JS_IQAMA_TIME_OF_DOHR))));
+        JS_QM4.innerHTML = ARNumbers(KonvertTimeTo12(gimeTime(_asr     + parseInt(JS_IQAMA_TIME_OF_ASR))));
+        JS_QM5.innerHTML = ARNumbers(KonvertTimeTo12(gimeTime(_maghreb + parseInt(JS_IQAMA_TIME_OF_MAGHRIB))));
+        JS_QM6.innerHTML = ARNumbers(KonvertTimeTo12(gimeTime(_isha    + parseInt(JS_IQAMA_TIME_OF_ISHA))));
+    }
+    else
+    {
             // VR ----------------------
-    JS_QM1.innerHTML = ARNumbers(JS_IQAMA_TIME_OF_FAJR) + JS_SIGNER;
-    JS_QM2.innerHTML = ARNumbers(JS_IQAMA_TIME_OF_SHRQ) + JS_SIGNER;
-    JS_QM3.innerHTML = ARNumbers(JS_IQAMA_TIME_OF_DOHR) + JS_SIGNER;
-    JS_QM4.innerHTML = ARNumbers(JS_IQAMA_TIME_OF_ASR) + JS_SIGNER;
-    JS_QM5.innerHTML = ARNumbers(JS_IQAMA_TIME_OF_MAGHRIB) + JS_SIGNER;
-    JS_QM6.innerHTML = ARNumbers(JS_IQAMA_TIME_OF_ISHA) + JS_SIGNER;
-}
+        JS_QM1.innerHTML = ARNumbers(JS_IQAMA_TIME_OF_FAJR) + JS_SIGNER;
+        JS_QM2.innerHTML = ARNumbers(JS_IQAMA_TIME_OF_SHRQ) + JS_SIGNER;
+        JS_QM3.innerHTML = ARNumbers(JS_IQAMA_TIME_OF_DOHR) + JS_SIGNER;
+        JS_QM4.innerHTML = ARNumbers(JS_IQAMA_TIME_OF_ASR) + JS_SIGNER;
+        JS_QM5.innerHTML = ARNumbers(JS_IQAMA_TIME_OF_MAGHRIB) + JS_SIGNER;
+        JS_QM6.innerHTML = ARNumbers(JS_IQAMA_TIME_OF_ISHA) + JS_SIGNER;
+    }
 
 
 // update HR ----------------------
-JS_W333HRQM1.innerHTML = JS_QM1.innerHTML;
-JS_W333HRQM2.innerHTML = JS_QM2.innerHTML;
-JS_W333HRQM3.innerHTML = JS_QM3.innerHTML;
-JS_W333HRQM4.innerHTML = JS_QM4.innerHTML;
-JS_W333HRQM5.innerHTML = JS_QM5.innerHTML;
-JS_W333HRQM6.innerHTML = JS_QM6.innerHTML;
+    JS_W333HRQM1.innerHTML = JS_QM1.innerHTML;
+    JS_W333HRQM2.innerHTML = JS_QM2.innerHTML;
+    JS_W333HRQM3.innerHTML = JS_QM3.innerHTML;
+    JS_W333HRQM4.innerHTML = JS_QM4.innerHTML;
+    JS_W333HRQM5.innerHTML = JS_QM5.innerHTML;
+    JS_W333HRQM6.innerHTML = JS_QM6.innerHTML;
 
 
 
@@ -6030,42 +6033,42 @@ JS_W333HRQM6.innerHTML = JS_QM6.innerHTML;
 
 
     // OVERRIDER OF FAJR
-if( (JS_FIXED_IQAMATFAJR !== "")&&(!JS_WCSV_ACTIVE) )
-{
-    JS_QM1.innerHTML        = ARNumbers(KonvertTimeTo12(JS_FIXED_IQAMATFAJR));
-    JS_W333HRQM1.innerHTML  = JS_QM1.innerHTML;
-}
+    if( (JS_FIXED_IQAMATFAJR !== "")&&(!JS_WCSV_ACTIVE) )
+    {
+        JS_QM1.innerHTML        = ARNumbers(KonvertTimeTo12(JS_FIXED_IQAMATFAJR));
+        JS_W333HRQM1.innerHTML  = JS_QM1.innerHTML;
+    }
     //-----------------------------------------------------------------------------------
     // OVERRIDER OF DOHR
-if( (JS_FIXED_IQAMATDOHR !== "")&&(!JS_WCSV_ACTIVE) )
-{
-    JS_QM3.innerHTML        = ARNumbers(KonvertTimeTo12(JS_FIXED_IQAMATDOHR));
-    JS_W333HRQM3.innerHTML  = JS_QM3.innerHTML;
-}
+    if( (JS_FIXED_IQAMATDOHR !== "")&&(!JS_WCSV_ACTIVE) )
+    {
+        JS_QM3.innerHTML        = ARNumbers(KonvertTimeTo12(JS_FIXED_IQAMATDOHR));
+        JS_W333HRQM3.innerHTML  = JS_QM3.innerHTML;
+    }
     //-----------------------------------------------------------------------------------
     // OVERRIDER OF ASR
-if( (JS_FIXED_IQAMATASR !== "")&&(!JS_WCSV_ACTIVE) )
-{
-    JS_QM4.innerHTML        = ARNumbers(KonvertTimeTo12(JS_FIXED_IQAMATASR));
-    JS_W333HRQM4.innerHTML  = JS_QM4.innerHTML;
-}
+    if( (JS_FIXED_IQAMATASR !== "")&&(!JS_WCSV_ACTIVE) )
+    {
+        JS_QM4.innerHTML        = ARNumbers(KonvertTimeTo12(JS_FIXED_IQAMATASR));
+        JS_W333HRQM4.innerHTML  = JS_QM4.innerHTML;
+    }
     //-----------------------------------------------------------------------------------
     // OVERRIDER OF ISHA
-if( (JS_FIXED_IQAMATISHA !== "")&&(!JS_WCSV_ACTIVE) )
-{
-    JS_QM6.innerHTML        = ARNumbers(KonvertTimeTo12(JS_FIXED_IQAMATISHA));
-    JS_W333HRQM6.innerHTML  = JS_QM6.innerHTML;
-}
+    if( (JS_FIXED_IQAMATISHA !== "")&&(!JS_WCSV_ACTIVE) )
+    {
+        JS_QM6.innerHTML        = ARNumbers(KonvertTimeTo12(JS_FIXED_IQAMATISHA));
+        JS_W333HRQM6.innerHTML  = JS_QM6.innerHTML;
+    }
     //-----------------------------------------------------------------------------------
 
 
 
     // NO IQAMA IN FRIDAY DOHR
-if(JS_TODAY_IS_JOMOA)
-{
-    JS_QM3.innerHTML        = "---";
-    JS_W333HRQM3.innerHTML  = "---";
-}
+    if(JS_TODAY_IS_JOMOA)
+    {
+        JS_QM3.innerHTML        = "---";
+        JS_W333HRQM3.innerHTML  = "---";
+    }
 
 
 }
@@ -6185,18 +6188,18 @@ var jvwh = 'vw';
 function CheckVRSCREEN()
 {
    if(JS_FORCED_VERTICAL == 1) document.body.className = 'vrRIGHT';
-else if(JS_FORCED_VERTICAL == 2) document.body.className = 'vrLEFT';
-if(JS_FORCED_VERTICAL > 0) jvwh = "vh";
+   else if(JS_FORCED_VERTICAL == 2) document.body.className = 'vrLEFT';
+   if(JS_FORCED_VERTICAL > 0) jvwh = "vh";
 }
 
 //-----------------------------------------------------------------------------------
 function ClearSETTINGS()
 {
     if(confirm("Are you sure to reset all settings and reload the page ?"))
-{
-    localStorage.clear();
-    location.reload();
-}
+    {
+        localStorage.clear();
+        location.reload();
+    }
 }
 
 //-------------------------------------------------------------------------------------------
@@ -6208,20 +6211,20 @@ function updateBottomInformations()
     var separ = "&nbsp; | &nbsp;";
     if (JS_LOCATION_NOW == "") separ = "";
 
-var eJMA = ARNumbers(KonvertTimeTo12(JS_PERSO_AUTOX_JOMOA));
+    var eJMA = ARNumbers(KonvertTimeTo12(JS_PERSO_AUTOX_JOMOA));
 
-if(JS_eMainVERTICAL.className == 's002')
-JS_VReJomoa.innerHTML        = "<span dir='ltr'>"+JS_tempJMA+"</span> "+eJMA;
-else
-    JS_VReJomoa.innerHTML        = eJMA+"<br><span dir='ltr'>"+JS_tempJMA+"</span>";
-
-
-JS_HReoptJomoa.innerHTML     = "<span class='HRfnx'>"+JS_tempJMA+"</span> "+eJMA;
-JS_HReJOMOAPRAYER.innerHTML  = eJMA;
+    if(JS_eMainVERTICAL.className == 's002')
+        JS_VReJomoa.innerHTML        = "<span dir='ltr'>"+JS_tempJMA+"</span> "+eJMA;
+    else
+        JS_VReJomoa.innerHTML        = eJMA+"<br><span dir='ltr'>"+JS_tempJMA+"</span>";
 
 
-_vre.innerHTML=_netv+separ+JS_LOCATION_NOW;_hrb0.innerHTML=_netv;_hrb1.innerHTML= JS_LOCATION_NOW;
-_hrb0.style.visibility='visible';_hrb0.style.opacity=1;_hrb0.style.display='block';
+    JS_HReoptJomoa.innerHTML     = "<span class='HRfnx'>"+JS_tempJMA+"</span> "+eJMA;
+    JS_HReJOMOAPRAYER.innerHTML  = eJMA;
+
+
+    _vre.innerHTML=_netv+separ+JS_LOCATION_NOW;_hrb0.innerHTML=_netv;_hrb1.innerHTML= JS_LOCATION_NOW;
+    _hrb0.style.visibility='visible';_hrb0.style.opacity=1;_hrb0.style.display='block';
 }
 //-------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------
@@ -6233,20 +6236,20 @@ function ARNumbers(str)
 
     if(!JS_ARABIC_DIGITS) return str;
 
-var newStr = "";
-var c = "";
+    var newStr = "";
+    var c = "";
 
-var iniStr = String(str);
+    var iniStr = String(str);
 
-for(i=0; i < iniStr.length; i++)
-{
-    c = iniStr.charAt(i);
-    if (c >= '0' && c <= '9')
-        newStr += map[parseInt(c)];
-    else newStr += c;
-}
+    for(i=0; i < iniStr.length; i++)
+    {
+        c = iniStr.charAt(i);
+        if (c >= '0' && c <= '9')
+            newStr += map[parseInt(c)];
+        else newStr += c;
+    }
 
-return newStr;
+    return newStr;
 }
 //-------------------------------------------------------------------------------------------
 
@@ -6435,19 +6438,19 @@ function ProcessLANGUAGE()
 
 
     if(JS_LANG_NOW == "AR")
-{
-    JS_ROOT.style.setProperty('--XX_LANG_DIR', 'rtl');
-    JS_AM_TEXT = "<span class='cARPM'>صباحا</span>";
-    JS_PM_TEXT = "<span class='cARPM'>مساء</span>";
-}
-else
-{
-    JS_ROOT.style.setProperty('--XX_LANG_DIR', 'ltr');
-}
+    {
+        JS_ROOT.style.setProperty('--XX_LANG_DIR', 'rtl');
+        JS_AM_TEXT = "<span class='cARPM'>صباحا</span>";
+        JS_PM_TEXT = "<span class='cARPM'>مساء</span>";
+    }
+    else
+    {
+        JS_ROOT.style.setProperty('--XX_LANG_DIR', 'ltr');
+    }
 
 
-document.getElementById('jZ1').innerHTML = JS_MONTHS_ZZ[0];
-document.getElementById('jZ2').innerHTML = JS_MONTHS_ZZ[1];
+    document.getElementById('jZ1').innerHTML = JS_MONTHS_ZZ[0];
+    document.getElementById('jZ2').innerHTML = JS_MONTHS_ZZ[1];
 }
 
 //-----------------------------------------------------------------------------------
@@ -6567,17 +6570,17 @@ function ManuallyGPS()
 
     var str = prompt("Enter Your GPS Position", sNowGps);
     if (str != null)
-{
-    str = str.replace(' ', '');
-    var tARR = str.split(',');
-    JS_METEO_LATITUDE  = tARR[0];
-    JS_METEO_LONGITUDE = tARR[1];
+    {
+        str = str.replace(' ', '');
+        var tARR = str.split(',');
+        JS_METEO_LATITUDE  = tARR[0];
+        JS_METEO_LONGITUDE = tARR[1];
 
-    localStorage.setItem('STORAGE_JS_METEO_LATITUDE', JS_METEO_LATITUDE);
-    localStorage.setItem('STORAGE_JS_METEO_LONGITUDE', JS_METEO_LONGITUDE);
-    ShowNowLatiLong();
-    FetchMETEO();
-}
+        localStorage.setItem('STORAGE_JS_METEO_LATITUDE', JS_METEO_LATITUDE);
+        localStorage.setItem('STORAGE_JS_METEO_LONGITUDE', JS_METEO_LONGITUDE);
+        ShowNowLatiLong();
+        FetchMETEO();
+    }
 }
 //-----------------------------------------------------------------------------------
 
@@ -6607,12 +6610,12 @@ var JS_mtoGPS = document.getElementById('mtoGPS');
 function updateGpsMETEO()
 {
     if(navigator.geolocation)
-{
-    JS_mtoGPS.innerHTML = '...';
-    navigator.geolocation.getCurrentPosition(iniPosition);
-}
-else
-    {alert("Geolocation is Not supported by this browser.");}
+    {
+        JS_mtoGPS.innerHTML = '...';
+        navigator.geolocation.getCurrentPosition(iniPosition);
+    }
+    else
+        {alert("Geolocation is Not supported by this browser.");}
 }
 //-----------------------------------------------------------------------------------
 function iniPosition(position)
@@ -6641,15 +6644,15 @@ function FetchMETEO()
 {
     if(JSALLDATA.IZmeteo==0) return;
 // &temperature_unit=fahrenheit
-if(JS_METEO_LATITUDE == 0) {JS_VRCELSIUS.innerHTML = "-"; JS_HRCELSIUS.innerHTML = "-"; return;}
+    if(JS_METEO_LATITUDE == 0) {JS_VRCELSIUS.innerHTML = "-"; JS_HRCELSIUS.innerHTML = "-"; return;}
 
-fetch('https://api.open-meteo.com/v1/forecast?latitude='+JS_METEO_LATITUDE+'&longitude='+JS_METEO_LONGITUDE+'&hourly=temperature_2m,weathercode&forecast_days=7&timezone=auto')
-.then(text => text.json())
-.then(data => {
-  JS_DATA_METEO = data;
-  proccessMETEO();
-})
-.catch(error => {console.log(error);})
+    fetch('https://api.open-meteo.com/v1/forecast?latitude='+JS_METEO_LATITUDE+'&longitude='+JS_METEO_LONGITUDE+'&hourly=temperature_2m,weathercode&forecast_days=7&timezone=auto')
+    .then(text => text.json())
+    .then(data => {
+      JS_DATA_METEO = data;
+      proccessMETEO();
+  })
+    .catch(error => {console.log(error);})
 }
 
 
@@ -6659,20 +6662,20 @@ function gimepic(iniNB,iniTM)
     var imc = '0.png';
 
     if(iniNB == 0){
-    if( (iniTM >= _maghreb) || (iniTM < _fjr) )
-        imc = 'i_clearNight.png'; else imc = 'i_clearDay.png';
-}
-else    if(isBetween(iniNB,1,3))   imc = 'i_clouds.png';
-else    if(isBetween(iniNB,4,9))   imc = 'i_smoke.png';
-else    if(isBetween(iniNB,10,19)) imc = 'i_fogmist.png';
-else    if(isBetween(iniNB,20,29)) imc = 'i_snowgrains.png';
-else    if(isBetween(iniNB,30,39)) imc = 'i_sandstorm.png';
-else    if(isBetween(iniNB,40,49)) imc = 'i_fogmist.png';
-else    if(isBetween(iniNB,50,69)) imc = 'i_dizzle.png';
-else    if(isBetween(iniNB,70,79)) imc = 'i_snow.png';
-else    if(isBetween(iniNB,80,99)) imc = 'i_rainhard.png';
+        if( (iniTM >= _maghreb) || (iniTM < _fjr) )
+            imc = 'i_clearNight.png'; else imc = 'i_clearDay.png';
+    }
+    else    if(isBetween(iniNB,1,3))   imc = 'i_clouds.png';
+    else    if(isBetween(iniNB,4,9))   imc = 'i_smoke.png';
+    else    if(isBetween(iniNB,10,19)) imc = 'i_fogmist.png';
+    else    if(isBetween(iniNB,20,29)) imc = 'i_snowgrains.png';
+    else    if(isBetween(iniNB,30,39)) imc = 'i_sandstorm.png';
+    else    if(isBetween(iniNB,40,49)) imc = 'i_fogmist.png';
+    else    if(isBetween(iniNB,50,69)) imc = 'i_dizzle.png';
+    else    if(isBetween(iniNB,70,79)) imc = 'i_snow.png';
+    else    if(isBetween(iniNB,80,99)) imc = 'i_rainhard.png';
 
-return imc;
+    return imc;
 }
 
 
@@ -6686,95 +6689,95 @@ function proccessMETEO()
 
     if(JSALLDATA.IZmeteo==0) return;
 
-if(!JS_DATA_METEO.timezone) return;
+    if(!JS_DATA_METEO.timezone) return;
 
-var nowTH = getFullTHnow();
-var idx = FindInArray(nowTH, JS_DATA_METEO.hourly.time);
+    var nowTH = getFullTHnow();
+    var idx = FindInArray(nowTH, JS_DATA_METEO.hourly.time);
 
 
 
-if(idx > -1)
-{
-    var TodayARR = JS_DATA_METEO.hourly.temperature_2m.slice(0,24);
-    JS_nowUNIT = JS_DATA_METEO.hourly_units.temperature_2m;
-    JS_nowUNIT = JS_nowUNIT.replace('°', '');
-    JS_nowCELS = Math.floor(JS_DATA_METEO.hourly.temperature_2m[idx]);
-    JS_VRCELSIUS.innerHTML = ARNumbers(JS_nowCELS)+'°';
-    JS_HRCELSIUS.innerHTML = JS_VRCELSIUS.innerHTML;
-    var ikoMTO = parseInt(JS_DATA_METEO.hourly.weathercode[idx]);
-    JS_HRimgMETEO.title = ikoMTO;
-    JS_VRimgMETEO.title = ikoMTO;
-    var imgi = gimepic(ikoMTO,JS_nowMNTS);
-    JS_HRimgMETEO.src = 'assets/offline/images/meteo/'+imgi;
-    JS_VRimgMETEO.src = JS_HRimgMETEO.src;
-    var uH = Math.floor(Math.max.apply(null, TodayARR));
-    var uL = Math.floor(Math.min.apply(null, TodayARR));
-    JS_HRmtoHHH.innerHTML = ARNumbers(uH+'°,'+uL+'°');
-    JS_VRmtoHHH.innerHTML = ARNumbers(uH+'°<br>'+uL+'°');
-}
-else {
-    JS_VRCELSIUS.innerHTML = '-';
-    JS_HRCELSIUS.innerHTML = '-';
-    JS_HRimgMETEO.src = '{{asset("assets/offline/images/meteo/0.png")}}';
-    JS_HRmtoHHH.innerHTML = '-';
-    JS_VRmtoHHH.innerHTML = '-';
-}
-
-if(JSALLDATA.IZMtoPRYRS==1)
-{
-    for (var i=0; i < 6; i++)
+    if(idx > -1)
     {
-        nowT= getFullDynDATE(0)+JS_arr6TIMES[i];
-        idx = FindInArray(nowT, JS_DATA_METEO.hourly.time);
-        var slxOH = document.getElementById('HmtALT'+i);
-        var slxOV = document.getElementById('VmtALT'+i);
-        if(idx > -1) {
-            JS_nowCELS = Math.floor(JS_DATA_METEO.hourly.temperature_2m[idx]);
-            var icx = parseInt(JS_DATA_METEO.hourly.weathercode[idx]);
+        var TodayARR = JS_DATA_METEO.hourly.temperature_2m.slice(0,24);
+        JS_nowUNIT = JS_DATA_METEO.hourly_units.temperature_2m;
+        JS_nowUNIT = JS_nowUNIT.replace('°', '');
+        JS_nowCELS = Math.floor(JS_DATA_METEO.hourly.temperature_2m[idx]);
+        JS_VRCELSIUS.innerHTML = ARNumbers(JS_nowCELS)+'°';
+        JS_HRCELSIUS.innerHTML = JS_VRCELSIUS.innerHTML;
+        var ikoMTO = parseInt(JS_DATA_METEO.hourly.weathercode[idx]);
+        JS_HRimgMETEO.title = ikoMTO;
+        JS_VRimgMETEO.title = ikoMTO;
+        var imgi = gimepic(ikoMTO,JS_nowMNTS);
+        JS_HRimgMETEO.src = 'assets/offline/images/meteo/'+imgi;
+        JS_VRimgMETEO.src = JS_HRimgMETEO.src;
+        var uH = Math.floor(Math.max.apply(null, TodayARR));
+        var uL = Math.floor(Math.min.apply(null, TodayARR));
+        JS_HRmtoHHH.innerHTML = ARNumbers(uH+'°,'+uL+'°');
+        JS_VRmtoHHH.innerHTML = ARNumbers(uH+'°<br>'+uL+'°');
+    }
+    else {
+        JS_VRCELSIUS.innerHTML = '-';
+        JS_HRCELSIUS.innerHTML = '-';
+        JS_HRimgMETEO.src = '{{asset("assets/offline/images/meteo/0.png")}}';
+        JS_HRmtoHHH.innerHTML = '-';
+        JS_VRmtoHHH.innerHTML = '-';
+    }
 
-            var imgc = gimepic(icx,JS_arr6DATAC[i]);
-            slxOH.title = icx;
-            var images = "{{ asset('assets/offline/images/meteo') }}";
-            slxOH.style.background = "url(assets/offline/images/meteo/"+imgc+") no-repeat left bottom";
+    if(JSALLDATA.IZMtoPRYRS==1)
+    {
+        for (var i=0; i < 6; i++)
+        {
+            nowT= getFullDynDATE(0)+JS_arr6TIMES[i];
+            idx = FindInArray(nowT, JS_DATA_METEO.hourly.time);
+            var slxOH = document.getElementById('HmtALT'+i);
+            var slxOV = document.getElementById('VmtALT'+i);
+            if(idx > -1) {
+                JS_nowCELS = Math.floor(JS_DATA_METEO.hourly.temperature_2m[idx]);
+                var icx = parseInt(JS_DATA_METEO.hourly.weathercode[idx]);
+
+                var imgc = gimepic(icx,JS_arr6DATAC[i]);
+                slxOH.title = icx;
+                var images = "{{ asset('assets/offline/images/meteo') }}";
+                slxOH.style.background = "url(assets/offline/images/meteo/"+imgc+") no-repeat left bottom";
 
 
-            slxOH.style.backgroundSize = "70% auto";
-            slxOH.innerHTML = ARNumbers(JS_nowCELS)+"°";
+                slxOH.style.backgroundSize = "70% auto";
+                slxOH.innerHTML = ARNumbers(JS_nowCELS)+"°";
 
-            slxOV.title = icx;
-            slxOV.style.background = slxOH.style.background;
-            slxOV.style.backgroundSize = "70% auto";
-            slxOV.innerHTML = slxOH.innerHTML;
-        } else {
-                                    slxOH.innerHTML = "-";
-                                    slxOV.innerHTML = "-";
-                                }
+                slxOV.title = icx;
+                slxOV.style.background = slxOH.style.background;
+                slxOV.style.backgroundSize = "70% auto";
+                slxOV.innerHTML = slxOH.innerHTML;
+            } else {
+                slxOH.innerHTML = "-";
+                slxOV.innerHTML = "-";
+            }
 
-                            }
-                        }
+        }
+    }
 
 
 
-                    }
+}
 
 
 //-----------------------------------------------------------------------------------
-                    ShowNowLatiLong();
-                    FetchMETEO();
-                    updateMeteoDSP(false);
-                    updateMtoPRYRS(false);
-                    goSetJanazat();
-                    updateDHRxminASR();
-                    AdminMsgsLISTER();
-                    AdminMsgsVIEW();
-                    SlidesLISTER();
-                    set5minAzkar();
-                    GlobalGatherAZKAR();
-                    go1MinCounter();
-                    goCounterEnlarge();
-                    goIqamaScreen();
-                    setMenuPOZ();
-                </script>
+ShowNowLatiLong();
+FetchMETEO();
+updateMeteoDSP(false);
+updateMtoPRYRS(false);
+goSetJanazat();
+updateDHRxminASR();
+AdminMsgsLISTER();
+AdminMsgsVIEW();
+SlidesLISTER();
+set5minAzkar();
+GlobalGatherAZKAR();
+go1MinCounter();
+goCounterEnlarge();
+goIqamaScreen();
+setMenuPOZ();
+</script>
 
-            </body>
-            </html>
+</body>
+</html>

@@ -16,7 +16,7 @@
               <div class='col-lg-12 info'>
                 <i class='bx bx-envelope bx-lg'></i>
                 <h4>Contact Author</h4>
-                <br><span style='color:#353535;'>Ismail CHAGDALI</span>
+                <br><span style='color:#353535;'>{{ get_section_content('project', 'site_author') }}</span>
               </div>
             </div>
           </div>
