@@ -1,3 +1,12 @@
+
+<script src="{{ asset('assets/w9vendors/aos.js') }}"></script>
+<script src="{{ asset('assets/w9vendors/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ asset('assets/w9vendors/glightbox.min.js') }}"></script>
+<script src="{{ asset('assets/w9vendors/validate.js') }}"></script>
+<script src="{{ asset('assets/w9vendors/swiper-bundle.min.js') }}"></script>
+<script src="{{ asset('assets/w9main.js') }}"></script>
+
+
 <script type="text/javascript">
 	var JS_LANG_NOW = 'AR';
 	var baseUrl = "{{ asset('assets/languages/') }}";

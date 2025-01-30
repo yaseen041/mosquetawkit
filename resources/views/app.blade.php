@@ -9,8 +9,11 @@
 </head>
 
 <body onload='_cadro();' onresize='_cadro();'>
+    @include('common.header')
     @yield('content')
+    @include('common.footer')
     @include('common.scripts')
+
 </body>
 </html>
 

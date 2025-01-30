@@ -6,7 +6,8 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ForgotPasswordController;
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\StripeController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\WTimesController;
 use Illuminate\Http\Request;
 
 /*
@@ -40,10 +41,14 @@ Route::get('error', [RegisterController::class, 'error']);
 Route::get('forgot-password', [ForgotPasswordController::class, 'index']);
 Route::post('forgot_password', [ForgotPasswordController::class, 'forgot_password']);
 
-Route::get('', [UserController::class, 'index']);
+Route::get('contact', [ContactController::class, 'index']);
+Route::get('wtimes', [WTimesController::class, 'index']);
+Route::get('installation', [WTimesController::class, 'installation']);
+Route::get('faq', [WTimesController::class, 'faq']);
 
 Route::get('/', [UserController::class, 'index']);
 Route::get('/online', [UserController::class, 'online']);
+Route::get('/offline', [UserController::class, 'offline']);
 Route::get('profile', [UserController::class, 'index']);
 Route::post('update_profile', [UserController::class, 'update']);
 Route::get('change_password', [UserController::class, 'change_password']);
@@ -51,9 +56,6 @@ Route::post('update_password', [UserController::class, 'update_password']);
 
 Route::get('payment/history', [UserController::class, 'payment_history'])->name('payment.history');
 Route::post('stripe/payment', [UserController::class, 'processPayment'])->name('stripe.payment');
-Route::post('stripe/checkout', [StripeController::class, 'createCheckoutSession'])->name('stripe.checkout');
-Route::get('payment/success', [StripeController::class, 'paymentSuccess'])->name('payment.success');
-Route::get('payment/cancel', [StripeController::class, 'paymentCancel'])->name('payment.cancel');
 
 
 // Route::get('/', function () {

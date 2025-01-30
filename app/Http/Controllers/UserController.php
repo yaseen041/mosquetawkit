@@ -24,7 +24,11 @@ class UserController extends Controller
 
     public function online(Request $request)
     {
-        return view('user/online');
+        return view('user.online');
+    }
+    public function offline(Request $request)
+    {
+        return view('user.offline');
     }
 
     public function payment_history(Request $request)
