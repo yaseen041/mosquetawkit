@@ -131,14 +131,20 @@
 		<div id='HRMTOikon'>WW</div>
 		<div id='HRCELSIUS' class='cShdw' onclick='proccessMETEO(false);' dir='ltr'></div>
 		<div id='HRmeteoHL'><span id='HRmtoHHH'></span>&nbsp;<span id='HRmtoLLL'></span></div>
-		<div id="CLOKO_MINI_HR" style="visibility: visible;">
-			<div id="HR_eFullHOUR"></div>
-			<div id="HR_eSECS">15</div>
-			<div id="HR_eAMPM"><span class="cARPM">مساء</span></div>
+
+		<!-- HR CLOCK MINI --->
+		<div id='CLOKO_MINI_HR'>
+			<div id='HR_eFullHOUR' >--:--</div>
+			<div id='HR_eSECS'>--</div>
+			<div id='HR_eAMPM'>--</div>
 		</div>
-		<div id="CLOKO_FULL_HR" style="visibility: hidden;">
-			<span id="HR_eFullCLOKO"></span><span id="HR_sssCLOKO">:21</span>
+
+
+		<!-- CLOCK FULL --->
+		<div id='CLOKO_FULL_HR'>
+			<span id='HR_eFullCLOKO' >--:--</span><span id='HR_sssCLOKO' >:--</span>
 		</div>
+
 		<div id='HReAyatsHDR' class='centro1' onclick='_GoMessages();'>
 			<div id='HReAYATS' class='centro2' dir='rtl'></div>
 		</div>
@@ -1937,10 +1943,13 @@
 		GoGloballyFillDATA();
 		Go1MN();
 	}
-	function SetFullClockOnOff() {
+
+	function SetFullClockOnOff()
+	{
 		JS_FULL_CLOCK_ACTIVE = !JS_FULL_CLOCK_ACTIVE;
 		UpdateFullClock(JS_FULL_CLOCK_ACTIVE);
 	}
+
 	function SetPastDimerOnOff() {
 		JS_PAST_DIMER_ACTIVE = !JS_PAST_DIMER_ACTIVE;
 		var sssBOOL = 0;
@@ -1994,24 +2003,30 @@
 		}
 	}
 	function UpdateFullClock(YES_ACTIVATE_IT) {
-		var sssBOOL = 0;
-		if (YES_ACTIVATE_IT) sssBOOL = 1;
-		localStorage.setItem('STORAGE_FULL_CLOCK_ACTIVE', sssBOOL);
-		if (sssBOOL) JS_eFullClockCHECK.checked = true; else JS_eFullClockCHECK.checked = false;
-		if (YES_ACTIVATE_IT) {
-			HideZunder('CLOKO_MINI_VR');
-			HideZunder('CLOKO_MINI_HR');
-			ShowZunder('CLOKO_FULL_VR');
-			ShowZunder('CLOKO_FULL_HR');
-		}
-		else {
-			ShowZunder('CLOKO_MINI_VR');
-			ShowZunder('CLOKO_MINI_HR');
-			HideZunder('CLOKO_FULL_VR');
-			HideZunder('CLOKO_FULL_HR');
-		}
-		setTimeout(Go1MN, 3000);
-	}
+    var sssBOOL = YES_ACTIVATE_IT ? 1 : 0;
+    localStorage.setItem('STORAGE_FULL_CLOCK_ACTIVE', sssBOOL);
+
+    // Ensure the checkbox reflects the correct state
+    if (typeof JS_eFullClockCHECK !== 'undefined') {
+        JS_eFullClockCHECK.checked = !!sssBOOL;
+    }
+
+    if (sssBOOL) {
+        // Activate Full Clock (Hide Mini Clock, Show Full Clock)
+        HideZunder('CLOKO_MINI_VR');
+        HideZunder('CLOKO_MINI_HR');
+        ShowZunder('CLOKO_FULL_VR');
+        ShowZunder('CLOKO_FULL_HR');
+    } else {
+        // Activate Mini Clock (Show Mini Clock, Hide Full Clock)
+        ShowZunder('CLOKO_MINI_VR');
+        ShowZunder('CLOKO_MINI_HR');
+        HideZunder('CLOKO_FULL_VR');
+        HideZunder('CLOKO_FULL_HR');
+    }
+
+    setTimeout(Go1MN, 3000);
+}
 	function SetDimmOnOff() {
 		JS_DIMM_WHILE_PRAYIN_ACTIVE = !JS_DIMM_WHILE_PRAYIN_ACTIVE;
 		var sssBOOL = 0;
