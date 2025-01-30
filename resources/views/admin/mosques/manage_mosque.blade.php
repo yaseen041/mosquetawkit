@@ -36,7 +36,7 @@
                                 </div>
                                 <div class="col-md-4 mb-3">
                                     <strong class="text-dark">Email:</strong>
-                                    <span class="text-navy"><a href="mailto:{{ $mosque->email }}" class="text-navy">{{ $mosque->email }}</a></span>
+                                    <span class="text-navy"><a href="mailto:{{ $mosque->email }}" target="_blank" class="text-navy">{{ $mosque->email }}</a></span>
                                 </div>
                                 <div class="col-md-4 mb-3">
                                     <strong class="text-dark">ID:</strong>
