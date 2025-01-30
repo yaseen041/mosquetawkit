@@ -36,9 +36,9 @@ class ForgotPasswordController extends Controller
         ]);
         if ($status > 0){
             $this->send_new_credential_email($data);
-            return redirect('forgot')->withSuccess('Please check your email inbox.');
+            return redirect("admin/forgot-password")->withSuccess('Please check your email inbox.');
         }else{
-            return redirect("forgot")->withErrors('Something went wrong, please try again!.');
+            return redirect("admin/forgot-password")->withErrors('Something went wrong, please try again!.');
         }
     }
 
@@ -46,7 +46,7 @@ class ForgotPasswordController extends Controller
     {
         $to = $data['email'];
         $subject = 'Password Reset';
-        $body = view('emails/reset_password_email', compact("data"));
+        $body = view('emails/admin_reset_password_email', compact("data"));
 
         $headers = "MIME-Version: 1.0\r\n";
         $headers .= 'From: <' . get_section_content('project', 'noreply_email') . '>' . "\r\n";

@@ -5,7 +5,7 @@ use App\Http\Controllers\Admin\AdminLoginController;
 use App\Http\Controllers\Admin\AdminController;
 
 use App\Http\Controllers\Admin\MosquesController;
-// use App\Http\Controllers\Admin\DocumentsController;
+use App\Http\Controllers\Admin\ForgotPasswordController;
 // use App\Http\Controllers\Admin\PaymentsController;
 
 
@@ -15,6 +15,9 @@ Route::group(['prefix'  =>  'admin'], function () {
 	// Route::get('login', [AdminLoginController::class, 'index'])->name('login');
 	Route::post('verify_login', [AdminLoginController::class, 'verify_login']);
 	Route::get('logout', [AdminLoginController::class, 'logout']);
+
+	Route::get('forgot-password', [ForgotPasswordController::class, 'index']);
+	Route::post('forgot_password', [ForgotPasswordController::class, 'forgot_password']);
 
 	Route::group(['middleware' => ['auth:admin']], function () {
 		Route::get('admin', [AdminController::class, 'index']);
