@@ -1,0 +1,9 @@
+JS_GPS_CALCULATION_CITIES_NOW =
+[
+"MC|Fontvieille|43.72687|7.41766|1.0|2.0",
+"MC|La Condamine|43.73439|7.42024|1.0|2.0",
+"MC|Monaco|43.73333|7.41667|1.0|2.0",
+"MC|Moneghetti|43.73679|7.41647|1.0|2.0",
+"MC|Monte-Carlo|43.73976|7.42732|1.0|2.0",
+"MC|Saint-Roman|43.7489|7.43423|1.0|2.0",
+];

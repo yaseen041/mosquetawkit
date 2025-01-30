@@ -1,0 +1,4 @@
+JS_GPS_CALCULATION_CITIES_NOW =
+[
+"VA|Vatican City|41.90268|12.45414|1.0|2.0",
+];

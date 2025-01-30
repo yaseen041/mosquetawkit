@@ -1,0 +1,5 @@
+JS_GPS_CALCULATION_CITIES_NOW =
+[
+"PM|Miquelon|47.0975|-56.38139|-3.0|-2.0",
+"PM|Saint-Pierre|46.77914|-56.1773|-3.0|-2.0",
+];

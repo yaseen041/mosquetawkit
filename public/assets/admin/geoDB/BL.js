@@ -1,0 +1,4 @@
+JS_GPS_CALCULATION_CITIES_NOW =
+[
+"BL|Gustavia|17.89618|-62.84978|-4.0|-4.0",
+];

@@ -1,0 +1,7 @@
+JS_GPS_CALCULATION_CITIES_NOW =
+[
+"EH|Dakhla|23.68477|-15.95798|1.0|1.0",
+"EH|Daoura|27.46175|-12.99412|1.0|1.0",
+"EH|Laayoune Plage|27.09611|-13.41583|1.0|1.0",
+"EH|Laayoune|27.1418|-13.18797|1.0|1.0",
+];

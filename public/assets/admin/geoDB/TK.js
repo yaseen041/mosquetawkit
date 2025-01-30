@@ -1,0 +1,6 @@
+JS_GPS_CALCULATION_CITIES_NOW =
+[
+"TK|Atafu Village|-8.54212|-172.51591|13.0|13.0",
+"TK|Fale old settlement|-9.38516|-171.24675|13.0|13.0",
+"TK|Nukunonu|-9.20045|-171.84804|13.0|13.0",
+];

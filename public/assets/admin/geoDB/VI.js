@@ -1,0 +1,6 @@
+JS_GPS_CALCULATION_CITIES_NOW =
+[
+"VI|Charlotte Amalie|18.3419|-64.9307|-4.0|-4.0",
+"VI|Cruz Bay|18.33134|-64.79375|-4.0|-4.0",
+"VI|Saint Croix|17.72751|-64.74698|-4.0|-4.0",
+];

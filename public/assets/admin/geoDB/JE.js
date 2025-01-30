@@ -1,0 +1,5 @@
+JS_GPS_CALCULATION_CITIES_NOW =
+[
+"JE|Le Hocq|49.16823|-2.06178|0.0|1.0",
+"JE|Saint Helier|49.18804|-2.10491|0.0|1.0",
+];

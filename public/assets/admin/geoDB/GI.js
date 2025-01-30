@@ -1,0 +1,4 @@
+JS_GPS_CALCULATION_CITIES_NOW =
+[
+"GI|Gibraltar|36.14474|-5.35257|1.0|2.0",
+];

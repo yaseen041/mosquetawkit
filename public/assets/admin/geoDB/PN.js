@@ -1,0 +1,4 @@
+JS_GPS_CALCULATION_CITIES_NOW =
+[
+"PN|Adamstown|-25.06597|-130.10147|-8.0|-8.0",
+];
