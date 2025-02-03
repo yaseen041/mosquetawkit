@@ -254,8 +254,8 @@
 					<span class='eLiter'>{{ get_section_content('project', 'site_title') }} Online Version</span><br><br>
 					<span class='CSS_EN33' onclick='ClearSETTINGS();'>RESET</span>&nbsp;.
 					<span class='CSS_EN33' onclick='location.reload();'>RELOAD</span>&nbsp;.
-					<span class='CSS_EN33' onclick="window.open('https://www.tawkit.net/contact/', '_blank');">CONTACT</span><br><br>
-					<span class='CSS_EN33' onclick="window.open('https://www.tawkit.net/', '_blank');">© {{date('Y')}} {{ get_section_content('project', 'site_title') }}. All rights reserved.</span><br>
+					<span class='CSS_EN33' onclick="window.open('{{url('contact')}}', '_blank');">CONTACT</span><br><br>
+					<span class='CSS_EN33' onclick="window.open('{{url('/')}}', '_blank');">© {{date('Y')}} {{ get_section_content('project', 'site_title') }}. All rights reserved.</span><br>
 				</div>
 				<br>
 			</div>
@@ -780,7 +780,7 @@
 	if(JS_IQAMA_TIME_OF_DOHR.indexOf(':') > -1) JS_FIXED_IQAMATDOHR = JS_IQAMA_TIME_OF_DOHR;
 	if(JS_IQAMA_TIME_OF_ASR.indexOf(':') > -1)  JS_FIXED_IQAMATASR  = JS_IQAMA_TIME_OF_ASR;
 	if(JS_IQAMA_TIME_OF_ISHA.indexOf(':') > -1) JS_FIXED_IQAMATISHA = JS_IQAMA_TIME_OF_ISHA;
-	var JS_SITE_ADMIN_DATA = "[@(السلام عليكم ورحمة الله<br>Makkah times here<br>to create own mosque app, <br><br>go to : <a href='http://online.tawkit.net/add-mosque/' target='_blank'> online.tawkit.net/add-mosque</a><br>)|]";
+	var JS_SITE_ADMIN_DATA = "[@(السلام عليكم ورحمة الله<br>Makkah times here<br>to create own mosque app, <br><br>go to : <a href='{{url('add-mosque')}}' target='_blank'> {{url('add-mosque')}}</a><br>)|]";
 	var JS_WCSV_ACTIVE = false;
 	if(JS_WCSV_ACTIVE) JS_IQAMA_FULL_TIMES	= true;
 	let JS_ROOT = document.documentElement;

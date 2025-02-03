@@ -4,7 +4,7 @@
 <section >
 	<div class='container'>
 		<div class='row' dir='ltr'>
-			<h1>Tawkit Frequently Asked Questions</h1>
+			<h1>Mosque Frequently Asked Questions</h1>
 		</div>
 	</div>
 </section>
@@ -22,7 +22,7 @@
 					</a>
 					<div id='accordion-list-1' class='' data-bs-parent='.accordion-list'>
 						<p>
-							If included times of your city are not correct or you need exact times for your Mosque, then you have to modify the wtimes-file of your city "/tawkit/data/XX/" or to put your own times in the PERSONAL file "wtimes-00.000.js" located in the folder : /tawkit/data/00/<br><br>Hours must be in 24 format !<br>After modifications, save the file, and restart tawkit app.<br><br>Here you can create and adjust your Mosque times with the wtimes-file-maker : <br><a href='https://www.tawkit.net/wtimes/' target='_blank' >www.tawkit.net/wtimes/</a>
+							If included times of your city are not correct or you need exact times for your Mosque, then you have to modify the wtimes-file of your city "/Mosque/data/XX/" or to put your own times in the PERSONAL file "wtimes-00.000.js" located in the folder : /Mosque/data/00/<br><br>Hours must be in 24 format !<br>After modifications, save the file, and restart Mosque app.<br><br>Here you can create and adjust your Mosque times with the wtimes-file-maker : <br><a href='{{url("/wtimes")}}' target='_blank' >{{url("/wtimes")}}</a>
 						</p>
 					</div>
 				</li>
@@ -35,7 +35,7 @@
 					</a>
 					<div id='accordion-list-2' class='' data-bs-parent='.accordion-list'>
 						<p>
-							Tawkit app has solution for special Jamaat/Iqama times, you need to enable JAMAAT TIMES option in settings, and modify the file "wcsv.js" located in the root folder of the application.
+							Mosque app has solution for special Jamaat/Iqama times, you need to enable JAMAAT TIMES option in settings, and modify the file "wcsv.js" located in the root folder of the application.
 						</p>
 					</div>
 				</li>
