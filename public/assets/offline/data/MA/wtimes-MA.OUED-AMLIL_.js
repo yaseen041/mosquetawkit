@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - MA|Morocco - OUED-AMLIL_
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - MA|Morocco - OUED-AMLIL_
+
 // ------------ METHOD : MAROC | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

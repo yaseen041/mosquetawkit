@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - SHUYUKH-TAHTANI
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - SHUYUKH-TAHTANI
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

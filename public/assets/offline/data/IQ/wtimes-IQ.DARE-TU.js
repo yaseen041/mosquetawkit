@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - IQ|Iraq - DARE-TU
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - IQ|Iraq - DARE-TU
+
 // ------------ METHOD : MWL | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

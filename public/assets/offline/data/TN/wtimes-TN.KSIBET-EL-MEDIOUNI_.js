@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - TN|Tunisia - KSIBET-EL-MEDIOUNI_
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - TN|Tunisia - KSIBET-EL-MEDIOUNI_
+
 // ------------ METHOD : TUNISIA | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

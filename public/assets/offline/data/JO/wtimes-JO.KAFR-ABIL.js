@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - JO|Jordan - KAFR-ABIL
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - JO|Jordan - KAFR-ABIL
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

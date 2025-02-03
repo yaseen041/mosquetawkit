@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - MAARRAT-AN-NUMAN
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - MAARRAT-AN-NUMAN
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

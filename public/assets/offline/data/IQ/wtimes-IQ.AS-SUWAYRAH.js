@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - IQ|Iraq - AS-SUWAYRAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - IQ|Iraq - AS-SUWAYRAH
+
 // ------------ METHOD : MWL | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

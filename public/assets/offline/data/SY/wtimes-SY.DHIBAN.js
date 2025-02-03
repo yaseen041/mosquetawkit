@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - DHIBAN
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - DHIBAN
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

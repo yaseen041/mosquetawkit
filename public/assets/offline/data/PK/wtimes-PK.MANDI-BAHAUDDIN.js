@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - MANDI-BAHAUDDIN
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - MANDI-BAHAUDDIN
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - IQ|Iraq - AR-RIFAI
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - IQ|Iraq - AR-RIFAI
+
 // ------------ METHOD : MWL | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - MIANKE-MOR
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - MIANKE-MOR
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

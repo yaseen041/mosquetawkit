@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - MA|Morocco - YOUSSOUFIA_
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - MA|Morocco - YOUSSOUFIA_
+
 // ------------ METHOD : MAROC | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

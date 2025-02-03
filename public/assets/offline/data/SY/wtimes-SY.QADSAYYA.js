@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - QADSAYYA
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - QADSAYYA
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

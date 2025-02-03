@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - RENALA-KHURD
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - RENALA-KHURD
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - TALL-ABYAD
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - TALL-ABYAD
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

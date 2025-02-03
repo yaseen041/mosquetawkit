@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - JO|Jordan - MALKA
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - JO|Jordan - MALKA
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

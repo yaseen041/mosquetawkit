@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - IQ|Iraq - BASRAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - IQ|Iraq - BASRAH
+
 // ------------ METHOD : MWL | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

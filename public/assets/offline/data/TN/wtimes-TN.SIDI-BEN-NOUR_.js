@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - TN|Tunisia - SIDI-BEN-NOUR_
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - TN|Tunisia - SIDI-BEN-NOUR_
+
 // ------------ METHOD : TUNISIA | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - RAJO-KHANANI
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - RAJO-KHANANI
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

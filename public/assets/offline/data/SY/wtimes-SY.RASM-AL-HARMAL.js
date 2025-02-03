@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - RASM-AL-HARMAL
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - RASM-AL-HARMAL
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - HYDERABAD
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - HYDERABAD
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

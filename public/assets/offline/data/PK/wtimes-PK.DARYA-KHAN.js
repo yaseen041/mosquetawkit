@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - DARYA-KHAN
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - DARYA-KHAN
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - KHAN-ARNABAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - KHAN-ARNABAH
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - SARAI-NAURANG
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - SARAI-NAURANG
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

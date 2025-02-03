@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - SKARDU
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - SKARDU
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

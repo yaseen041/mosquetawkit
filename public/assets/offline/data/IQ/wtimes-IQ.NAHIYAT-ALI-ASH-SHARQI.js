@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - IQ|Iraq - NAHIYAT-ALI-ASH-SHARQI
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - IQ|Iraq - NAHIYAT-ALI-ASH-SHARQI
+
 // ------------ METHOD : MWL | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - JATI
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - JATI
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

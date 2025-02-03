@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - MISMIYAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - MISMIYAH
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

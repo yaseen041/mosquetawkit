@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - SURAB
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - SURAB
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

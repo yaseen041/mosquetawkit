@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - NAHIYAT-AS-SAB-BIYAR
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - NAHIYAT-AS-SAB-BIYAR
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - QILA-ABDULLAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - QILA-ABDULLAH
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

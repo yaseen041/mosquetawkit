@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - ASSAL-AL-WARD
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - ASSAL-AL-WARD
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

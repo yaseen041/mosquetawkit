@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - KHUSHAM
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - KHUSHAM
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - HARF-AL-MUSAYTIRAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - HARF-AL-MUSAYTIRAH
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

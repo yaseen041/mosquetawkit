@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - AL-GHANTU
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - AL-GHANTU
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - KHUSHAB
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - KHUSHAB
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - KHAIRPUR-MIRS
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - KHAIRPUR-MIRS
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

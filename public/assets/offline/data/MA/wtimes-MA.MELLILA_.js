@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - MA|Morocco - MELLILA_
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - MA|Morocco - MELLILA_
+
 // ------------ METHOD : MAROC | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

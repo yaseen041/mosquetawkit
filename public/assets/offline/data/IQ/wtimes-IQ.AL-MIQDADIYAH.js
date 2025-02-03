@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - IQ|Iraq - AL-MIQDADIYAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - IQ|Iraq - AL-MIQDADIYAH
+
 // ------------ METHOD : MWL | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

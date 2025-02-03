@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - SHAHR-SULTAN
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - SHAHR-SULTAN
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

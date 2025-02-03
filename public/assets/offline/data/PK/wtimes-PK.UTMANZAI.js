@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - UTMANZAI
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - UTMANZAI
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

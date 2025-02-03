@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - TN|Tunisia - RHAR-EL-MELAH_
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - TN|Tunisia - RHAR-EL-MELAH_
+
 // ------------ METHOD : TUNISIA | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

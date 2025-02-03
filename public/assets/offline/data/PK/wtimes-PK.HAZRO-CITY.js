@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - HAZRO-CITY
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - HAZRO-CITY
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

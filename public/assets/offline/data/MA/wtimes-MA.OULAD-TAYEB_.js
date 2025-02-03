@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - MA|Morocco - OULAD-TAYEB_
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - MA|Morocco - OULAD-TAYEB_
+
 // ------------ METHOD : MAROC | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - SITA-ROAD
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - SITA-ROAD
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

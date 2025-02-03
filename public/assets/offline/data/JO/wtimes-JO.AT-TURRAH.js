@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - JO|Jordan - AT-TURRAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - JO|Jordan - AT-TURRAH
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

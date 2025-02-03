@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - AL-HINADI
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - AL-HINADI
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

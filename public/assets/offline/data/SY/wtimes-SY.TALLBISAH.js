@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - TALLBISAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - TALLBISAH
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

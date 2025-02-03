@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - JACOBABAD
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - JACOBABAD
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

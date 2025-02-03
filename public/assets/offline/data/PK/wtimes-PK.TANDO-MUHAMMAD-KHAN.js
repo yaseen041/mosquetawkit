@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - TANDO-MUHAMMAD-KHAN
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - TANDO-MUHAMMAD-KHAN
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

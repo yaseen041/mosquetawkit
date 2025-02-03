@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - IQ|Iraq - NAHIYAT-HIRAN
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - IQ|Iraq - NAHIYAT-HIRAN
+
 // ------------ METHOD : MWL | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

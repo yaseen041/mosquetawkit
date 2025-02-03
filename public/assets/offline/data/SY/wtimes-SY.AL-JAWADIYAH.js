@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - AL-JAWADIYAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - AL-JAWADIYAH
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

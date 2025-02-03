@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - MAZRAAT-BAYT-JINN
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - MAZRAAT-BAYT-JINN
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

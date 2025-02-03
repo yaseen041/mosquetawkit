@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - BRUMMANAT-AL-MASHAYIKH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - BRUMMANAT-AL-MASHAYIKH
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

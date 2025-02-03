@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - IQ|Iraq - TUZ-KHURMATU
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - IQ|Iraq - TUZ-KHURMATU
+
 // ------------ METHOD : MWL | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

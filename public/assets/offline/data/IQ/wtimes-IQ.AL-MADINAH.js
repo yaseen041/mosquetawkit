@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - IQ|Iraq - AL-MADINAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - IQ|Iraq - AL-MADINAH
+
 // ------------ METHOD : MWL | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - AL-MABATLI
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - AL-MABATLI
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - MA|Morocco - ZAWYAT-ECH-CHEIKH_
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - MA|Morocco - ZAWYAT-ECH-CHEIKH_
+
 // ------------ METHOD : MAROC | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

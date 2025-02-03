@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - NEW-BADAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - NEW-BADAH
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - AZ-ZIYARAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - AZ-ZIYARAH
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

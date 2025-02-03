@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - JO|Jordan - KARAK-CITY
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - JO|Jordan - KARAK-CITY
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

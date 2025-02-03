@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - LADHEWALA-WARAICH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - LADHEWALA-WARAICH
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - JO|Jordan - TALA-BAY
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - JO|Jordan - TALA-BAY
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - ALBU-KAMAL
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - ALBU-KAMAL
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - JO|Jordan - BAYT-IDIS
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - JO|Jordan - BAYT-IDIS
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

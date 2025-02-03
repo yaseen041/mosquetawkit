@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - HASILPUR
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - HASILPUR
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

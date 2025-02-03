@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - RAJU
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - RAJU
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

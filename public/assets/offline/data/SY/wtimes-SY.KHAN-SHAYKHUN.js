@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - KHAN-SHAYKHUN
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - KHAN-SHAYKHUN
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

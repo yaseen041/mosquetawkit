@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - NAROWAL
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - NAROWAL
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

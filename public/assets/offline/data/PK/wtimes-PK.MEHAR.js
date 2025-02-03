@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - MEHAR
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - MEHAR
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

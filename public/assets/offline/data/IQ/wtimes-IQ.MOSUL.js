@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - IQ|Iraq - MOSUL
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - IQ|Iraq - MOSUL
+
 // ------------ METHOD : MWL | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

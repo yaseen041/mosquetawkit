@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - MUH-HASAN
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - MUH-HASAN
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

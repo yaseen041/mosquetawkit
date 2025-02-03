@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - MURAK
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - MURAK
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - AD-DALIYAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - AD-DALIYAH
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

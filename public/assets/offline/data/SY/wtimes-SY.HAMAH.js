@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - HAMAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - HAMAH
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

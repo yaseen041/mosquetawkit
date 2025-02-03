@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - NEW-MIRPUR
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - NEW-MIRPUR
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

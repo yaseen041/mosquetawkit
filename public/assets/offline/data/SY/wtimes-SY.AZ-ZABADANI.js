@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - AZ-ZABADANI
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - AZ-ZABADANI
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

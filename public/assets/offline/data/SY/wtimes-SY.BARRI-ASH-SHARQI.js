@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - BARRI-ASH-SHARQI
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - BARRI-ASH-SHARQI
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

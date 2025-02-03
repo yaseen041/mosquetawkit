@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - AL-QABW
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - AL-QABW
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

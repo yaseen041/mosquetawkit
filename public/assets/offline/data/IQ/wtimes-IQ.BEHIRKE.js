@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - IQ|Iraq - BEHIRKE
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - IQ|Iraq - BEHIRKE
+
 // ------------ METHOD : MWL | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

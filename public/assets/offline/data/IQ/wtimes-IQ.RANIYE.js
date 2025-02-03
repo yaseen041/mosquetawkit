@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - IQ|Iraq - RANIYE
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - IQ|Iraq - RANIYE
+
 // ------------ METHOD : MWL | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

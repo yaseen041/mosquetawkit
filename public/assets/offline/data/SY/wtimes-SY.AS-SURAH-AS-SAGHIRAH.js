@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - AS-SURAH-AS-SAGHIRAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - AS-SURAH-AS-SAGHIRAH
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

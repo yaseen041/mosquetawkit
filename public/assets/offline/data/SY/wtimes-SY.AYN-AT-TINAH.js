@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - AYN-AT-TINAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - AYN-AT-TINAH
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

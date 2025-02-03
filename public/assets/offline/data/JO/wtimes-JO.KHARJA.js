@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - JO|Jordan - KHARJA
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - JO|Jordan - KHARJA
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

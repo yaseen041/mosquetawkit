@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - KOT-MUMIN
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - KOT-MUMIN
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

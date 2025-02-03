@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - AL-KARIMAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - AL-KARIMAH
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

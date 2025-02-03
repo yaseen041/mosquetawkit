@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - SHORKOT
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - SHORKOT
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

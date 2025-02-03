@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - SARAI-ALAMGIR
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - SARAI-ALAMGIR
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

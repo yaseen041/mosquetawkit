@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - DHORO-NARO
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - DHORO-NARO
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

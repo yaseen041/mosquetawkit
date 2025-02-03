@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - MA|Morocco - HAD-KOURT_
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - MA|Morocco - HAD-KOURT_
+
 // ------------ METHOD : MAROC | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

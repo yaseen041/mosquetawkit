@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - KUWAYRIS-SHARQI
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - KUWAYRIS-SHARQI
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

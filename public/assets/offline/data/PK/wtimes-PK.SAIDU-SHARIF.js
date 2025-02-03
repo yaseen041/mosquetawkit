@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - SAIDU-SHARIF
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - SAIDU-SHARIF
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

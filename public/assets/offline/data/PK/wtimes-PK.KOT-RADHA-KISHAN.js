@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - KOT-RADHA-KISHAN
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - KOT-RADHA-KISHAN
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

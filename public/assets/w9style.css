@@ -25,7 +25,9 @@
 .stokels {position:absolute; left:0%; top:0%; width:100%; visibility:hidden;}
 
 .row h1{margin-bottom:30px;}
-
+.error{
+  color: red !important;
+}
 table{padding:0;border:none}
 td{padding:3px;}
 table caption {display:none;}
@@ -1162,6 +1164,7 @@ section {
   padding: 12px 15px;
 }
 
+.contact .php-email-form button[type=button],
 .contact .php-email-form button[type=submit] {
   background: #fff;
   border: 2px solid var(--colorTHEME);
@@ -1172,6 +1175,7 @@ section {
   margin-top: 5px;
 }
 
+.contact .php-email-form button[type=button]:hover,
 .contact .php-email-form button[type=submit]:hover {
   background: var(--colorTHEME);
   color: #fff;
@@ -1373,3 +1377,4 @@ section {
     padding: 5px 0;
   }
 }
+

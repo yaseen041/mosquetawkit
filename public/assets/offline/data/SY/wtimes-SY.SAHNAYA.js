@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - SAHNAYA
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - SAHNAYA
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

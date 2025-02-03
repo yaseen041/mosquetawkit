@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - IQ|Iraq - AZ-ZUBAYR
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - IQ|Iraq - AZ-ZUBAYR
+
 // ------------ METHOD : MWL | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

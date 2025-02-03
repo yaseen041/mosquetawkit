@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - IQ|Iraq - KARBALA
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - IQ|Iraq - KARBALA
+
 // ------------ METHOD : MWL | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

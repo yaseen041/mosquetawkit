@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - SETHARJA-OLD
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - SETHARJA-OLD
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

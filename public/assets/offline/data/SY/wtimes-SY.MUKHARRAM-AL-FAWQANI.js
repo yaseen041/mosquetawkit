@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - MUKHARRAM-AL-FAWQANI
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - MUKHARRAM-AL-FAWQANI
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

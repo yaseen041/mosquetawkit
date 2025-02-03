@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - KAMOKE
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - KAMOKE
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

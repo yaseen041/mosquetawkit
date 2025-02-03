@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - TALL-HAMIS
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - TALL-HAMIS
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

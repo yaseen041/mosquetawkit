@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - SUBAYKHAN
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - SUBAYKHAN
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

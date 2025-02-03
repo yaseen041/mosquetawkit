@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - QATANA
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - QATANA
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - KALUR-KOT
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - KALUR-KOT
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

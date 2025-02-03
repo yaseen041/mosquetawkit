@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - JAHANIAN-SHAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - JAHANIAN-SHAH
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

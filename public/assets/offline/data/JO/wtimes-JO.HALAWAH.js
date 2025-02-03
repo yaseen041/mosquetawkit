@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - JO|Jordan - HALAWAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - JO|Jordan - HALAWAH
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

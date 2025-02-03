@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - DARAYYA
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - DARAYYA
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

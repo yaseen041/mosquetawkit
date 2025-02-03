@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - MA|Morocco - ISSEKSI_
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - MA|Morocco - ISSEKSI_
+
 // ------------ METHOD : MAROC | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

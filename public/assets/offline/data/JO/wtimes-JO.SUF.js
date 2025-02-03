@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - JO|Jordan - SUF
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - JO|Jordan - SUF
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

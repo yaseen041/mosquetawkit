@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - JALALPUR-JATTAN
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - JALALPUR-JATTAN
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

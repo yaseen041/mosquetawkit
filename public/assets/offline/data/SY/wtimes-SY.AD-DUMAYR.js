@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - AD-DUMAYR
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - AD-DUMAYR
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

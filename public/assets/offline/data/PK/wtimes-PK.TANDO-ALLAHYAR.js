@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - TANDO-ALLAHYAR
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - TANDO-ALLAHYAR
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

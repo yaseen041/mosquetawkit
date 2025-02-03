@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - JHANG-SADR
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - JHANG-SADR
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

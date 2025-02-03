@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - MA|Morocco - KELAAT-MGOUNA_
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - MA|Morocco - KELAAT-MGOUNA_
+
 // ------------ METHOD : MAROC | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

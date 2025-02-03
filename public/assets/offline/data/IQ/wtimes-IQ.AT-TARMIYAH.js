@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - IQ|Iraq - AT-TARMIYAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - IQ|Iraq - AT-TARMIYAH
+
 // ------------ METHOD : MWL | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

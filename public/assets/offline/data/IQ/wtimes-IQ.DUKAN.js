@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - IQ|Iraq - DUKAN
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - IQ|Iraq - DUKAN
+
 // ------------ METHOD : MWL | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

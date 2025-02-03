@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - IQ|Iraq - AN-NUMANIYAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - IQ|Iraq - AN-NUMANIYAH
+
 // ------------ METHOD : MWL | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

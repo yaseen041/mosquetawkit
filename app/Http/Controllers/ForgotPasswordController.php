@@ -5,15 +5,10 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Hash, Session, DB;
-use App\Models\User;
+use App\Models\Mosques;
 
 class ForgotPasswordController extends Controller
 {
-
-    public function __construct()
-    {
-        $this->middleware('guest');
-    }
 
     public function index()
     {
@@ -23,22 +18,27 @@ class ForgotPasswordController extends Controller
     public function forgot_password(Request $request)
     {
         $data = $request->all();
+
+
         $request->validate([
-            'email' => 'required|email|exists:users',
+            'email' => 'required|email|exists:mosques',
         ],
         [
             'email.exists'=> 'This email address not found.',
         ]);
 
         $data['password'] = rand(10000000, 99999999);
-        $status = User::where('email', $data['email'])->update([
+        $status = Mosques::where('email', $data['email'])->update([
             'password' => Hash::make($data['password'])
         ]);
         if ($status > 0){
             $this->send_user_credential_email($data);
-            return redirect('forgot')->withSuccess('Please check your email inbox.');
+            return response()->json(['status' => 'success', 'message' => 'Your account passwword has been changed. Please check your email inbox.']);
+            // return redirect("forgot-password")->withSuccess('');
+            // return redirect('forgot')->withSuccess('Please check your email inbox.');
         }else{
-            return redirect("forgot")->withErrors('Something went wrong, please try again!.');
+            return response()->json(['status' => 'error', 'message' => 'Email address not found.'], 400);
+            // return redirect("forgot-password")->withErrors('Something went wrong, please try again!.');
         }
     }
 

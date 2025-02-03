@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - DERA-ISMAIL-KHAN
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - DERA-ISMAIL-KHAN
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - KHANGAH-DOGRAN
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - KHANGAH-DOGRAN
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - KAMAR-MUSHANI
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - KAMAR-MUSHANI
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

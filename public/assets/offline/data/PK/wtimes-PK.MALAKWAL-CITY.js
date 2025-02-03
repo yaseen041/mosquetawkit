@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - MALAKWAL-CITY
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - MALAKWAL-CITY
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

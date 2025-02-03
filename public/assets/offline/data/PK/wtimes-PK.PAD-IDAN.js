@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - PAD-IDAN
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - PAD-IDAN
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

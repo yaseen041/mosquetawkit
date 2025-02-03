@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - KOT-GHULAM-MUHAMMAD
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - KOT-GHULAM-MUHAMMAD
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

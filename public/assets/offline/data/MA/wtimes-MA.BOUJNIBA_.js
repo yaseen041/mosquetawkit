@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - MA|Morocco - BOUJNIBA_
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - MA|Morocco - BOUJNIBA_
+
 // ------------ METHOD : MAROC | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

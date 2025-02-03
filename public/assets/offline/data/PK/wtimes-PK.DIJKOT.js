@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - DIJKOT
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - DIJKOT
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - IQ|Iraq - IBRAHIM-AL-KHALIL
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - IQ|Iraq - IBRAHIM-AL-KHALIL
+
 // ------------ METHOD : MWL | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

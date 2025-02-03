@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - IQ|Iraq - AL-BAAJ
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - IQ|Iraq - AL-BAAJ
+
 // ------------ METHOD : MWL | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

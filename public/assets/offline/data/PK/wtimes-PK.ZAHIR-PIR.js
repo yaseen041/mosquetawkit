@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - ZAHIR-PIR
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - ZAHIR-PIR
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

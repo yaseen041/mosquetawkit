@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - MALULA
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - MALULA
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

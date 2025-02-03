@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - JO|Jordan - ASH-SHUNAH-ASH-SHAMALIYAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - JO|Jordan - ASH-SHUNAH-ASH-SHAMALIYAH
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

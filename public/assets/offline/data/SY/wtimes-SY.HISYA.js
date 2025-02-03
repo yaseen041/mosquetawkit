@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - HISYA
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - HISYA
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

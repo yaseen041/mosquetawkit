@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - NAUSHAHRA-VIRKAN
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - NAUSHAHRA-VIRKAN
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

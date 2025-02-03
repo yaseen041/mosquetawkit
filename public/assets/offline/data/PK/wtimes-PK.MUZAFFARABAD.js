@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - MUZAFFARABAD
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - MUZAFFARABAD
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - MADAN
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - MADAN
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

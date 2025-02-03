@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - JO|Jordan - AR-RUSAYFAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - JO|Jordan - AR-RUSAYFAH
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

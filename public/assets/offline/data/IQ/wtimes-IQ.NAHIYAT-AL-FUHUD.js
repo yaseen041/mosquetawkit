@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - IQ|Iraq - NAHIYAT-AL-FUHUD
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - IQ|Iraq - NAHIYAT-AL-FUHUD
+
 // ------------ METHOD : MWL | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

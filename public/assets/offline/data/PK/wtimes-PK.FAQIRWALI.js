@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - FAQIRWALI
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - FAQIRWALI
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - JO|Jordan - MUTHALLATH-JAMIAT-AL-AL-BAYT
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - JO|Jordan - MUTHALLATH-JAMIAT-AL-AL-BAYT
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

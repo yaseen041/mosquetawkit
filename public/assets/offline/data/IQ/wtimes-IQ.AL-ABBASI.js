@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - IQ|Iraq - AL-ABBASI
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - IQ|Iraq - AL-ABBASI
+
 // ------------ METHOD : MWL | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

@@ -12,6 +12,10 @@
     font-display: swap;
 }
 
+.error{
+  color: red !important;
+}
+
 @font-face {
     font-family: 'Andalus';
     src: url('font/Andalus.woff2') format('woff2');

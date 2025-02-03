@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - SHAHDADPUR
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - SHAHDADPUR
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

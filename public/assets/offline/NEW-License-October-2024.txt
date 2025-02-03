@@ -1,11 +1,4 @@
-﻿Tawkit.net	
-تطبيق أوقات الصلاة
-Prayer Times Application 
-
-Copyright 	Ismail CHAGDALI
-		www.tawkit.net
-		info@tawkit.net
-
+﻿
 
 شروط الاستعمال
 ------------------------

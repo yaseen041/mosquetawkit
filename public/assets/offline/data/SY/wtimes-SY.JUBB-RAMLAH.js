@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - JUBB-RAMLAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - JUBB-RAMLAH
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

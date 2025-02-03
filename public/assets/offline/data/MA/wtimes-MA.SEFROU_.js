@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - MA|Morocco - SEFROU_
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - MA|Morocco - SEFROU_
+
 // ------------ METHOD : MAROC | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

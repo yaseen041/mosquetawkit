@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - MIRPUR-MATHELO
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - MIRPUR-MATHELO
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

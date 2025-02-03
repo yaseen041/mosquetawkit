@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - KOT-ADDU
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - KOT-ADDU
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

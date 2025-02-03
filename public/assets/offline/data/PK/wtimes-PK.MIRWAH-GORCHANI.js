@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - MIRWAH-GORCHANI
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - MIRWAH-GORCHANI
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

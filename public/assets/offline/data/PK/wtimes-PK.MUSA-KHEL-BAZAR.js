@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - MUSA-KHEL-BAZAR
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - MUSA-KHEL-BAZAR
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

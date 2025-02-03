@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - JO|Jordan - HAYY-AL-BUNAYYAT
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - JO|Jordan - HAYY-AL-BUNAYYAT
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

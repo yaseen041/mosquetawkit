@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - MA|Morocco - MOULAY-BRAHIM_
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - MA|Morocco - MOULAY-BRAHIM_
+
 // ------------ METHOD : MAROC | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

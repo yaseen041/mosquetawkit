@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - AR-RAI
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - AR-RAI
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

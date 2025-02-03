@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - JO|Jordan - RUJM-ASH-SHAMI-AL-GHARBI
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - JO|Jordan - RUJM-ASH-SHAMI-AL-GHARBI
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

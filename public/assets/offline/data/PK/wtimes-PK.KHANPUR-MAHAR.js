@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - KHANPUR-MAHAR
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - KHANPUR-MAHAR
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

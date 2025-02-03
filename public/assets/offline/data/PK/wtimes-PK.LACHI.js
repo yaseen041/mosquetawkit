@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - LACHI
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - LACHI
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

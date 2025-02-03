@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - WADI-AL-UYUN
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - WADI-AL-UYUN
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

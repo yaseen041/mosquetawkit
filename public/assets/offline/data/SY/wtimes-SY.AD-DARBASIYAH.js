@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - AD-DARBASIYAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - AD-DARBASIYAH
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

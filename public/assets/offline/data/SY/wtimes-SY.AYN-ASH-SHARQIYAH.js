@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - AYN-ASH-SHARQIYAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - AYN-ASH-SHARQIYAH
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

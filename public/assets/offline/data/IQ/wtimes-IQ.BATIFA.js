@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - IQ|Iraq - BATIFA
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - IQ|Iraq - BATIFA
+
 // ------------ METHOD : MWL | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

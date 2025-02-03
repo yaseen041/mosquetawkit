@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - KALLAR-KAHAR
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - KALLAR-KAHAR
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

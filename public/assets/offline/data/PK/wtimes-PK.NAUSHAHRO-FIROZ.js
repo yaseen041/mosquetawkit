@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - NAUSHAHRO-FIROZ
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - NAUSHAHRO-FIROZ
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

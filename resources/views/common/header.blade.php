@@ -6,7 +6,7 @@
       <nav id='navbar' class='navbar'>
         <ul>
           <li>
-            <a class='nav-link scrollto' title='{{ get_section_content('project', 'site_title') }} Online App Administration' href="{{ url('admin') }}" target='_blank' >ADMINISTRATION</a>
+            <a class='nav-link scrollto' title='{{ get_section_content('project', 'site_title') }} Online App Administration' href="{{ url('mosque') }}" target='_blank' >ADMINISTRATION</a>
           </li>
           <li>
             <a class='nav-link scrollto' title='{{ get_section_content('project', 'site_title') }} Live App' href="{{ url('offline') }}" target='_blank'>LIVE APP</a>

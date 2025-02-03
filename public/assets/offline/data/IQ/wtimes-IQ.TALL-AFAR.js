@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - IQ|Iraq - TALL-AFAR
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - IQ|Iraq - TALL-AFAR
+
 // ------------ METHOD : MWL | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

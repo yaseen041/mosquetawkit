@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - JO|Jordan - WADI-MUSA
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - JO|Jordan - WADI-MUSA
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - JO|Jordan - AL-MUWAQQAR
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - JO|Jordan - AL-MUWAQQAR
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

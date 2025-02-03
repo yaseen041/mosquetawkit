@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - IQ|Iraq - IMAM-QASIM
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - IQ|Iraq - IMAM-QASIM
+
 // ------------ METHOD : MWL | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

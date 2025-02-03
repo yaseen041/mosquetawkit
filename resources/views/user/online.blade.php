@@ -8,7 +8,7 @@
 	<meta http-equiv='cache-control' content='public'>
 	<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' />
 	<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
-	<link rel='icon' href='favicon.ico'>
+	<link rel='icon' href="{{asset('assets/favicon.ico')}}">
 	<link rel='shortcut icon' type='image/x-icon' href="{{ asset('assets/favicon.ico') }}" />
 	<link rel='apple-touch-icon' sizes='152x152' href="{{ asset('assets/favicon152.png') }}" />
 	<link rel='stylesheet' href='{{ asset("assets/style.css" ) }}'>
@@ -42,6 +42,7 @@
 				</tr>
 			</table>
 		</div>
+
 		<img src="{{ asset('assets/logo.png') }}" id='VR_LOGO' alt='app-logo' class='VR_LOGO' />
 		<div id='CLOKO_MINI_VR'>
 			<div id='VR_eFullHOUR' >--:--</div>
@@ -755,7 +756,7 @@
 </script>
 <script type='text/javascript'>
 	var JS_TAWKIT_ONLINE_VERSION = 947;
-	var JS_NET_ADRESS_VERSION 	= 'TAWKIT.NET ONLINE';
+	var JS_NET_ADRESS_VERSION 	= '{{ get_section_content('project', 'site_title') }}';
 	var JS_cCODE = 'SA';
 	var JS_LOCATION_NOW 		= "MAKKAH, SA";
 	var JS_LOGS_ENABLED			= false;
@@ -2394,12 +2395,65 @@
 			updateTextContent('W9_AYATS_ACTIVE', JS_eLang.W9_AYATS_ACTIVE);
 			updateTextContent('VRBAQI2IQAMA', JS_eLang.MinutesToIqama);
 			updateTextContent('HRBAQI2IQAMA', JS_eLang.MinutesToIqama);
+
+			if( (JS_LANG_NOW =="AR") || (JS_LANG_NOW =="UR") ) // Arabi / Urdu
+			{
+				document.getElementById('eVRDATES').style.direction = 'rtl';
+				document.getElementById('HR_TopDATES').lang = 'ar';
+
+				JS_ROOT.style.setProperty('--XX_LANG_DIR', 'rtl');
+
+				JS_ROOT.style.setProperty('--FOXEN', JS_ACTIVE_FOXEN);
+
+				JS_AM_TEXT = "<span class='cARPM'>صباحا</span>";
+				JS_PM_TEXT = "<span class='cARPM'>مساء</span>";
+			} else {
+				JS_T_0.className ='eeeNAMEen';
+				JS_T_2.className ='eeeNAMEen';
+				JS_T_3.className ='eeeNAMEen';
+				JS_T_4.className ='eeeNAMEen';
+				JS_T_5.className ='eeeNAMEen';
+
+
+				JS_S_0.className ='eeeHOURen';
+				JS_S_2.className ='eeeHOURen';
+				JS_S_3.className ='eeeHOURen';
+				JS_S_4.className ='eeeHOURen';
+				JS_S_5.className ='eeeHOURen';
+
+
+				JS_QM1.className ='eeeIQAMAen';
+				JS_QM3.className ='eeeIQAMAen';
+				JS_QM4.className ='eeeIQAMAen';
+				JS_QM5.className ='eeeIQAMAen';
+				JS_QM6.className ='eeeIQAMAen';
+
+				JS_W333HT_0.className ='wwwNAMEen';
+				JS_W333HT_2.className ='wwwNAMEen';
+				JS_W333HT_3.className ='wwwNAMEen';
+				JS_W333HT_4.className ='wwwNAMEen';
+				JS_W333HT_5.className ='wwwNAMEen';
+
+				document.getElementById('eVRDATES').style.direction = 'ltr';
+				document.getElementById('HR_TopDATES').lang = '';
+
+				document.getElementById('VR_TITLES').style.visibility = 'hidden';
+
+				document.getElementById('alongotablo').dir = 'ltr';
+
+				JS_ROOT.style.setProperty('--XX_LANG_DIR', 'ltr');
+
+				JS_ROOT.style.setProperty('--FOXEN', 1);
+
+			}
+
+
+
 			JS_PRAYNAMES_NOW = JS_eLang.NamesOfPrayings.split(",");
 			JS_WEEK_DAYS_NOW = JS_eLang.NamesWeekDays.split(",");
 			JS_MONTHS_NOW = JS_eLang.NamesMonthsMiladi.split(",");
 			console.log(JS_MONTHS_NOW);
 			JS_HIJRI_NOW = JS_eLang.MenuMonthsHijri.split(",");
-			// alert(JS_HIJRI_NOW); // xl
 			JS_T_0.innerHTML = JS_PRAYNAMES_NOW[0];
 			JS_T_2.innerHTML = JS_PRAYNAMES_NOW[2];
 			JS_T_3.innerHTML = JS_PRAYNAMES_NOW[3];

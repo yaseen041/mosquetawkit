@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - NOWSHERA-CANTONMENT
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - NOWSHERA-CANTONMENT
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

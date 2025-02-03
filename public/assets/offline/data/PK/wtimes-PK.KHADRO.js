@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - KHADRO
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - KHADRO
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - KHANASIR
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - KHANASIR
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

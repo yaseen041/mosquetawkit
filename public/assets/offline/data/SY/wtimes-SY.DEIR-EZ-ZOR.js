@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - DEIR-EZ-ZOR
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - DEIR-EZ-ZOR
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

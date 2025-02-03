@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - TN|Tunisia - REMADA_
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - TN|Tunisia - REMADA_
+
 // ------------ METHOD : TUNISIA | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

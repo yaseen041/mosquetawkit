@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - MASHTA-AL-HULW
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - MASHTA-AL-HULW
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

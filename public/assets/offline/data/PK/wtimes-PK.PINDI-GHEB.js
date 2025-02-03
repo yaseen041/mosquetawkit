@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - PINDI-GHEB
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - PINDI-GHEB
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

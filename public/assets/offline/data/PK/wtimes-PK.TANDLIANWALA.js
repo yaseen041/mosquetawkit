@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - TANDLIANWALA
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - TANDLIANWALA
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

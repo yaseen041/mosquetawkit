@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - IQ|Iraq - KIFRI
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - IQ|Iraq - KIFRI
+
 // ------------ METHOD : MWL | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

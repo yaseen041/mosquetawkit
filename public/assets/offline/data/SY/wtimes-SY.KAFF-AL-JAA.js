@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - KAFF-AL-JAA
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - KAFF-AL-JAA
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

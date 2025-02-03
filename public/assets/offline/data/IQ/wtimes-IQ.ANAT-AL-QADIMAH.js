@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - IQ|Iraq - ANAT-AL-QADIMAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - IQ|Iraq - ANAT-AL-QADIMAH
+
 // ------------ METHOD : MWL | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

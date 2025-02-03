@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - IQ|Iraq - KASNAZAN
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - IQ|Iraq - KASNAZAN
+
 // ------------ METHOD : MWL | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

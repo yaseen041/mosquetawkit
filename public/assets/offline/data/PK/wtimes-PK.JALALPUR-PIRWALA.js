@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - JALALPUR-PIRWALA
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - JALALPUR-PIRWALA
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

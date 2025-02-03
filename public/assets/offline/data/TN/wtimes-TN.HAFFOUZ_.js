@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - TN|Tunisia - HAFFOUZ_
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - TN|Tunisia - HAFFOUZ_
+
 // ------------ METHOD : TUNISIA | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

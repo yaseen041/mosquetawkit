@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - DUNGA-BUNGA
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - DUNGA-BUNGA
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

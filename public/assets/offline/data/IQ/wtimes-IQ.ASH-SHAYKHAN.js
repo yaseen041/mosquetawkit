@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - IQ|Iraq - ASH-SHAYKHAN
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - IQ|Iraq - ASH-SHAYKHAN
+
 // ------------ METHOD : MWL | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

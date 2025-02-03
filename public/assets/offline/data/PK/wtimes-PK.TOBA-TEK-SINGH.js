@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - TOBA-TEK-SINGH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - TOBA-TEK-SINGH
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

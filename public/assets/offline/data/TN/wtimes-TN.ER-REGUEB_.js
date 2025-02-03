@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - TN|Tunisia - ER-REGUEB_
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - TN|Tunisia - ER-REGUEB_
+
 // ------------ METHOD : TUNISIA | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

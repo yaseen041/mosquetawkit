@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - NAZIR-TOWN
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - NAZIR-TOWN
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

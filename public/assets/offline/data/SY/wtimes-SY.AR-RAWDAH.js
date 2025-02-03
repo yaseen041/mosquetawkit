@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - AR-RAWDAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - AR-RAWDAH
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

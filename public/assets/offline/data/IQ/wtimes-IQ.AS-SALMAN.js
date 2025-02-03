@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - IQ|Iraq - AS-SALMAN
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - IQ|Iraq - AS-SALMAN
+
 // ------------ METHOD : MWL | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

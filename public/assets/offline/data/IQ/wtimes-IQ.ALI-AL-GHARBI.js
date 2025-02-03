@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - IQ|Iraq - ALI-AL-GHARBI
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - IQ|Iraq - ALI-AL-GHARBI
+
 // ------------ METHOD : MWL | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - DUWAYR-RASLAN
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - DUWAYR-RASLAN
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

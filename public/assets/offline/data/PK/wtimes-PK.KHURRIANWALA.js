@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - KHURRIANWALA
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - KHURRIANWALA
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

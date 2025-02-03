@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - KETI-BANDAR
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - KETI-BANDAR
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

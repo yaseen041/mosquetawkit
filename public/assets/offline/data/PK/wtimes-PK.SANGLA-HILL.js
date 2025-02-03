@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - SANGLA-HILL
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - SANGLA-HILL
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

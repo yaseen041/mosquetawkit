@@ -1,15 +1,15 @@
 <html>
 <head>
-</script>
+
 <style type='text/css'>
 	@font-face {
 		font-family: 'Amiri';
-		src: url('../font/Amiri-Regular.eot');
-		src: url('../font/Amiri-Regular.eot?#iefix') format('embedded-opentype'),
-		url('../font/Amiri-Regular.woff2') format('woff2'),
-		url('../font/Amiri-Regular.woff') format('woff'),
-		url('../font/Amiri-Regular.ttf') format('truetype'),
-		url('../font/Amiri-Regular.svg#Amiri-Regular') format('svg');
+		src: url("{{ asset('assets/font/Amiri-Regular.eot') }}");
+		src: url("{{ asset('assets/font/Amiri-Regular.eot?#iefix') }}") format('embedded-opentype'),
+		url("{{ asset('assets/font/Amiri-Regular.woff2') }}") format('woff2'),
+		url("{{ asset('assets/font/Amiri-Regular.woff') }}") format('woff'),
+		url("{{ asset('assets/font/Amiri-Regular.ttf') }}") format('truetype'),
+		url("{{ asset('assets/font/Amiri-Regular.svg#Amiri-Regular') }}") format('svg');
 		font-weight: normal;
 		font-style: normal;
 		font-display: swap;
@@ -29,8 +29,16 @@
 	.CSS_LINK:hover {color:#9E2D15;}
 	.cssAR {font-size:115%; color:#008E00; font-family:'Amiri'; direction:rtl;}
 	.cssBLUE {color:blue; cursor:pointer;}
+
+
+        #email-error { color: red !important; font-size: 14px; }
+        .success { color: green; font-size: 14px; margin-top: 10px; }
+
 </style>
 <title>Password Recovery</title>
+<link rel='icon' href="{{asset('assets/favicon.ico')}}">
+	<link rel='shortcut icon' type='image/x-icon' href="{{ asset('assets/favicon.ico') }}" />
+	<link rel='apple-touch-icon' sizes='152x152' href="{{ asset('assets/favicon152.png') }}" />
 </head>
 <body>
 	<center>
@@ -44,18 +52,90 @@
 			</div>
 			<br />
 			<br />
-			<form method='post' action='./recover.php'>
-				<table align='center' cellpadding='12' cellspacing='0' width='61%' border='0' >
+			<form id="recoverForm">
+				@csrf
+				<table align="center" cellpadding="12" cellspacing="0" width="61%" border="0">
 					<tr>
-						<td align='center'><input id='vIniMAIL' type='text' name='vIniMAIL' placeholder='enter your email' style='padding:5px; width:100%; border:1px solid silver;' /></td>
+						<td>
+							<input id="email" type="text" name="email" placeholder="Enter your email"
+							style="padding:5px; width:100%; border:1px solid silver;" />
+						</td>
 					</tr>
 					<tr>
-						<td align='center'><input type='submit' name='vDoRECOVER' value='RECOVER PASSWORD - إستعادة كلمة المرور' style='font-size:110%; padding:10px;  width:100%;' /></td>
+						<td align="center">
+							<div class='error-message'></div>
+            <div class='sent-message'>Your message has been sent. Thank you!</div>
+						</td>
+					</tr>
+					<tr>
+						<td align="center">
+							<button type="button" id="submitBtn" style="font-size:110%; padding:10px; width:100%;">RECOVER PASSWORD - إستعادة كلمة المرور</button>
+						</td>
 					</tr>
 				</table>
 			</form>
+
 			<hr />
 		</div>
 	</center>
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js" ></script>
+
+
+<script>
+     $(document).ready(function () {
+ $(".error-message").hide();
+          $(".sent-message").hide();
+    $("#recoverForm").validate({
+        rules: {
+            email: {
+                required: true,
+                email: true
+            }
+        },
+        messages: {
+            email: {
+                required: "Email is required",
+                email: "Enter a valid email address"
+            }
+        },
+        errorPlacement: function (error, element) {
+            error.insertAfter(element);
+        }
+    });
+
+    // Handle form submission
+    $("#submitBtn").click(function () {
+        if ($("#recoverForm").valid()) {
+
+            $.ajax({
+                url: "{{ url('reset-password') }}",  // Ensure this is correct
+                type: "POST",
+                data: $("#recoverForm").serialize(),
+                beforeSend: function () {
+                    $("#responseMessage").html("<p class='success'>Processing...</p>");
+                },
+                success: function (response) {
+              $(".loading").hide();
+              if (response.status == "success") {
+                $(".sent-message").show();
+                $(".sent-message").text(response.message);
+                $("#recoverForm")[0].reset();
+              } else {
+                $(".error-message").text(response).show();
+              }
+            },
+            error: function () {
+              $(".loading").hide();
+              $(".error-message").text("Something went wrong. Please try again.").show();
+            }
+            });
+        }
+    });
+});
+
+    </script>
 </html>
+

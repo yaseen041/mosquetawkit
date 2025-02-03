@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - SARAI-SIDHU
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - SARAI-SIDHU
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

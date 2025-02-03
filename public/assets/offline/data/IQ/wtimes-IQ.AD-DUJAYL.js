@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - IQ|Iraq - AD-DUJAYL
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - IQ|Iraq - AD-DUJAYL
+
 // ------------ METHOD : MWL | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

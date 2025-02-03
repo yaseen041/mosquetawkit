@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - JO|Jordan - HAKAMA
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - JO|Jordan - HAKAMA
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

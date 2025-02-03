@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - KAFR-LAHA
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - KAFR-LAHA
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

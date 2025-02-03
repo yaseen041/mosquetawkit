@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - KAKAD-WARI-DIR-UPPER
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - KAKAD-WARI-DIR-UPPER
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

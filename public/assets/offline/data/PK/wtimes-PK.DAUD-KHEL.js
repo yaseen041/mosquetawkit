@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - DAUD-KHEL
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - DAUD-KHEL
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

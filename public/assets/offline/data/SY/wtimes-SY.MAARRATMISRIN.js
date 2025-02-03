@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - MAARRATMISRIN
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - MAARRATMISRIN
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

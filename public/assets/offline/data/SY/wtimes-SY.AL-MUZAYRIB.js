@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - AL-MUZAYRIB
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - AL-MUZAYRIB
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

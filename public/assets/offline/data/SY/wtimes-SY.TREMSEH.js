@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - TREMSEH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - TREMSEH
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

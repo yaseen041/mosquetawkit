@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - MANANWALA
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - MANANWALA
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

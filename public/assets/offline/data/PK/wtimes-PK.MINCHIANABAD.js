@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - MINCHIANABAD
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - MINCHIANABAD
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

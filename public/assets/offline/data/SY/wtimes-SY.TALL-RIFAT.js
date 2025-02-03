@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - TALL-RIFAT
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - TALL-RIFAT
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

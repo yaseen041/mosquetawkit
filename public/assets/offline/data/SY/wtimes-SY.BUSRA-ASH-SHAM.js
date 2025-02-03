@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - BUSRA-ASH-SHAM
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - BUSRA-ASH-SHAM
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - JHAWARIAN
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - JHAWARIAN
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

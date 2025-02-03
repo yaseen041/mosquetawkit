@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - JUNAYNAT-RASLAN
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - JUNAYNAT-RASLAN
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

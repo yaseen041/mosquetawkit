@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - JISR-ASH-SHUGHUR
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - JISR-ASH-SHUGHUR
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

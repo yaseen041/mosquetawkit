@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - KHIRBAT-GHAZALAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - KHIRBAT-GHAZALAH
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

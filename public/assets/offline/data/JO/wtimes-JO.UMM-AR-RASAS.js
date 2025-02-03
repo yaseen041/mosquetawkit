@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - JO|Jordan - UMM-AR-RASAS
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - JO|Jordan - UMM-AR-RASAS
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

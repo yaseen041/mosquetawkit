@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - KHARIAN
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - KHARIAN
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

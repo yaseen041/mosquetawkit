@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - MA|Morocco - KSAR-EL-KEBIR_
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - MA|Morocco - KSAR-EL-KEBIR_
+
 // ------------ METHOD : MAROC | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

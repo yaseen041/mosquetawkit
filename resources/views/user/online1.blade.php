@@ -1,19 +1,4 @@
-<!--  بسم الله الرحمن الرحيم -->
-<!--  الحمد لله رب العالمين   -->
-<!--  والصلاة والسلام على سيدنا محمد   -->
-<!--  وعلى آله وصحبه ومن تبعهم بإحسان إلى يوم الدين  -->
-<!-- ==================================================================== -->
-<!--  TAWKIT APPLICATION | HORIZONTAL AND VERTICAL DISPLAY -->
-<!--  COPYRIGHT	TAWKIT.NET -->
-<!--  AUTHOR 	: ISMAIL CHAGDALI | INFO@TAWKIT.NET | WWW.TAWKIT.NET -->
-<!-- البرنامج مجاني ولا يجوز بيعه في جميع الأحوال -->
-<!-- لابد بالاحتفاظ بهذا الإشعار القانوني مع البرنامج  -->
-<!--  LICENSE 	: FREE TO USE AND MODIFY FOR PERSONAL USE -->
-<!--  		 	: YOU MUST KEEP THIS LEGAL NOTICE WITH APPLICATION -->
-<!--  		 	: YOU ARE NOT ALLOWED TO CHANGE APPLICATION NAME -->
-<!--  		 	: YOU ARE NOT ALLOWED TO REMOVE AUTHOR NAME -->
-<!--  		 	: FORBIDDEN TO SELL THIS APPLICATION IN ANYWAY -->
-<!-- ==================================================================== -->
+
 <!DOCTYPE html>
 <html lang='SA'>
 <head>
@@ -46,7 +31,7 @@ document.write("<script src='/languages7/lang-"+JS_LANG_NOW+".js?s=cmp'><\/scrip
 
 var JS_TAWKIT_ONLINE_VERSION = 947;
 
-var JS_NET_ADRESS_VERSION 	= 'TAWKIT.NET ONLINE';
+var JS_NET_ADRESS_VERSION 	= 'Makkah';
 
 var JS_cCODE = 'SA';
 

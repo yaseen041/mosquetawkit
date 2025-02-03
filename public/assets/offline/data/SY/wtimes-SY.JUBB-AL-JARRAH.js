@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - JUBB-AL-JARRAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - JUBB-AL-JARRAH
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

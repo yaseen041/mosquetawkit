@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - MATLI
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - MATLI
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

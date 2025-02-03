@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - AN-NASHABIYAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - AN-NASHABIYAH
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

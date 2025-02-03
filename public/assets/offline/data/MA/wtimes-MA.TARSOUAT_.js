@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - MA|Morocco - TARSOUAT_
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - MA|Morocco - TARSOUAT_
+
 // ------------ METHOD : MAROC | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

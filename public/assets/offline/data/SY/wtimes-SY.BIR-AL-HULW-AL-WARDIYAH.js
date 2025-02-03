@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - BIR-AL-HULW-AL-WARDIYAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - BIR-AL-HULW-AL-WARDIYAH
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

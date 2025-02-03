@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - QALAT-AL-MADIQ
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - QALAT-AL-MADIQ
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

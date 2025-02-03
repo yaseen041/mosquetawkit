@@ -106,8 +106,7 @@
                       </div>
                       <div class='col-md-8' >
                         <p class='fst-italic'>
-                          {{ get_section_content('project', 'site_title') }}.net doesn't sell any media-box.
-                          You need to have your own <a href=''>Android Media-Box</a> or any device with a modern Browser.<br>
+                          {{ get_section_content('project', 'site_title') }}.net doesn't sell any media-box. You need to have your own <a href=''>Android Media-Box</a> or any device with a modern Browser.<br>
                           You can also use a Smart TV, but ONLY if its Browser is capable viewing {{ get_section_content('project', 'site_title') }} application correctly !<br>
                           To know if a Smart TV is good for {{ get_section_content('project', 'site_title') }} or no, ask the seller to test this link in its Browser :
                           <a href='#' >{{ get_section_content('project', 'site_title') }}</a><br>

@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - JO|Jordan - TIBNAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - JO|Jordan - TIBNAH
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - IQ|Iraq - UMM-QASR
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - IQ|Iraq - UMM-QASR
+
 // ------------ METHOD : MWL | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

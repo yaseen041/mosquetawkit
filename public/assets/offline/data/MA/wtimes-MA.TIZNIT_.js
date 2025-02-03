@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - MA|Morocco - TIZNIT_
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - MA|Morocco - TIZNIT_
+
 // ------------ METHOD : MAROC | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

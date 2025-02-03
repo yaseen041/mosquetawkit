@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - JO|Jordan - AL-HAMRA
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - JO|Jordan - AL-HAMRA
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

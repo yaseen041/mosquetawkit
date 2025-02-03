@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - SHAHDAD-KOT
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - SHAHDAD-KOT
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

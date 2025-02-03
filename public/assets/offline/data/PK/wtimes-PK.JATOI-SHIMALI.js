@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - JATOI-SHIMALI
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - JATOI-SHIMALI
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

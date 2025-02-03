@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - DHOK-AWAN
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - DHOK-AWAN
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

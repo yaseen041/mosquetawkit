@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - ABU-AZ-ZUHUR
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - ABU-AZ-ZUHUR
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - GULISHAH-KACH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - GULISHAH-KACH
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

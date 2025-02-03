@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - TN|Tunisia - ARIANA_
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - TN|Tunisia - ARIANA_
+
 // ------------ METHOD : TUNISIA | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

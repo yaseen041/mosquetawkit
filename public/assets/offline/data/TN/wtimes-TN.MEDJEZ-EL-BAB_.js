@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - TN|Tunisia - MEDJEZ-EL-BAB_
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - TN|Tunisia - MEDJEZ-EL-BAB_
+
 // ------------ METHOD : TUNISIA | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

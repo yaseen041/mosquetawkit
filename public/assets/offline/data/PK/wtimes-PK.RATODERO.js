@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - RATODERO
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - RATODERO
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

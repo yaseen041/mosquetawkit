@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - MA|Morocco - TAGHAZOUT_
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - MA|Morocco - TAGHAZOUT_
+
 // ------------ METHOD : MAROC | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

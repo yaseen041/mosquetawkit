@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - AYN-AL-BAYDA
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - AYN-AL-BAYDA
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

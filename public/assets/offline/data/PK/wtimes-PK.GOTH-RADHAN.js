@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - GOTH-RADHAN
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - GOTH-RADHAN
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

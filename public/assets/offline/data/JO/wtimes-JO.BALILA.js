@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - JO|Jordan - BALILA
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - JO|Jordan - BALILA
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

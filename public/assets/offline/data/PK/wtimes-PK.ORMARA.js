@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - ORMARA
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - ORMARA
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

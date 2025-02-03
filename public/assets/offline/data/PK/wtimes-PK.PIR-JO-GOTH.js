@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - PIR-JO-GOTH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - PIR-JO-GOTH
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

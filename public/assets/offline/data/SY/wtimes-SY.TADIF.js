@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - TADIF
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - TADIF
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

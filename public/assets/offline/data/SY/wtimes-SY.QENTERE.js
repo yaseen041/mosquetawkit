@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - QENTERE
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - QENTERE
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

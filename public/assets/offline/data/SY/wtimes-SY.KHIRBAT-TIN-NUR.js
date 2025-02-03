@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - KHIRBAT-TIN-NUR
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - KHIRBAT-TIN-NUR
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

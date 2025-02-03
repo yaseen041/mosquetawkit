@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - KARAUNDI
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - KARAUNDI
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

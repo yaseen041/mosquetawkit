@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - JO|Jordan - MUTHALLATH-AL-AZRAQ
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - JO|Jordan - MUTHALLATH-AL-AZRAQ
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

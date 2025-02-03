@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - DIGRI
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - DIGRI
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

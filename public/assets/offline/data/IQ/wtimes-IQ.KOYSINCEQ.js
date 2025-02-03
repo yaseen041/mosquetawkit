@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - IQ|Iraq - KOYSINCEQ
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - IQ|Iraq - KOYSINCEQ
+
 // ------------ METHOD : MWL | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - IQ|Iraq - KANI-MASI
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - IQ|Iraq - KANI-MASI
+
 // ------------ METHOD : MWL | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

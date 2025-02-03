@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - MASKANAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - MASKANAH
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

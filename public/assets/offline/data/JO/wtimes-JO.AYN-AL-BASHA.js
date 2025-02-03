@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - JO|Jordan - AYN-AL-BASHA
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - JO|Jordan - AYN-AL-BASHA
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - IQ|Iraq - SINAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - IQ|Iraq - SINAH
+
 // ------------ METHOD : MWL | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - JAUHARABAD
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - JAUHARABAD
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

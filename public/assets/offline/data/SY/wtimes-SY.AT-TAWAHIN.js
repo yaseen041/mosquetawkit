@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - AT-TAWAHIN
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - AT-TAWAHIN
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

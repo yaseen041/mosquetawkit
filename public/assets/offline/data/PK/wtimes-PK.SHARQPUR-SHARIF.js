@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - SHARQPUR-SHARIF
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - SHARQPUR-SHARIF
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

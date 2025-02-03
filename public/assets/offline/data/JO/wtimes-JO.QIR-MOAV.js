@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - JO|Jordan - QIR-MOAV
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - JO|Jordan - QIR-MOAV
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

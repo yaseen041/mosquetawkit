@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - JO|Jordan - TABAQAT-FAHL
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - JO|Jordan - TABAQAT-FAHL
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

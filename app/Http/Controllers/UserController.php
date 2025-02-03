@@ -9,11 +9,6 @@ use App\Models\Documents;
 use Illuminate\Support\Facades\Auth;
 use Hash, Session, Validator, DB, DateTime, DateInterval;
 
-
-use Stripe\Exception\CardException;
-use Stripe\Stripe;
-use Stripe\Charge;
-
 class UserController extends Controller
 {
 
@@ -26,28 +21,18 @@ class UserController extends Controller
     {
         return view('user.online');
     }
+
     public function offline(Request $request)
     {
         return view('user.offline');
     }
 
-    public function payment_history(Request $request)
-    {
-        $data['user'] = User::find(Auth::user()->id);
-        $data['payments'] = Payments::where('user_id', Auth::user()->id)->orderBy('id', 'desc')->get();
-        return view('user/payment_history', $data);
-    }
-
-    public function profile()
-    {
-        $data['user'] = User::find(Auth::user()->id);
-        return view('user/profile', $data);
-    }
     public function change_password()
     {
         $data['user'] = User::find(Auth::user()->id);
         return view('user/change_password', $data);
     }
+
     public function update_password(Request $request)
     {
         $data = $request->all();
@@ -76,7 +61,5 @@ class UserController extends Controller
             return $finalResult;
         }
     }
-
-
 
 }

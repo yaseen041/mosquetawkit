@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - SHAQQA
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - SHAQQA
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

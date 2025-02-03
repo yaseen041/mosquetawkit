@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - ZIARAT
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - ZIARAT
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

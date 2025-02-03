@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - JO|Jordan - SAHAM-AL-KAFFARAT
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - JO|Jordan - SAHAM-AL-KAFFARAT
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - KAROR
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - KAROR
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

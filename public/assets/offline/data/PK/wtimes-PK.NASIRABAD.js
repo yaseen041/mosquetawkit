@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - NASIRABAD
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - NASIRABAD
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

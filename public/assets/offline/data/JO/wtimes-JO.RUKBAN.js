@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - JO|Jordan - RUKBAN
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - JO|Jordan - RUKBAN
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

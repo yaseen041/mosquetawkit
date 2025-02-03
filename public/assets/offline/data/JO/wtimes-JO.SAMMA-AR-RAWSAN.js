@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - JO|Jordan - SAMMA-AR-RAWSAN
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - JO|Jordan - SAMMA-AR-RAWSAN
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

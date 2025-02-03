@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - PALLANDRI
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - PALLANDRI
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

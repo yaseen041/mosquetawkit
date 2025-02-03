@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - TN|Tunisia - BOU-ARADA_
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - TN|Tunisia - BOU-ARADA_
+
 // ------------ METHOD : TUNISIA | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

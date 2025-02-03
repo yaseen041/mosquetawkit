@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - JO|Jordan - GHAWR-AL-MAZRAAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - JO|Jordan - GHAWR-AL-MAZRAAH
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

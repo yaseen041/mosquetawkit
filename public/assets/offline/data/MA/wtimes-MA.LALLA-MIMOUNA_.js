@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - MA|Morocco - LALLA-MIMOUNA_
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - MA|Morocco - LALLA-MIMOUNA_
+
 // ------------ METHOD : MAROC | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

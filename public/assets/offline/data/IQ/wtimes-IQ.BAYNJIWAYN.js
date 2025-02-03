@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - IQ|Iraq - BAYNJIWAYN
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - IQ|Iraq - BAYNJIWAYN
+
 // ------------ METHOD : MWL | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

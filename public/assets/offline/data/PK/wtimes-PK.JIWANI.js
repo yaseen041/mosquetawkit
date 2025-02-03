@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - JIWANI
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - JIWANI
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

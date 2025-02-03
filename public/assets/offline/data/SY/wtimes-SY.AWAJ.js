@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - AWAJ
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - AWAJ
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

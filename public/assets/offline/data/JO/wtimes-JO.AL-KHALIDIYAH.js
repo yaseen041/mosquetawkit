@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - JO|Jordan - AL-KHALIDIYAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - JO|Jordan - AL-KHALIDIYAH
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

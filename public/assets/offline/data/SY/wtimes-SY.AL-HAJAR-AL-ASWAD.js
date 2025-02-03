@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - AL-HAJAR-AL-ASWAD
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - AL-HAJAR-AL-ASWAD
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

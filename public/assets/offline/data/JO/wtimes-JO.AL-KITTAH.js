@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - JO|Jordan - AL-KITTAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - JO|Jordan - AL-KITTAH
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

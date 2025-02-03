@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - DAYR-ATIYAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - DAYR-ATIYAH
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

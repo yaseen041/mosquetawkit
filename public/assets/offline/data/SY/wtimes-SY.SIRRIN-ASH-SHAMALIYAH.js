@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - SIRRIN-ASH-SHAMALIYAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - SIRRIN-ASH-SHAMALIYAH
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

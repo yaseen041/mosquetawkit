@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - AL-QUNAYTIRAH
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - AL-QUNAYTIRAH
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

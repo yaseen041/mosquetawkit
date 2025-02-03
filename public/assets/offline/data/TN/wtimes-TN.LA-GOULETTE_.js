@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - TN|Tunisia - LA-GOULETTE_
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - TN|Tunisia - LA-GOULETTE_
+
 // ------------ METHOD : TUNISIA | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

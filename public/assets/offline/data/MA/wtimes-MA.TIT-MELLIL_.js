@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - MA|Morocco - TIT-MELLIL_
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - MA|Morocco - TIT-MELLIL_
+
 // ------------ METHOD : MAROC | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

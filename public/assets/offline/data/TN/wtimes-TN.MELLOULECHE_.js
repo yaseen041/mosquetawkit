@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - TN|Tunisia - MELLOULECHE_
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - TN|Tunisia - MELLOULECHE_
+
 // ------------ METHOD : TUNISIA | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

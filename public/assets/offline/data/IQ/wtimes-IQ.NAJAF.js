@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - IQ|Iraq - NAJAF
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - IQ|Iraq - NAJAF
+
 // ------------ METHOD : MWL | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

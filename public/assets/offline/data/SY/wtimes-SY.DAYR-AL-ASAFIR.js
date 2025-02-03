@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - DAYR-AL-ASAFIR
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - DAYR-AL-ASAFIR
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

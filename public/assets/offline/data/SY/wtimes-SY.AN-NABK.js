@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - SY|Syria - AN-NABK
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - SY|Syria - AN-NABK
+
 // ------------ METHOD : MAKKAH | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

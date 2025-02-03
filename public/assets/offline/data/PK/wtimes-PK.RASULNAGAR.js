@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - PK|Pakistan - RASULNAGAR
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - PK|Pakistan - RASULNAGAR
+
 // ------------ METHOD : KARACHI | ASR_TYPE : Hanafi
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

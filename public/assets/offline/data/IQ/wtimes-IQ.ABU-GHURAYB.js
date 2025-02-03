@@ -1,9 +1,3 @@
-// ------------ TAWKIT.NET - IQ|Iraq - ABU-GHURAYB
-// ------------ https://www.tawkit.net/wtimes/
-// ------------ METHOD : MWL | ASR_TYPE : Standard
-// ------------ Calculation Script : PrayTimes.org
-// ------------ Geographical Database : GeoNames.org
-
 var JS_TIMES =
 [
 "-------------- JANUARY ----------------------------",

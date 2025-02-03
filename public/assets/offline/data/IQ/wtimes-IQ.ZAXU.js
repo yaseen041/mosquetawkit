@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - IQ|Iraq - ZAXU
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - IQ|Iraq - ZAXU
+
 // ------------ METHOD : MWL | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org

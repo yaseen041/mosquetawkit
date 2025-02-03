@@ -1,5 +1,5 @@
-// ------------ TAWKIT.NET - TN|Tunisia - MANOUBA_
-// ------------ https://www.tawkit.net/wtimes/
+// ------------  - TN|Tunisia - MANOUBA_
+
 // ------------ METHOD : TUNISIA | ASR_TYPE : Standard
 // ------------ Calculation Script : PrayTimes.org
 // ------------ Geographical Database : GeoNames.org
