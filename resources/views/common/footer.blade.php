@@ -34,7 +34,7 @@
                         </li>
                         <li>
                             <i class='bx bx-chevron-right'></i>
-                            <a title='{{ get_section_content('project', 'site_title') }} Online App Administration' href="{{ url('admin') }}" target='_blank'>Online Administration</a>
+                            <a title='{{ get_section_content('project', 'site_title') }} Online App Administration' href="{{ url('/mosque') }}" target='_blank'>Online Administration</a>
                         </li>
                         <li>
                             <i class='bx bx-chevron-right'></i>
