@@ -91,8 +91,8 @@
                     (<b>IMPORTANT</b> to use this old version! and don't update it!).
                     <li><i class='bi bi-check'></i> Download <a href='#'>{{ get_section_content('project', 'site_title') }}</a> in Downloads folder of your device.
                       <li><i class='bi bi-check'></i> Open ES-Explorer and go to Downloads.
-                        <li><i class='bi bi-check'></i> Open tawkit.zip you downloaded, and click on Extract.
-                          <li><i class='bi bi-check'></i> Go back, and open the extracted folder of tawkit,
+                        <li><i class='bi bi-check'></i> Open mosque.zip you downloaded, and click on Extract.
+                          <li><i class='bi bi-check'></i> Go back, and open the extracted folder of mosque,
                            and start the file index.html in Opera Browser !
                          </ul>
                          <p>
@@ -162,7 +162,7 @@
                   const d = new Date();
                   d.setTime(d.getTime() + (exdays*24*60*60*1000));
                   let expires = 'expires='+ d.toUTCString();
-                  document.cookie = cname + '=' + cvalue + '; ' + expires + '; path=/; domain=.tawkit.net; SameSite=Strict;';
+                  // document.cookie = cname + '=' + cvalue + '; ' + expires + '; path=/; domain=.tawkit.net; SameSite=Strict;';
                 }
 //-----------------------------------------------------------------------------------
                 function changeLang(ss)

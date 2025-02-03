@@ -14,7 +14,7 @@
             </div>
             <div class='col-md-6 d-flex align-items-end'>
                 <a href="{{ asset('assets/admin/tawkit-9.54n-db004.zip')}}" class='download-btn'>
-                    <span class='colink'>DOWNLOAD TAWKIT v9.54n-db004</span><br>
+                    <span class='colink'>DOWNLOAD {{ get_section_content('project', 'site_title') }} v9.54n-db004</span><br>
                     <span>Offline Edition, <b>Without Internet</b></span><br>
                     <span>تنزيل النسخة المحلية<br>بدون إنترنت</span>
                 </a>
@@ -35,74 +35,74 @@
                 <b>This application is 100% freeware !</b> It is not permissible to sell it. <br>
                 <a href='./#License'>See License.</a>
             </div>
-            <img alt='Tawkit - prayer times application' src="{{ asset('assets/images_tawkit/tawkit00.png') }}"
+            <img alt='Mosque - prayer times application' src="{{ asset('assets/images_tawkit/tawkit00.png') }}"
                 style='width:100%; margin-bottom:17px;'>
             <div class='col-md-6 d-flex align-items-end'>
                 <div class='col-md-6 d-flex align-items-end'>
-                    <img alt='Tawkit - prayer times application' src="{{ asset('assets/images_tawkit/tawkit-v1.png') }}"
+                    <img alt='Mosque - prayer times application' src="{{ asset('assets/images_tawkit/tawkit-v1.png') }}"
                         style='width:100%;'>
                 </div>
                 <div class='col-md-6 d-flex align-items-end'>
-                    <img alt='Tawkit - prayer times application' src="{{ asset('assets/images_tawkit/tawkit-v0.png') }}"
+                    <img alt='Mosque - prayer times application' src="{{ asset('assets/images_tawkit/tawkit-v0.png') }}"
                         style='width:100%;'>
                 </div>
             </div>
             <div class='col-md-6 d-flex align-items-end'>
                 <div class='col-md-6 d-flex align-items-end'>
-                    <img alt='Tawkit - prayer times application' src="{{ asset('assets/images_tawkit/tawkit-v3.png') }}"
+                    <img alt='Mosque - prayer times application' src="{{ asset('assets/images_tawkit/tawkit-v3.png') }}"
                         style='width:100%;'>
                 </div>
                 <div class='col-md-6 d-flex align-items-end'>
-                    <img alt='Tawkit - prayer times application' src="{{ asset('assets/images_tawkit/tawkit-v2.png') }}"
+                    <img alt='Mosque - prayer times application' src="{{ asset('assets/images_tawkit/tawkit-v2.png') }}"
                         style='width:100%;'>
                 </div>
             </div>
             <div class='col-md-6 d-flex align-items-end'>
-                <img alt='Tawkit - prayer times application' src="{{ asset('assets/images_tawkit/tawkit-h1.png') }}"
+                <img alt='Mosque - prayer times application' src="{{ asset('assets/images_tawkit/tawkit-h1.png') }}"
                     style='width:100%;'>
             </div>
             <div class='col-md-6 d-flex align-items-end'>
-                <img alt='Tawkit - prayer times application' src="{{ asset('assets/images_tawkit/tawkit-h3.png') }}"
+                <img alt='Mosque - prayer times application' src="{{ asset('assets/images_tawkit/tawkit-h3.png') }}"
                     style='width:100%;'>
             </div>
             <div class='col-md-6 d-flex align-items-end'>
-                <img alt='Tawkit - prayer times application' src="{{ asset('assets/images_tawkit/tawkit-h2.png') }}"
+                <img alt='Mosque - prayer times application' src="{{ asset('assets/images_tawkit/tawkit-h2.png') }}"
                     style='width:100%;'>
             </div>
             <div class='col-md-6 d-flex align-items-end'>
-                <img alt='Tawkit - prayer times application' src="{{ asset('assets/images_tawkit/tawkit-h0.png') }}"
+                <img alt='Mosque - prayer times application' src="{{ asset('assets/images_tawkit/tawkit-h0.png') }}"
                     style='width:100%;'>
             </div>
             <div class='col-md-6 d-flex align-items-end'>
-                <img alt='Tawkit - prayer times application' src="{{ asset('assets/images_tawkit/tawkit-h4.png') }}"
+                <img alt='Mosque - prayer times application' src="{{ asset('assets/images_tawkit/tawkit-h4.png') }}"
                     style='width:100%;'>
             </div>
             <div class='col-md-6 d-flex align-items-end'>
-                <img alt='Tawkit - prayer times application' src="{{ asset('assets/images_tawkit/tawkit-h5.png') }}"
+                <img alt='Mosque - prayer times application' src="{{ asset('assets/images_tawkit/tawkit-h5.png') }}"
                     style='width:100%;'>
             </div>
             <div class='col-md-6 d-flex align-items-end'>
-                <img alt='Tawkit - prayer times application' src="{{ asset('assets/images_tawkit/tawkit-h6.png') }}"
+                <img alt='Mosque - prayer times application' src="{{ asset('assets/images_tawkit/tawkit-h6.png') }}"
                     style='width:100%;'>
             </div>
             <div class='col-md-6 d-flex align-items-end'>
-                <img alt='Tawkit - prayer times application' src="{{ asset('assets/images_tawkit/tawkit-h7.png') }}"
+                <img alt='Mosque - prayer times application' src="{{ asset('assets/images_tawkit/tawkit-h7.png') }}"
                     style='width:100%;'>
             </div>
             <div class='col-md-6 d-flex align-items-end'>
-                <img alt='Tawkit - prayer times application' src="{{ asset('assets/images_tawkit/tawkit-h9.png') }}"
+                <img alt='Mosque - prayer times application' src="{{ asset('assets/images_tawkit/tawkit-h9.png') }}"
                     style='width:100%;'>
             </div>
             <div class='col-md-6 d-flex align-items-end'>
-                <img alt='Tawkit - prayer times application' src="{{ asset('assets/images_tawkit/tawkit-ha.png') }}"
+                <img alt='Mosque - prayer times application' src="{{ asset('assets/images_tawkit/tawkit-ha.png') }}"
                     style='width:100%;'>
             </div>
             <div class='col-md-6 d-flex align-items-end'>
-                <img alt='Tawkit - prayer times application' src="{{ asset('assets/images_tawkit/tawkit-hb.png') }}"
+                <img alt='Mosque - prayer times application' src="{{ asset('assets/images_tawkit/tawkit-hb.png') }}"
                     style='width:100%;'>
             </div>
             <div class='col-md-6 d-flex align-items-end'>
-                <img alt='Tawkit - prayer times application' src="{{ asset('assets/images_tawkit/tawkit-h8.png') }}"
+                <img alt='Mosque - prayer times application' src="{{ asset('assets/images_tawkit/tawkit-h8.png') }}"
                     style='width:100%;'>
             </div>
         </div>
@@ -467,7 +467,7 @@
         const d = new Date();
         d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
         let expires = 'expires=' + d.toUTCString();
-        document.cookie = cname + '=' + cvalue + '; ' + expires + '; path=/; domain=.tawkit.net; SameSite=Strict;';
+        // document.cookie = cname + '=' + cvalue + '; ' + expires + '; path=/; domain=.tawkit.net; SameSite=Strict;';
     }
 
     function changeLang(ss) {
