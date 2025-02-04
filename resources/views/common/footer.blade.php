@@ -44,9 +44,32 @@
                 </div>
                 <div class='col-lg-4 col-md-4 footer-links'>
                     <ul align='right'>
-                        <li>Author : {{ get_section_content('project', 'site_author') }}</li>
-                        <li>Email :  {{ get_section_content('project', 'admin_email') }}</li>
-                        <li>© {{date('Y')}} {{ get_section_content('project', 'site_title') }}. All rights reserved.</li>
+                        <li>
+                            Author:&nbsp;
+                            <a href="" target='_blank' class='cssAR' title='8803' >
+                                <strong>
+                                    {{ get_section_content('project', 'site_author') }}
+                                </strong>
+                            </a>
+                        </li>
+                        <li>
+                            Email:&nbsp;&nbsp;
+                            <a href="" target='_blank' class='cssAR' title='8803' >
+                                <strong>
+                                    {{ get_section_content('project', 'admin_email') }}
+                                </strong>
+                            </a>
+                        </li>
+                        <li>
+                            ©
+                            {{date('Y')}}&nbsp;
+                            <a href="" target='_blank' class='cssAR' title='8803' >
+                                <strong>
+                                    {{ get_section_content('project', 'site_title') }}
+                                </strong>
+                            </a>.
+                            All rights reserved.
+                        </li>
                     </ul>
                 </div>
             </div>

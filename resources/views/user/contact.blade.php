@@ -1,5 +1,5 @@
 @extends('app')
-@section('title', 'Contact ')
+@section('title', 'Contact Author')
 @section('content')
 <section >
   <div class='container'>
@@ -53,8 +53,6 @@
 @push('scripts')
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js" ></script>
-
-
 <script>
   $(document).ready(function () {
     var validator = $("#contactForm").validate({
@@ -124,8 +122,6 @@
         });
   });
 </script>
-
-
 <script>
   function setCookie(cname, cvalue, exdays) {
     const d = new Date();

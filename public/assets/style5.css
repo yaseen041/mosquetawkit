@@ -175,7 +175,7 @@ hr {border: 1px solid #333333;}
 #HR_eAMPM		{position:absolute; line-height:1em; font-size:3.3vw; text-align:right;  z-index:927; right:4%; top:52%; width:12%; text-shadow:var(--TXT_SHDW);}
 
 #CLOKO_FULL_HR	{position:absolute;	line-height:1em; font-size:13vw; 
-	left:23%; top:25%; z-index:929; text-align:center; 
+	left:23%; top:25%; z-index:997; text-align:center;
 	width:54%; height:25%; text-shadow:var(--CLK_SHDW); 
 	font-family :var(--XX_DIGITS); 
 	color:var(--Color_CLOCK);}

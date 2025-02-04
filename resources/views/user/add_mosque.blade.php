@@ -94,7 +94,6 @@
 	var JS_btnStep2		= document.getElementById('btnStep2');
 	var JS_uuuCITY 		= document.getElementById('mCITY');
 	var JS_mWTIMES 		= document.getElementById('mWTIMES');
-//-----------------------------------------------------------------------------------
 	function checkMsqNames()
 	{
 		var JS_nNormal 		= document.getElementById('mNAME');
@@ -104,5 +103,4 @@
 		else
 			{ JS_btnStep3.disabled = false; JS_btnStep3.style.backgroundColor = 'Green'; }
 	}
-//-----------------------------------------------------------------------------------
 </script>

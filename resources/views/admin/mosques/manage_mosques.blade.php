@@ -65,9 +65,13 @@
                                 <tr id="tr">
                                     <td>{{ $i++ }}</td>
                                     <td>
+                                        <a href="{{url('online'.'/'.$mosque->unique_id.'/'.$mosque->city)}}" target='_blank' class='cssAR' title='8803' style='font-size:110%;'>
                                         {{ $mosque->mosque_name}}
+                                    </a>
                                     </td>
-                                    <td>{{ $mosque->app_name }}</td>
+                                    <td>
+                                        {{ $mosque->app_name }}
+                                    </td>
                                     <td>{{ $mosque->email }}</td>
                                     <td>{{ $mosque->country }}</td>
                                     <td>{{ $mosque->city }}</td>

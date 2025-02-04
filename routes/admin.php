@@ -6,7 +6,7 @@ use App\Http\Controllers\Admin\AdminController;
 
 use App\Http\Controllers\Admin\MosquesController;
 use App\Http\Controllers\Admin\ForgotPasswordController;
-// use App\Http\Controllers\Admin\PaymentsController;
+use App\Http\Controllers\Admin\ContactsController;
 
 
 Route::group(['prefix'  =>  'admin'], function () {
@@ -30,6 +30,12 @@ Route::group(['prefix'  =>  'admin'], function () {
 			Route::get('manage-mosque/{id}', [MosquesController::class, 'manage_mosque']);
 			Route::post('update_status', [MosquesController::class, 'update_status']);
 			Route::post('delete', [MosquesController::class, 'destroy']);
+		});
+
+		Route::group(['prefix' => 'contacts'], function () {
+			Route::get('/', [ContactsController::class, 'index']);
+			Route::post('/show', [ContactsController::class, 'show']);
+			Route::post('/delete', [ContactsController::class, 'destroy']);
 		});
 
 	});

@@ -25,6 +25,10 @@
                 <a href="{{ url('admin/mosques') }}"><i class="fa-solid fa-mosque"></i><span class="nav-label">Mosques</span></a>
             </li>
 
+            <li class="{{ Request::is('admin/contacts') ? 'active' : '' }} {{ Request::is('admin/contacts*') ? 'active' : '' }}">
+                <a href="{{ url('admin/contacts') }}"><i class="fa-solid fa-envelope"></i><span class="nav-label">Contacts Messages</span></a>
+            </li>
+
         </ul>
     </div>
 </nav>
