@@ -28,7 +28,7 @@
                 </div>
                 <div class="ibox-content">
                     <div class="row">
-                        <div class="col-md-10">
+                        <div class="col-md-9">
                             <div class="row">
                                 <div class="col-md-4 mb-3">
                                     <strong class="text-dark">Mosque Name:</strong>
@@ -57,6 +57,24 @@
                                     <span>{{ $mosque->city }}</span>
                                 </div>
                                 <div class="col-md-4 mb-3">
+                                    <strong class="text-dark">Auto add 1 hour in Summer:</strong><br />
+                                    <span class="label {{ $mosque->status == 1 ? 'bg-success' : 'bg-danger' }}">
+                                        {{ $mosque->status == 1 ? 'Active' : 'Suspended' }}
+                                    </span>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <strong class="text-dark">Auto Add 30 Minutes To Isha In Ramadan :</strong>
+                                    <span class="label {{ $mosque->status == 1 ? 'bg-success' : 'bg-danger' }}">
+                                        {{ $mosque->status == 1 ? 'Active' : 'Suspended' }}
+                                    </span>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <strong class="text-dark">Auto REDUCE 1 Hour In Ramadan:</strong><br />
+                                    <span class="label {{ $mosque->status == 1 ? 'bg-success' : 'bg-danger' }}">
+                                        {{ $mosque->status == 1 ? 'Active' : 'Suspended' }}
+                                    </span>
+                                </div>
+                                <div class="col-md-4 mb-3">
                                     <strong class="text-dark">Created Date:</strong>
                                     <span>{{ date_formated($mosque->created_at) }}</span>
                                 </div>
@@ -75,14 +93,24 @@
                                     <strong class="text-dark">Message:</strong>
                                     <span>{{ $mosque->message }}</span>
                                 </div>
+                                <div class="col-md-12 mb-3">
+                                    <strong class="text-dark">WTimes:</strong>
+                                    <textarea disabled rows="10" class="form-control">{{ $mosque->annual_time }}</textarea>
+                                </div>
+
 
                             </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-3">
+
                             @if( @$mosque->qr_code)
-                            <a href="{{ @$mosque->qr_code }}" target="_blank">
-                                <img src="{{ @$mosque->qr_code }}" alt="{{ @$mosque->mosque_name }}" class="media img_width">
+                            <a href="{{url('online'.'/'.$mosque->unique_id.'/'.$mosque->city)}}" target="_blank">
+                                <img src="{{ asset('uploads/qrcodes/'.$mosque->qr_code) }}" alt="{{ @$mosque->mosque_name }}" class="media img_width"><br />
+                                {{url('online'.'/'.$mosque->unique_id.'/'.$mosque->city)}}
                             </a>
+                            @endif
+                            @if( @$mosque->logo)
+                            <img src="{{ asset('uploads/mosque_logos/'.$mosque->logo) }}" alt="{{ @$mosque->mosque_name }}" class="media img_width"><br />
                             @endif
                         </div>
                     </div>

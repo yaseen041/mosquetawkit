@@ -26,7 +26,7 @@
             </li>
 
             <li class="{{ Request::is('admin/contacts') ? 'active' : '' }} {{ Request::is('admin/contacts*') ? 'active' : '' }}">
-                <a href="{{ url('admin/contacts') }}"><i class="fa-solid fa-envelope"></i><span class="nav-label">Contacts Messages</span></a>
+                <a href="{{ url('admin/contacts') }}"><i class="fa-solid fa-envelope"></i><span class="nav-label">Contacts</span></a>
             </li>
 
         </ul>
