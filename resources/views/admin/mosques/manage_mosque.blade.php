@@ -32,7 +32,7 @@
                             <div class="row">
                                 <div class="col-md-4 mb-3">
                                     <strong class="text-dark">Mosque Name:</strong>
-                                    <a href="{{url('online'.'/'.$mosque->unique_id.'/'.$mosque->city)}}" target='_blank' class='cssAR' title='8803' style='font-size:110%;'>
+                                    <a href="{{url('online'.'/'.$mosque->unique_id.'/'.$mosque->city)}}" target='_blank' class='cssAR' title="{{ $mosque->mosque_name}}" style='font-size:110%;'>
                                         <span>{{ $mosque->mosque_name }}</span>
                                     </a>
                                 </div>

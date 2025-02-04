@@ -119,7 +119,7 @@
 									&nbsp;<br /><br />
 									<span style='font-size:120%;'>
 										{{ get_section_content('project', 'site_title') }} Administration &nbsp; - &nbsp;
-										<a href="{{url('online'.'/'.$mosque->unique_id.'/'.$mosque->city)}}" target='_blank' class='cssAR' title='8803' style='font-size:110%;'>
+										<a href="{{url('online'.'/'.$mosque->unique_id.'/'.$mosque->city)}}" target='_blank' class='cssAR' title="{{ $mosque->unique_id}}" style='font-size:110%;'>
 											{{$mosque->app_name}}
 										</a>
 									</span>
@@ -137,7 +137,7 @@
 												Mosque link - <span class='cssAR'>رابط المسجد</span> :
 											</td>
 											<td height='30' width='70%' align='left' valign='top' style='font-variant:normal; color:blue;'>
-												<a href='{{url('online'.'/'.$mosque->unique_id.'/'.$mosque->city)}}' target='_blank'>{{url('online'.'/'.$mosque->unique_id.'/'.$mosque->city)}}</a>
+												<a href='{{url('online'.'/'.$mosque->unique_id.'/'.$mosque->city)}}' target='_blank'  title="{{ $mosque->unique_id}}">{{url('online'.'/'.$mosque->unique_id.'/'.$mosque->city)}}</a>
 											</td>
 										</tr>
 										<tr>
