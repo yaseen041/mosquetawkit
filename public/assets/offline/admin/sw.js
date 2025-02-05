@@ -50,20 +50,31 @@ var JS_GPS_CALCULATION_CITIES_NOW = [];
 function uCountryCHANGE(obj) 
 {
 	var eee_STR = obj.options[obj.selectedIndex].value;
+
 	JS_CITIES_DATA = "";
 	emptyCities();
+
 	if(eee_STR == '')
 	{
+		//emptyCities();
 		return;
 	}
+
+
 	var tmpARR   = eee_STR.split("|");
 	var eee_CODE  = tmpARR[0];
+
 	var JS_VERSIO = new Date().getTime();
+
 	JS_GPS_CALCULATION_CITIES_NOW = [];
 	var tempIniFile =  "assets/admin/geoDB/" + eee_CODE + ".js";
-	var jsRealFilesFile = "assets/admin/data/" + eee_CODE + "/" + eee_CODE + ".js";
-	log(jsRealFilesFile);
-	uLoadRealFILES(jsRealFilesFile);
+	// var jsRealFilesFile = "assets/admin/data/" + eee_CODE + "/" + eee_CODE + ".js?s="+JS_VERSIO;
+	// var tempIniFile 	= "../admin/geoDB/" + eee_CODE + ".js";
+	// var jsRealFilesFile	= "https://offline.tawkit.net/data/" + eee_CODE + "/" + eee_CODE + ".js?s="+JS_VERSIO;
+
+	// log(jsRealFilesFile);
+
+	// uLoadRealFILES(jsRealFilesFile);
 	setTimeout(uLoadGpsCitiesAsJS, 1200, tempIniFile);
 }
 

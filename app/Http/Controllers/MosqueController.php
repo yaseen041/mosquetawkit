@@ -70,8 +70,18 @@ class MosqueController extends Controller
         $countryCode  = $countryParts[0] ?? null;
         $countryName  = $countryParts[1] ?? null;
 
+        $cityValue = $validatedData['mCITY'];
+
+        if (strpos($cityValue, '|') !== false) {
+            $cityParts = explode('|', $cityValue);
+            $cityName = $cityParts[1] ?? null;
+        } else {
+            $cityParts = explode('.', $cityValue);
+            if (count($cityParts) >= 3) {
+                $cityName = rtrim($cityParts[2], '.');
+            }
+        }
         $cityParts = preg_split('/[|]/', $validatedData['mCITY']);
-        $cityName       = $cityParts[1] ?? null;
         $timezoneOffset = $cityParts[4] ?? null;
         $dstOffset      = $cityParts[5] ?? null;
 
@@ -92,6 +102,7 @@ class MosqueController extends Controller
             'dst_offset'      => $dstOffset,
         ]);
 
+
         if ($updated) {
             return redirect()->to('/add-mosque?step3=' . $validatedData['mID']);
         }
@@ -102,6 +113,7 @@ class MosqueController extends Controller
     public function handleStep3(Request $request)
     {
         $data = $request->all();
+
         $validator = Validator::make($data, [
             'mNAME' => 'required|string',
             'mMETHODS' => 'required|string',
@@ -115,7 +127,6 @@ class MosqueController extends Controller
             ]);
         }
 
-        // Save WTimes JSON file
         $fileName = $request->mID . "-data.js";
         $filePath = public_path("uploads/wtimes/{$fileName}");
         if (!File::exists(public_path('uploads/wtimes'))) {
@@ -135,7 +146,7 @@ class MosqueController extends Controller
         $writer = new PngWriter();
         $qrCodeResult = $writer->write($qrCode);
         $qrCodePath = public_path("uploads/qrcodes/{$qrCodeName}");
-        File::put($qrCodePath, $qrCodeResult->getString());
+        $file = File::put($qrCodePath, $qrCodeResult->getString());
 
         Mosques::where('unique_id', $request->mID)->update([
             'mosque_name' => $request->mMETHODS,
@@ -200,6 +211,8 @@ class MosqueController extends Controller
         if ($request->hasFile('pLGfile')) {
             $image = $request->file('pLGfile');
             $imageName = $mosque->unique_id . '-logo.' . $image->getClientOriginalExtension();
+
+        // Ensure the directory exists
             $uploadPath = public_path("uploads/mosque_logos/");
             if (!file_exists($uploadPath)) {
                 mkdir($uploadPath, 0777, true);
@@ -265,9 +278,9 @@ class MosqueController extends Controller
             'message_switcher' => $request->mAyatsSWITCHER,
         ]);
 
-         return $mosque
-            ? back()->with('update_success', 'Mosque updated successfully!')
-            : back()->with('update_error', 'Something went wrong!!');
+        return $mosque
+        ? back()->with('update_success', 'Mosque updated successfully!')
+        : back()->with('update_error', 'Something went wrong!!');
     }
 
     public function send_user_credential_email($data)

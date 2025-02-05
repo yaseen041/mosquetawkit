@@ -163,7 +163,7 @@
 																<div class="mb-3">
 																	<label for="pLGfile" class="form-label fw-bold">Modify Mosque Logo (PNG file size 550 x 550)</label><br>
 																	<span class="cssAR text-muted">تغيير شعار المسجد</span><br>
-																	<input type="file" name="pLGfile" id="pLGfile" class="form-control" accept=".png">
+																	<input type="file" name="pLGfile" id="pLGfile" class="form-control" accept=".png, .jpeg, .jpg">
 																	@error('pLGfile')
 																	<div class="error">{{ $message }}</div>
 																	@enderror
