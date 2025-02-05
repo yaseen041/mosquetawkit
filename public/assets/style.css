@@ -142,7 +142,7 @@ hr {border: 1px solid #333333;}
 /*  LANDSCAPE  */
 @media only screen and (orientation:landscape)
 {
-#eMainHORIZONTAL {display:block; width:100%; position:relative; padding-top:56.25%; background:url(); background-repeat:no-repeat; background-size:100% 100%;}
+#eMainHORIZONTAL {display:block; width:100%; position:relative; padding-top:53.5%; background:url(); background-repeat:no-repeat; background-size:100% 100%;}
 #eMainVERTICAL 	 {display:none;  width:100%; position:relative; padding-top:177.77%;}
 
 #eMenuHR {position:absolute; z-index:9999333; left:1%; top:0; font-size:2.8vw; padding:2px;}

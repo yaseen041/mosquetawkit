@@ -200,8 +200,6 @@ class MosqueController extends Controller
         if ($request->hasFile('pLGfile')) {
             $image = $request->file('pLGfile');
             $imageName = $mosque->unique_id . '-logo.' . $image->getClientOriginalExtension();
-
-        // Ensure the directory exists
             $uploadPath = public_path("uploads/mosque_logos/");
             if (!file_exists($uploadPath)) {
                 mkdir($uploadPath, 0777, true);
@@ -222,32 +220,22 @@ class MosqueController extends Controller
     public function update_profile(Request $request)
     {
         $data = $request->all();
-
-
         $validator = Validator::make($data,
             [
-                'mID' => 'required|numeric',
                 'mSETTINGS' => 'required|date_format:H:i',
-                'm12BOOLZ' => 'nullable|string',
                 'mNAMELATIN' => 'required|string|max:255',
                 'mNAME' => 'required|string|max:255',
                 'mDATA' => 'required|string|max:250',
-                'mDatetimeEND' => 'required|date_format:Y-m-d H:i',
-                'mAyatsSWITCHER' => 'nullable|in:1',
                 'mWTIMES' => 'required|string',
             ],
             [
                 'mIQAMAS.regex' => 'The IQAMA times must be in the format "1,1,1,1,1".',
                 'mSETTINGS.date_format' => 'The settings time must be in the format "HH:MM".',
-                'mDatetimeEND.date_format' => 'The expiration date must be in the format "YYYY-MM-DD HH:MM".',
             ],
         );
 
         if ($validator->fails()) {
-            return response()->json([
-                'msg' => 'lvl_error',
-                'response' => $validator->errors()->all()
-            ]);
+            return back()->withErrors($validator)->withInput();
         }
         $fileName = $request->mID . "-data.js";
         $filePath = public_path("uploads/wtimes/{$fileName}");
@@ -261,7 +249,7 @@ class MosqueController extends Controller
         $summer_hour = $request->has('mSummer1HOUR') ?'1' : '0';
         $increase_isha_ramadan = $request->has('m30MinIshaRAMADAN') ?'1' : '0';
         $reduce_isha_ramadan = $request->has('mLess1HourRAMADAN') ?'1' : '0';
-
+        $mDatetimeEND = ($request->mDatetimeEND == '0000-00-00 00:00') ? null : $request->mDatetimeEND;
         $mosque = Mosques::where('unique_id', $request->mID)->update([
             'annual_time' => $request->mWTIMES,
             'iqamaz' => $request->mIQAMAS,
@@ -273,15 +261,13 @@ class MosqueController extends Controller
             'latin_name' => $request->mNAMELATIN,
             'app_name' => $request->mNAME,
             'message' => $request->mDATA,
-            'message_expire_date' => $request->mDatetimeEND,
+            'message_expire_date' => $mDatetimeEND,
             'message_switcher' => $request->mAyatsSWITCHER,
         ]);
 
-        if ($mosque) {
-            return response()->json(['msg' => 'success', 'response' => 'Mosque updated successfully.']);
-        } else {
-            return response()->json(['msg' => 'error', 'response' => 'Something went wrong!']);
-        }
+         return $mosque
+            ? back()->with('update_success', 'Mosque updated successfully!')
+            : back()->with('update_error', 'Something went wrong!!');
     }
 
     public function send_user_credential_email($data)

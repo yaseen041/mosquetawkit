@@ -44,8 +44,8 @@
 		var JS_IQAMA_TIME_OF_ASR = '0';
 		var JS_IQAMA_TIME_OF_MAGHRIB = '0';
 		var JS_IQAMA_TIME_OF_ISHA = '0';
-		var JS_MOSK_IQAMAS = '{{$mosque->iqamaz}}';
-		var JS_WEB_12BOOLZ = '{{$mosque->m_12boolz}}';
+		var JS_MOSK_IQAMAS = '---,---,---,---,---';
+var JS_WEB_12BOOLZ				= '100000000000';
 		var JS_ID_MSQ = '{{ $mosque->unique_id}}';
 		var JS_PERSO_FIXED_JOMOA = '';
 		var JS_FIXED_IQAMATFAJR = '';
@@ -56,7 +56,13 @@
 		if (JS_IQAMA_TIME_OF_DOHR.indexOf(':') > -1) JS_FIXED_IQAMATDOHR = JS_IQAMA_TIME_OF_DOHR;
 		if (JS_IQAMA_TIME_OF_ASR.indexOf(':') > -1) JS_FIXED_IQAMATASR = JS_IQAMA_TIME_OF_ASR;
 		if (JS_IQAMA_TIME_OF_ISHA.indexOf(':') > -1) JS_FIXED_IQAMATISHA = JS_IQAMA_TIME_OF_ISHA;
-		var JS_SITE_ADMIN_DATA = "[@()|]";
+
+		const currentDate = new Date();
+		const expireDate = new Date(`{{ $mosque->message_expire_date}}`);
+		var JS_SITE_ADMIN_DATA = currentDate > expireDate
+		? "[@(_ _ _)|]"
+		: `[@('{{ str_replace(" ", "\n", $mosque->message) }}')|]`;
+
 		var JS_WCSV_ACTIVE = false;
 		if (JS_WCSV_ACTIVE) JS_IQAMA_FULL_TIMES = true;
 		let JS_ROOT = document.documentElement;
@@ -2209,6 +2215,7 @@
     var JS_QM4 = document.getElementById('qm4');
     var JS_QM5 = document.getElementById('qm5');
     var JS_QM6 = document.getElementById('qm6');
+
     var JS_W333HRQM1 = document.getElementById('W333HRqm1');
     var JS_W333HRQM3 = document.getElementById('W333HRqm3');
     var JS_W333HRQM4 = document.getElementById('W333HRqm4');

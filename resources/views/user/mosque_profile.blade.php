@@ -167,7 +167,8 @@
 																	@error('pLGfile')
 																	<div class="error">{{ $message }}</div>
 																	@enderror
-																</div><br>
+																</div>
+																<br>
 
 																<button type="submit" name="pUploadLOGO" class="btn btn-primary" style="padding: 3px 7px; font-size: 12px">
 																	<i class="fas fa-upload"></i> Upload Logo
@@ -175,11 +176,15 @@
 																</button>
 
 																@if (session('success'))
-																<div class="mt-3 alert alert-success">{{ session('success') }}</div>
+																<div class="mt-3 alert alert-success">
+																	{{ session('success') }}
+																</div>
 																@endif
 
 																@if (session('error'))
-																<div class="mt-3 alert alert-danger">{{ session('error') }}</div>
+																<div class="mt-3 alert alert-danger">
+																	{{ session('error') }}
+																</div>
 																@endif
 															</form>
 														</td>
@@ -192,9 +197,9 @@
 										@csrf
 										<input type='hidden' name='mID' value="{{ $mosque->unique_id}}" >
 										<input type='hidden' name='mSavedCITY' value="{{ $mosque->city}}" >
-										<input type='hidden' name='mIQAMAS' id='mIQAMAS' value="---,---,---,---,---" >
-										<input type='hidden' name='mSETTINGS' id='mSETTINGS' value="" >
-										<input type='hidden' name='m12BOOLZ' id='m12BOOLZ' value="" >
+										<input type='hidden' name='mIQAMAS' id='mIQAMAS' value="{{ $mosque->iqamaz}}" >
+										<input type='hidden' name='mSETTINGS' id='mSETTINGS' value="{{ $mosque->m_settings}}" >
+										<input type='hidden' name='m12BOOLZ' id='m12BOOLZ' value="{{ $mosque->m_12boolz}}" >
 
 
 										<table align='center' cellpadding='10' cellspacing='0' border='0' width='100%' >
@@ -203,9 +208,8 @@
 													Mosque name (by Latin) :
 												</td>
 
-												<pre id="output"></pre>
 												<td height='30' width='70%' align='left' valign='top'>
-													<input type='text' id='mNAMELATIN' name='mNAMELATIN' 		value="{{ $mosque->mosque_name}}" class='cssINPUT' />
+													<input type='text' id='mNAMELATIN' name='mNAMELATIN' value="{{ $mosque->mosque_name}}" class='cssINPUT' />
 												</td>
 											</tr>
 											<tr>
@@ -251,7 +255,10 @@
 													<span class='cssAR'>تاريخ انتهاء الرسالة</span>
 												</td>
 												<td height='30' width='70%' align='left' valign='top'>
-													<input type='text' id='mDatetimeEND' name='mDatetimeEND' value="{{ $mosque->message_expire_date}}" readonly class='cssINPUT' style='width:145px;' />
+													<input type="text" id="mDatetimeEND" name="mDatetimeEND"
+													value="{{ $mosque->message_expire_date == '0000-00-00 00:00:00' ? '' : $mosque->message_expire_date }}"
+													readonly class="cssINPUT" style="width:145px;" />
+
 													<span class='cssBLUE cssBORD' onclick="NewCssCal('mDatetimeEND','yyyyMMdd','ARROW',true,'24',false,true)">
 														<img border='0' src="{{ asset('assets/images/cal.gif')}}" />
 														&nbsp;
@@ -884,9 +891,31 @@
 													<br>
 												</td>
 											</tr>
+
+											@if (session('update_success') || session('update_error'))
 											<tr>
-												<td height='20' width='30%'></td><td height='20' width='70%' class='btmLINE'></td>
+												<td  height='0'/>
+
+												<td  height='5'>
+													@if (session('update_success'))
+													<div class="mt-3 alert alert-success">
+														{{ session('update_success') }}
+													</div>
+													@endif
+
+													@if (session('update_error'))
+													<div class="mt-3 alert alert-danger">
+														{{ session('update_error') }}
+													</div>
+													@endif
+
+												</td>
 											</tr>
+											@endif
+											<tr>
+												<td height='0' width='30%' style="padding: 0px;"></td><td height='0' width='70%' style="padding: 0px;" class='btmLINE'></td>
+											</tr>
+
 											<tr>
 												<td height='30' width='30%' align='right'></td>
 												<td height='30' width='70%' align='center'><br />
@@ -907,7 +936,8 @@
 						<div style='height:90px;' >&nbsp;</div>
 						<center>
 							<div align='center' style='color:#919191; width:350px;' >
-								© {{date('Y')}} {{ get_section_content('project', 'site_title') }}. All rights reserved.<br /><br />
+								© {{date('Y')}} {{ get_section_content('project', 'site_title') }}. All rights reserved.
+								<br /><br />
 							</div>
 						</center>
 						<br />
@@ -937,7 +967,7 @@
 						}
 						function DisableMsgDATE()
 						{
-							document.getElementById('mDatetimeEND').value = '0000-00-00';
+							document.getElementById('mDatetimeEND').value = '0000-00-00 00:00';
 						}
 						function FillTheIQAMAS()
 						{
