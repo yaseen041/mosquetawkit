@@ -2280,7 +2280,7 @@
         if (JS_nowMNTS == _maghreb) startDECOMPTE(JS_IQAMA_TIME_OF_MAGHRIB, JS_PRAY_DURATION_OF_MAGHRIB);
         if (JS_nowMNTS == _isha) startDECOMPTE(JS_IQAMA_TIME_OF_ISHA, JS_PRAY_DURATION_OF_ISHA);
         if (JS_TODAY_IS_JOMOA) {
-            - JOMOA_THUHR___SPECIAL_DIMMING
+
             if (JS_nowMNTS == (_thuhr - JS_JOMOA_DIM_MINIUTES_BEFORE)) { StartBlackScreenWhilePraying(); }
             if (JS_nowMNTS == (_thuhr + JS_JOMOA_DIM_MINIUTES_AFTER)) { RemoveBlackScreen(); SetAllTubesNORMAL(); }
         }
